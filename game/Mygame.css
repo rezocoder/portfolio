@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("game-images/background.jpg");
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
+    #object {
+        width: 15.1%;
+        position: absolute;
+        margin-top: 7%;
+    }
+
+    
+    .ball {
+        width: 38px;
+        height: 10px;
+        background-color: black;
+        border-radius: 50%;
+        margin-left: 220px;
+        margin-top: 15px;
+    }
+
+
+    .zombi, .zombiOne, .zombiTwo, .zombiThree, .zombiFour, .zombiFive, .zombiSix, .zombiSeven, .zombiEight, .zombiNine {
+        width: 100px;
+        height: 90px;
+        margin-left: 91%;
+        position: absolute;
+        background-image: url('game-images/step-two.png');
+        background-size: 70%;
+        background-repeat: no-repeat;
+    }
+  
+
+    img {
+      width: 100px;
+        height: 90px;
+        margin-left: 92.45%;
+        position: absolute;
+    }
+
+    img#tanki {
+      width: 150px;
+      height: 100px;
+      margin-left: 52%;
+    }
+    
+    .bg2 {
+      background-image: url('game-images/step-one.png');
+      background-size: 70%;
+      background-repeat: no-repeat;
+    }
+
+
+    .right-wall {
+      width: 9.05%;
+      /*height: 658px;*/
+      height: 100%;
+      background-color: black;
+      position: absolute;
+      margin-left: 90.95%;
+    }
+
+    .top-wall {
+      width: 100%;
+      height: 14%;
+      background-color: black;
+      position: fixed;
+    }
+
+    .left-wall {
+      width: 9.05%;
+      height: 100%;
+      background-color: black;
+      position: absolute;
+    }
+
+    h2 {
+      color: white;
+      position: absolute;
+      margin-left: 45%;
+      font-size: 30px;
+      margin-top: 10px;
+    }
+
+    .result {
+      color: rgb(255, 255, 255);
+      text-align: center;
+      font-size: 22px;
+      margin-top: 28px;
+    }
+
+    .game-over {
+      width: 30%;
+      margin-left: 35%;
+      border: 3px solid brown;
+      height: 240px;
+      margin-top: 180px;
+      position: absolute;
+      display: none;
+      background-color: gray;
+    }
+
+    .game-over h1 {
+      color: rgb(129, 4, 4);
+      text-align: center;
+      margin-top: 23px;
+    }
+
+    .game-over button {
+      padding: 10px 20px;
+      cursor: pointer;
+      display: block;
+      margin: auto;
+      background-color: #66AF33;
+      border: none;
+      color: white;
+      font-size: 20px;
+      font-weight: bolder;
+      margin-top: 40px;
+    }
+
+    .start {
+      width: 30%;
+      margin-left: 35%;
+      border: 3px solid brown;
+      height: 240px;
+      margin-top: 180px;
+      position: absolute;
+      display: none;
+      background-color: gray;
+    }
+
+    .start p {
+      text-align: center;
+    }
+
+    .start button {
+      padding: 8px 30px;
+      background-color: #66AF33;
+      color: white;
+      border: none;
+      display: block;
+      margin: auto;
+      font-size: 18px;
+      margin-top: 50px;
+      cursor: pointer;
+    }
