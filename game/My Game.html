@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My First Game</title>
+    <link rel="icon" type="image/ico" href="file:///C:/Users/Board/Desktop/tanki.png" />
+    <link rel="stylesheet" href="Mygame.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+  
+<div id="object">
+  <img id="tanki" src="game-images/tanki.png">
+</div>
+<div class="top-wall"></div>
+<div class="right-wall"></div>
+<div class="left-wall"></div>
+<h2 id="score">0</h2>
+
+<div class="start">
+  <p>თამაშის მიზანია თქვენსკენ მომავალი ზომბების შეჩერება. 'SPACE' ღილაკზე დაწოლით თქვენი ტანკი ისვრის ტყვიებს, ხოლო ზემო და ქვემო ისრებით შეგიძლიათ არეგულიროთ ტანკის მოძრაობა. </p>
+
+  <button id="start">Start</button> <br>
+</div>
+
+<div class="game-over">
+  <h1>Game over !</h1>
+  <h3 class="result"></h3>
+  <button id="startAgain">თავიდან დაწყება</button> <br>
+</div>
+
+    <script src="Mygame.js"></script>
+</body>
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+    <link rel="shortcut icon" href="./images/favicon.webp" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css"/>
+    <link rel="stylesheet" href="styles.css" />
+    <title>პორტფოლიო</title>
+  </head>
+  <body>
+    <!-- Header -->
+    
+    <header id="home" class="header">
+      <div class="logo">
+        <p>Hello world</p>
+        <img src="./images/portfolio-logo.png" alt="" />
+        
+      </div>
+      <!-- Navigation -->
+      <nav class="nav">
+        <div class="navigation contain">
+          
+
+          <div class="menu">
+            <div class="top-nav">
+              <div class="logo">
+                <h1>პორტფოლიო</h1>
+              </div>
+              <div class="close">
+                <i class="fas fa-times"></i>
+              </div>
+            </div>
+
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="#home" class="nav-link scroll-link">მთავარი</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link scroll-link">ჩემ შესახებ</a>
+              </li>
+              <li class="nav-item">
+                <a href="#skills" class="nav-link scroll-link">უნარები</a>
+              </li>
+              <li class="nav-item">
+                <a href="#projects" class="nav-link scroll-link">ნამუშევრები</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link scroll-link">კონტაქტი</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hamburger" style="position: absolute; margin-left: 42%;">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+      <!-- Hero -->
+      <div class="hero">
+        <h3>მოგესალმებით</h3>
+        <h1>რევაზ ტეტუნაშვილი</h1>
+        <br>
+        <h4>მე ვარ <span id="type1"></span></h4>
+        <a href="#about"><i class="fas fa-chevron-down" id="scrollSlowly" style="font-size: 3rem;"></i></a>
+
+      </div>
+
+      <img class="banner" src="./images/profile.png" alt="" />
+
+<!-- სოცქსელები დროებით ამოღებულია
+      <div class="icons">
+        <span><i class="fab fa-facebook-f"></i></span>
+        <span><i class="fab fa-google"></i></span>
+      </div>
+    -->
+    </header>
+
+    <!-- Main -->
+    <section class="section about" id="about">
+      <div class="title">
+        <h1>ჩემ შესახებ</h1>
+      </div>
+
+      <div class="about-center contain">
+        <div class="left" data-aos="fade-right" data-aos-duration="2000">
+          <img src="./images/profile1.jpg" alt="" />
+        </div>
+        <div class="right" data-aos="fade-left" data-aos-duration="2000">
+          <h1>მე ვარ <span id="type2"></span></h1>
+          <p>
+            რევაზ ტეტუნაშვილი, 23 წლის. ვცხოვრობ თბილისში.
+            ბოლო პერიოდში დავინტერესდი ვებ დეველოპმენტით და
+            ძალიან შემიყვარდა.
+            მინდა, ჩემი სამსახური შეესაბამებოდეს ჩემს ინტერესებს,
+            მქონდეს ვებ-პროგრამირებაში განვითარების
+            შესაძლებლობა.
+            კოდის წერა არის ჩემი დღევანდელობის განუყოფელი ნაწილი,
+            ყოველდღიურად ახალი ტექნოლოგიების ათვისებისა და ძველი ცოდნის 
+            გამყარების პროცესში ვარ. ასე, რომ ქვემოთ,
+            ჩემი 'სკილებისა' და ნამუშევრების სექცია დრო და დრო შესაძლოა განახლდეს. 
+            ინგლისური და რუსული ენების ცოდნა მეხმარება ახალი მასალის 
+            სწრაფად ათვისებაში. 
+          </p>
+          <a href="სივი.pdf" class="btn" download><span style="font-size: 1.4rem;">სივი</span></a>
+         
+        </div>
+      </div>
+    </section>
+
+    
+    
+
+    <!-- Skills -->
+    <section class="section skills" id="skills">
+      <div class="title">
+        <h1>My Skills</h1>
+      </div>
+
+      <div class="skills-center contain">
+        <div class="skills-left" data-aos="fade-right" data-aos-duration="2000">
+          <div class="skills-box">
+            <h4>HTML5</h4>
+            <div class="skills-ilt">
+              <div class="skills-bar html"></div>
+              <span>95%</span>
+            </div>
+          </div>
+
+          <div class="skills-box">
+            <h4>CSS 3</h4>
+            <div class="skills-ilt">
+              <div class="skills-bar css"></div>
+              <span>85%</span>
+            </div>
+          </div>
+
+          <div class="skills-box">
+            <h4>Sass/Less</h4>
+            <div class="skills-ilt">
+              <div class="skills-bar css"></div>
+              <span>85%</span>
+            </div>
+          </div>
+
+          <div class="skills-box">
+            <h4>Responsive Designe</h4>
+            <div class="skills-ilt">
+              <div class="skills-bar css"></div>
+              <span>85%</span>
+            </div>
+          </div>
+          
+          <div class="skills-box">
+            <h4>JavaScript</h4>
+            <div class="skills-ilt">
+              <div class="skills-bar javascript"></div>
+              <span>80%</span>
+            </div>
+          </div>
+          <div class="skills-box">
+            <h4>jQuery</h4>
+            <div class="skills-ilt">
+              <div class="skills-bar jQuery"></div>
+              <span>80%</span>
+            </div>
+          </div>
+
+          <div class="skills-box">
+            <h4>Bootstrap</h4>
+            <div class="skills-ilt">
+              <div class="skills-bar jQuery"></div>
+              <span>80%</span>
+            </div>
+          </div>
+
+          <div class="skills-box">
+            <h4>PHP</h4>
+            <div class="skills-ilt">
+              <div class="skills-bar php"></div>
+              <span>40%</span>
+            </div>
+          </div>
+
+          <div class="skills-box">
+            <h4>SQL</h4>
+            <div class="skills-ilt">
+              <div class="skills-bar sql"></div>
+              <span>40%</span>
+            </div>
+          </div>
+        </div>
+
+        
+
+        
+
+        <div class="right" data-aos="fade-left" data-aos-duration="2000">
+          <h3>პროგრამირების ენები და ტექნოლოგიები</h3>
+          <p style="font-size: 1.4rem;">
+            აქ მოცემული ენებითა და ტექნოლოგიებით ვქმნი ფრონტ ენდ საიტებს, 
+            რომლებიც არის რესპონსიული და ადაპტიური ყველა მოწყობილობის მიმართ. 
+            რესპონსიული საიტის შესაქმნელად ვიყენებ თანამედროვე პოპულარულ ბიბლიოთეკას - ბუთსტრაპს (Bootstrap 4).
+            თუმცა არა ყოველთვის. გააჩნია ყლის ზომას და გააჩნია მანდილოსანს.
+            ჯავასკრიპტსა და მის ბიბლიოთეკა (jQuery)-ის ვიყენებ საიტზე მარტივი ფუნქციონალის დასამატებლად. 
+            მაგალითად ღილაკზე დაკლიკებისას დიალოგური ფანჯრის გასახსნელად. ეს ერთ-ერთი ყველაზე ხშირი და 
+            მარტივი მაგალითია, როდესაც კლიენტის მხრიდან კონკრეტულ მოქმედებაზე ჯავასკრიპტის ფუნქცია უნდა გაეშვას.
+            ჯავასკრიპტს ასევე ვიყენებ საიტზე ეფექტური ანიმაციების შესაქმნელად, რომლებიც ამ პორტფოლიოშიც არაერთგან არის გამოყენებული.
+
+            ჯერჯერობით დაკავებული ვარ არსებული ცოდნის გაღრმავებით და პრაქტიკით. მინდა ამ პორტფოლიოს ნამუშევრების სექციაში 
+            კიდევ უკეთესი პროექტები დავამატო. შემდეგ კი გადავიდე ახალი ტექნოლოგიების სწავლაზე. 
+            განსაკუთრებული ინტერესი მაქვს ჯავასკრიპტის
+            თანამედროვე პოპულარული ფრეიმვორკების მიმართ.
+          </p>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <div class="container pb-3 " id="projects">
+      <div class="row justify-content-center pb-5">
+        <div class="col-12 col-md-12 col-lg-6 col-xl-5" data-aos="fade-right" data-aos-duration="1500">
+          <div class="cardholder">
+            <div class="card" id="project1" onmouseover="showOverlay1()" onmouseout="hideOverlay1()">
+              <div id="overlay1" >
+                <div class="overlay-content">
+                  <button class="showProject" id="goOnProject1">ნახვა</button>
+                </div>
+              </div>
+              <img src="images/project-1.png" />
+        
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-12 col-md-12 col-lg-6 col-xl-5" data-aos="fade-left" data-aos-duration="1500">
+          <div class="cardholder">
+            <div class="card" id="project2" onmouseover="showOverlay2()" onmouseout="hideOverlay2()">
+              <div id="overlay2" >
+                <div class="overlay-content">
+                  <button class="showProject" id="goOnProject2">ნახვა</button>
+                </div>
+              </div>
+              <img src="images/project-2.png" />
+              
+            </div>
+          </div>
+        </div>
+        
+        
+
+        <div class="col-12 col-md-6 col-xl-3 pt-5 mt-5" data-aos="fade-right" data-aos-duration="1500">
+          <div class="cardholder">
+            <div class="card" onmouseover="showOverlay5()" onmouseout="hideOverlay5()">
+              <div id="overlay5" >
+                <div class="overlay-content">
+                  <button class="showProject" id="smallButton1">ნახვა</button>
+                </div>
+              </div>
+              <img src="images/project-3.png" />
+        
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-12 col-md-6 col-xl-3 pt-5 mt-5" data-aos="fade-up" data-aos-duration="3000">
+          <div class="cardholder">
+            <div class="card" onmouseover="showOverlay6()" onmouseout="hideOverlay6()">
+              <div id="overlay6" >
+                <div class="overlay-content">
+                  <button class="showProject" id="smallButton2">ნახვა</button>
+                </div>
+              </div>
+               <img src="images/project-4.png" />
+              
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="col-12 col-md-9 col-lg-7 col-xl-3 pt-5 mt-5 justify-content-center" data-aos="fade-left" data-aos-duration="1500">
+          <div class="cardholder">
+            <div class="card" onmouseover="showOverlay7()" onmouseout="hideOverlay7()">
+              <div id="overlay7" >
+                <div class="overlay-content">
+                  <button class="showProject" id="smallButton3">ნახვა</button>
+                </div>
+              </div>
+              <img src="images/project-5.png" />
+        
+            </div>
+          </div>
+        </div>
+        
+
+        <div class="col-12 col-md-12 col-lg-6 col-xl-5" data-aos="fade-right" data-aos-duration="1500" style="margin-top: 50px;">
+          <div class="cardholder">
+            <div class="card" id="project3" onmouseover="showOverlay3()" onmouseout="hideOverlay3()">
+             
+              <div id="overlay3" >
+                <div class="overlay-content">
+                  <button class="showProject" id="goOnProject3">ნახვა</button>
+                </div>
+              </div>
+              <img src="images/project-6.png" />
+            </div>
+
+          </div>
+        </div>
+        
+        <div class="col-12 col-md-12 col-lg-6 col-xl-5" data-aos="fade-left" data-aos-duration="1500" style="margin-top: 50px;">
+          <div class="cardholder">
+            <div class="card" id="project4" onmouseover="showOverlay4()" onmouseout="hideOverlay4()">
+              <div id="overlay4" >
+                <div class="overlay-content">
+                  <button class="showProject" id="goOnProject4">ნახვა</button>
+                </div>
+              </div>
+              <img src="images/project-7.png" />
+              
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="title">
+        <h1>კონტაქტი</h1>
+      </div>
+
+      <div class="contact-center container">
+        <div class="left" id="left" data-aos="fade-down-right" data-aos-duration="2000">
+        
+          
+          <div>
+            <span class="icon"><i class="fas fa-user"></i></span>
+            <span class="content">
+              <h3>სახელი, გვარი</h3>
+              <span>რევაზ ტეტუნაშვილი</span>
+            </span>
+          </div>
+
+          <div>
+            <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+            <span class="content">
+              <h3>მისამართი</h3>
+              <span>თბილისი, საბურთალო</span>
+            </span>
+          </div>
+         
+        </div>
+        <div class="right" data-aos="fade-up-left" data-aos-duration="2000">
+          
+          <div>
+          <span class="icon"><i class="fas fa-phone"></i></span>
+          <span class="content">
+            <h3>ტელეფონი</h3>
+            <span>568 74 86 17</span>
+          </span>
+        </div>
+
+        <div>
+          <span class="icon"><i class="fas fa-envelope"></i></span>
+          <span class="content">
+            <h3>იმეილი</h3>
+            <span>rezotetunashvili4@gmail.com</span>
+          </span>
+        </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Created By <span>Rezo Tetunashvili</span> | &copy; 2021 All rights reserved.</p>
+    </footer>
+
+    <!-- AOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Typeit -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/7.0.4/typeit.min.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <!-- Glidejs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+    <!-- Custom Script -->
+    <script src="index.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ტესტი</title>
+    <link rel="icon" type="image/ico" href="quiz-images/title%20logo.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="Quiz.css">
+    <script src="Quiz.js"></script>
+</head>
+<body>
+
+   <div id="modalWindow">მოგელსალმებით,
+        <br> თქვენს წინაშეა <strong>JQUERY</strong>-ით დაპროგრამებული ქვიზი. ტესტის დასაწყებად დააწკაპეთ თანხმობის ღილაკზე.
+         გაითვალისწინეთ, რომ თითიეულ კითხვაზე მოსაფიქრებელი მაქსიმალური დრო შეადგენს 30 წამს. 
+        <button id="start">ტესტის დაწყება</button>
+        </div>
+
+        <center> <span class='timer'></span></center>
+
+        <div id="firstQuestion">
+                <center> <span class='countDown-timer-1'></span></center>
+                <h5>დრო ამოიწურა !</h5> 
+                <h2></h2>
+                <h6>1/10</h6> <br>
+            <h3>1. მოცემულია რიცხვები: 50, 100 და 150. რა იქნება მათი საშუალო არითმეტიკული?</h3>
+            <button class="answer-one-1" >200</button>
+            <button class="answer-two-1">100</button>
+            <button class="answer-three-1">150</button> <br> <br>
+            <button class="next1">დადასტურება</button>
+            <button class="refresh1">თავიდან დაწყება</button>
+        </div>
+
+        <div id="secondQuestion">
+                <center> <span class='countDown-timer-2'></span></center> 
+                <h5>დრო ამოიწურა !</h5> 
+                <h2></h2>
+                <h6>2/10</h6> <br>
+                <h3>2. მოცემულია რიცხვები: 2, 4 და 10. რა იქნება მათი ნამრავლი?</h3>
+                <button class="answer-one-2" >100</button>
+                <button class="answer-two-2">80</button>
+                <button class="answer-three-2">50</button><br> <br>
+                <button class="next2">დადასტურება</button>
+                <button class="refresh2">თავიდან დაწყება</button>
+            </div>
+
+
+            <div id="thirdQuestion">
+                <center> <span class='countDown-timer-3'></span></center>
+                <h5>დრო ამოიწურა !</h5> 
+                <h2></h2>
+            <h6>3/10</h6> <br>
+            <h3>3. მოცემულია რიცხვები: 20, 15, 45, 67 და 8. რომელია მათგან უდიდესი?</h3>
+            <button class="answer-one-3">20</button>
+            <button class="answer-two-3">8</button>
+            <button class="answer-three-3">67</button><br> <br>
+            <button class="next3">დადასტურება</button>
+            <button class="refresh3">თავიდან დაწყება</button>
+        </div>
+
+
+        <div id="Question4">
+            <center> <span class='countDown-timer-4'></span></center>
+            <h5>დრო ამოიწურა !</h5> 
+                <h2></h2>
+        <h6>4/10</h6> <br>
+        <h3>4. მოცემულია რიცხვები: 9, 120, 57, 3, 825 და 68. რომელია მათგან უმცირესი?</h3>
+        <button class="answer-one-4">3</button>
+        <button class="answer-two-4">120</button>
+        <button class="answer-three-4">8</button> <br> <br>
+        <button class="next4">დადასტურება</button>
+        <button class="refresh4">თავიდან დაწყება</button>
+    </div>
+
+
+    <div id="Question5">
+        <center> <span class='countDown-timer-5'></span></center>
+        <h5>დრო ამოიწურა !</h5> 
+                <h2></h2>
+    <h6>5/10</h6> <br>
+    <h3>5. მოცემულია რიცხვები: 50, 100, 150. იპოვეთ ამ რიცხვების ჯამი.</h3>
+    <button class="answer-one-5">200</button>
+    <button class="answer-two-5">350</button>
+    <button class="answer-three-5">300</button> <br> <br>
+    <button class="next5">დადასტურება</button>
+    <button class="refresh5">თავიდან დაწყება</button>
+</div>
+
+
+<div id="Question6">
+    <center> <span class='countDown-timer-6'></span></center>
+    <h5>დრო ამოიწურა !</h5> 
+                <h2></h2>
+<h6>6/10</h6> <br>
+<h3>6. მოცემულია: 50, 100, 150. იპოვეთ უდიდესი და უმცირესი რიცხვების სხვაობა.</h3>
+<button class="answer-one-6">100</button>
+<button class="answer-two-6">150</button>
+<button class="answer-three-6">50</button> <br> <br>
+<button class="next6">დადასტურება</button>
+<button class="refresh6">თავიდან დაწყება</button>
+</div>
+
+
+<div id="Question7">
+    <center> <span class='countDown-timer-7'></span></center>
+    <h5>დრო ამოიწურა !</h5> 
+      <h2></h2>
+<h6>7/10</h6> <br>
+<h3>7. მოცემულია გამოსახულება: (32:2) + 14 - (40:8), იპოვეთ მისი მნიშვნელობა.</h3>
+<button class="answer-one-7">20</button>
+<button class="answer-two-7">30</button>
+<button class="answer-three-7">25</button><br> <br>
+<button class="next7">დადასტურება</button>
+<button class="refresh7">თავიდან დაწყება</button>
+</div>
+
+
+<div id="Question8">
+    <center> <span class='countDown-timer-8'></span></center>
+    <h5>დრო ამოიწურა !</h5> 
+      <h2></h2>
+<h6>8/10</h6> <br>
+<h3>8. მოცემულია განტოლება: x = (21:3) * 9 + 37. იპოვეთ უცნობი წევრის მნიშვნელობა.</h3>
+<button class="answer-one-8">120</button>
+<button class="answer-two-8">100</button>
+<button class="answer-three-8">150</button> <br> <br>
+<button class="next8">დადასტურება</button>
+<button class="refresh8">თავიდან დაწყება</button>
+</div>
+
+
+<div id="Question9">
+    <center> <span class='countDown-timer-9'></span></center>
+    <h5>დრო ამოიწურა !</h5> 
+                <h2></h2>
+<h6>9/10</h6> <br>
+<h3>9. მოცემულია განტოლება: x = (8*2*4) + (9*4) + 50. იპოვეთ უცნობი წევრის მნიშნელობა</h3>
+<button class="answer-one-9">200</button>
+<button class="answer-two-9">150</button>
+<button class="answer-three-9">300</button> <br> <br>
+<button class="next9">დადასტურება</button>
+<button class="refresh9">თავიდან დაწყება</button>
+</div>
+
+
+<div id="Question10">
+    <center> <span class='countDown-timer-10'></span></center>
+    <h5>დრო ამოიწურა !</h5> 
+                <h2></h2>
+<h6>10/10</h6> <br>
+<h3>10. მოცემულია განტოლება: y = 25 + 35 + 60 - 50 + 15 - 5. იპოვეთ უცნობი წევრის მნშვნელობა.</h3>
+<button class="answer-one-10">120</button>
+<button class="answer-two-10">60</button>
+<button class="answer-three-10">80</button> <br> <br>
+<button class="next10">დადასტურება</button>
+<button class="refresh10">თავიდან დაწყება</button>
+</div>
+
+
+<div id="result">
+    <h2 id="finished"></h2>
+    <h2 id="finishedOne"></h2>
+    <h1></h1>
+    <button class="refresh11">თავიდან დაწყება</button>
+</div>
+
+
+</body>
+</html>

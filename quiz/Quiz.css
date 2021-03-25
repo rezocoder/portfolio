@@ -1,0 +1,255 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url("quiz-images/background.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position-y: -150px;
+}
+
+#modalWindow {
+    /*background: rgb(206, 210, 255);*/
+    background-color: rgb(34, 34, 36);
+    border: 8px solid rgb(9, 22, 1);
+    margin-left: 30%;
+    padding: 20px;
+    display: none;
+    position: absolute;
+    width: 38%;
+    margin-top: 150px;
+    border-radius: 8%;
+    color: white;
+  }
+
+  #modalWindow strong {
+      color: rgb(39, 160, 39);
+      font-weight: 400;
+  }
+
+
+  #start {
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+    font-size: 1.3vw;
+    padding: 1.7% 5%;
+    background-color: #66AF33;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+  }
+
+  #start:hover {
+      background-color: rgb(246, 246, 246);
+      color: #66AF33;
+      border: 1px solid brown;
+  }
+
+  span.timer{
+      margin-top: 260px;
+      color: white;
+      font-size: 6vw;
+      position: absolute;
+      margin-left: 0%;
+  }
+
+  
+  #firstQuestion, #secondQuestion, #thirdQuestion, #Question4, #Question5, #Question6,  #Question7, #Question8, #Question9, #Question10, #result {
+    background-color: rgb(34, 34, 36);
+    border: 8px solid rgb(49, 1, 1);
+    margin-left: 30%;
+    padding: 20px;
+    display: none;
+    position: absolute;
+    width: 39.3%;
+    margin-top: 150px;
+    border-radius: 5%;
+  }
+
+
+  #firstQuestion h3, #secondQuestion h3, #thirdQuestion h3, #Question4 h3, #Question5 h3, #Question6 h3, #Question7 h3, #Question8 h3, #Question9 h3, #Question10 h3 {
+    color: rgb(255, 255, 255);
+    margin-top: -15px;
+    text-align: center;
+    font-size: 1.7vw;
+  }
+
+
+  #firstQuestion h2, #secondQuestion h2, #thirdQuestion h2, #Question4 h2, #Question5 h2, #Question6 h2, #Question7 h2, #Question8 h2, #Question9 h2, #Question10 h2 {
+       display: none;
+       color: white;
+       text-align: center;
+  }
+
+
+  #firstQuestion h5, #secondQuestion h5, #thirdQuestion h5, #Question4 h5, #Question5 h5, #Question6 h5, #Question7 h5, #Question8 h5, #Question9 h5, #Question10 h5 {
+       display: none;
+       color: red;
+       text-align: center;
+       margin-top: 50px;
+       font-size: 1.8vw;
+  }
+
+   h6 {
+    margin-top: -18px;
+    color: white;
+    font-size: 1.5vw;
+    /*text-align: center;*/
+    margin-left: 45%;
+  }
+
+
+  #result h2 {
+    color: #66AF33;
+    text-align: center;
+  }
+
+
+  #result h1 {
+    color: white;
+    text-align: center;
+  }
+
+
+  .countDown-timer-1, .countDown-timer-2, .countDown-timer-3, .countDown-timer-4, .countDown-timer-5, .countDown-timer-6, .countDown-timer-7, .countDown-timer-8, .countDown-timer-9, .countDown-timer-10 {
+      color: white;
+      font-size: 3vw;
+      float: right;
+      margin-top: -27px;
+  }
+
+
+   button {
+    padding: 1.7% 8%;
+    background-color: white;
+    border: none;
+    margin-left: 10%;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+
+  button.next1, .next2, .next3, .next4, .next5, .next6, .next7, .next8, .next9, .next10 {
+    margin-left: 35.5%;
+    padding: 1.7% 7%;
+    border: none;
+    background-color: white;
+  }
+
+  .refresh1, .refresh2, .refresh3, .refresh4, .refresh5, .refresh6, .refresh7, .refresh8, .refresh9, .refresh10 {
+     display: none;
+     margin-left: 32%;
+     padding: 1.7% 7%;
+     border: none;
+     background-color: rgb(70, 3, 3);
+     cursor: pointer;
+     color: white;
+     font-size: 1.2vw;
+     margin-top: -20px;
+  }
+
+
+  .refresh11 {
+     display: none;
+     margin-left: 32%;
+     padding: 1.7% 7%;
+     border: none;
+     /*background-color: rgb(70, 3, 3);*/
+     background-color: #66AF33;
+     cursor: pointer;
+     color: white;
+     font-size: 1.2vw;
+     margin-top: 20px;
+  }
+
+  .refresh1:hover, .refresh2:hover, .refresh3:hover, .refresh4:hover, .refresh5:hover, .refresh6:hover, .refresh7:hover, .refresh8:hover, .refresh9:hover, .refresh10:hover, .refresh11:hover {
+    background-color: brown;
+    color: white;
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    body {
+      background-image: url("quiz-images/ipad-background.jpg");
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+    #modalWindow {
+      width: 88%;
+      margin-left: 1%;
+      margin-top: 300px;
+      font-size: 3vw;
+    }
+
+    #firstQuestion, #secondQuestion, #thirdQuestion, #Question4, #Question5, #Question6,  #Question7, #Question8, #Question9, #Question10, #result {
+      width: 90%;
+      margin-left: 1%;
+      margin-top: 270px;
+    }
+
+    #firstQuestion h3, #secondQuestion h3, #thirdQuestion h3, #Question4 h3, #Question5 h3, #Question6 h3, #Question7 h3, #Question8 h3, #Question9 h3, #Question10 h3 {
+      font-size: 3vw;
+    }
+    #firstQuestion h6, #secondQuestion h6, #thirdQuestion h6, #Question4 h6, #Question5 h6, #Question6 h6, #Question7 h6, #Question8 h6, #Question9 h6, #Question10 h6 {
+         font-size: 3vw;
+         margin-left: 47%;
+    }
+  
+    #firstQuestion h5, #secondQuestion h5, #thirdQuestion h5, #Question4 h5, #Question5 h5, #Question6 h5, #Question7 h5, #Question8 h5, #Question9 h5, #Question10 h5 {
+         display: none;
+         color: red;
+         text-align: center;
+         margin-top: 50px;
+         font-size: 3vw;
+    }
+
+    #firstQuestion button, #secondQuestion button, #thirdQuestion button, #Question4 button, #Question5 button, #Question6 button, #Question7 button, #Question8 button, #Question9 button, #Question10 button {
+       font-size: 2.5vw;
+    }
+
+    #start {
+      font-size: 2.7vw;
+    }
+
+    #result {
+      height: 270px;
+      margin-top: 280px;
+    }
+
+    .refresh11 {
+      font-size: 2.5vw;
+    }
+
+      .countDown-timer-1, .countDown-timer-2, .countDown-timer-3, .countDown-timer-4, .countDown-timer-5, .countDown-timer-6, .countDown-timer-7, .countDown-timer-8, .countDown-timer-9, .countDown-timer-10 {
+      margin-top: -18px;
+  }
+      
+     
+    @media only screen and (max-width: 480px) { 
+       body {
+         background-image: url("quiz-images/phone-background.jpg");
+         background-size: cover;
+         background-repeat: no-repeat;
+       }
+
+       #modalWindow {
+         width: 85%;
+         border: 5px solid rgb(9, 22, 1);
+         margin-top: 200px;
+       }
+
+       #firstQuestion, #secondQuestion, #thirdQuestion, #Question4, #Question5, #Question6,  #Question7, #Question8, #Question9, #Question10, #result {
+        width: 85%;
+        margin-top: 210px;
+        border: 5px solid rgb(49, 1, 1);
+      }
+
+      span.timer{
+        margin-top: 280px;
+        font-size: 18vw;
+        margin-left: -4%;
+    }
+    }
+  }
