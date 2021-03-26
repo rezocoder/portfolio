@@ -598,7 +598,33 @@ a.btn:active {
   }
 }
 
-/* Teams */
+/* projects */
+.projects-title {
+  text-align: center;
+}
+
+.projects-title h1 {
+  font-size: 3.5rem !important;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.projects-title h1::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -30%;
+  transform: translate(-50%, -50%);
+  background-color: #dd9a05;
+  width: 60%;
+  height: 0.4rem;
+  z-index: 1;
+  cursor: pointer;
+}
+
 .team {
   color: #fff;
   background-color: #111;
