@@ -1,0 +1,219 @@
+
+<html>
+<head>
+<script language="javascript">
+<!--
+function pop(select,form) {
+	if(select.options[0].selected==false) {
+		select.disabled='true';
+		form.rating.value=select.value;
+		openMyPopup("",form.target,170,50);
+		form.submit();
+	} else {
+		alert("Please select your rating");
+	}
+}
+function openMyPopup(url,target,W,H)
+{
+   var X = (screen.width/2)-(W/2);
+   var Y = (screen.height/2)-(H/2);
+   var winPref = "width=" + W + ",height=" + H
+               + ",innerWidth=" + W + ",innerHeight=" + H
+               + ",left=" + X + ",top=" + Y
+               + ",screenX=" + X + ",screenY=" + Y
+               + ",dependent=yes,titlebar=no,scrollbars=no,resizable=no";
+   openMyPopup.popup = window.open( url, target, winPref );
+   openMyPopup.popup.focus();
+   return true;
+}
+//-->
+</script>
+<title>Questions</title>
+
+<script language="javascript">
+<!--
+answers=new Array(25);
+for (i=1; i<=25; i++) {answers[i]=0;}
+function verify()
+{
+var i, found=0, error="";
+for (i=1; i<=25; i++)
+    {
+    if (answers[i]==0)
+        {
+        if (error>"") {error=error+", ";}
+        error=error+i;
+        found++;
+        }
+    }
+if (found==1) {alert("You missed question #"+error+"!"); return false;}
+if (found>1) {alert("You missed "+found+" questions: "+error+"!"); return false;}
+}
+//-->
+</script>
+<meta name=viewport content="width=device-width, initial-scale=1">
+<LINK REL="STYLESHEET" HREF="/sminds.css" TYPE="text/css">
+</head>
+
+    <body  bgcolor="#eeeeee" marginwidth="0" marginheight="0" topmargin="0" leftmargin="0">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                                <td width="0%" bgcolor="#16163c"><img src="/minibarcode3.gif" width="22" height="17" border="0" align="top"><font color="white"><a class="header" href="/index.html">similarminds.com</a></font></td>
+                                <td bgcolor="#16163c">
+                                        <div align="right">
+						 &nbsp;</div>
+                                </td>
+                        </tr>
+                </table>
+
+
+                <div align="center">
+
+                        <p>Personality Test</p>
+
+                        
+                        <table border="0" cellpadding="0" cellspacing="0" width="90%">
+
+                                <tr>
+
+                                        <td>
+                                               
+                                               <p><b>Answering these questions accurately requires honest reflection on how you really think, feel, and act <u>in general</u> and maybe taking the test on more than one occasion.</b> &nbsp;Some of the questions on this test measure personality traits differently than you might guess so trying to answer the test in a way you think would be ideal is just going to screw up your results, so just focus on being honest if you want the most accurate results.</p>
+						<div align="center">
+							<table border="0" cellpadding="0" cellspacing="0" bgcolor="white">
+								<tr>
+									<td>
+										<div align="center">
+											<b>PLEASE&nbsp;NOTE:&nbsp;SELECTING&nbsp;THE&nbsp;MIDDLE&nbsp;ANSWER MEANS A&nbsp;STATEMENT&nbsp;IS AROUND&nbsp;50%&nbsp;ACCURATE<br>
+												 </b></div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div align="center">
+											<table border='0' cellpadding='0' cellspacing='0' width='306'>
+												<tr>
+													<td>
+														<div align='center'>
+															
+														Very Inaccurate</div>
+													</td>
+													<td bgcolor='#c3c3c3'><input type=radio onClick='answers[1]=1;' value=0></td>
+													<td bgcolor='#d4d4d4'><input type=radio onClick='answers[1]=1;' value=0></td>
+													<td bgcolor='#e5e5e5'><input type=radio onClick='answers[1]=1;' value=0 checked></td>
+													<td bgcolor='#d4d4d4'><input type=radio onClick='answers[1]=1;' value=0></td>
+													<td bgcolor='#c3c3c3'><input type=radio onClick='answers[1]=1;' value=0></td>
+													<td>
+														<div align='center'>
+															
+														Very Accurate</div>
+													</td>
+												</tr>
+											</table>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</div>
+                                                <form name="questions" action="" method="post">
+                                                <input type="hidden" name="action" value="result">
+                                                <input type="hidden" name="gender" value="male">
+																		<input type="hidden" name="ethnic" value="">
+                                                <input type="hidden" name="email" value="">
+																		<input type="hidden" name="email2" value="">
+                                                <input type="hidden" name="age" value="">
+                                                <input type="hidden" name="answer" value="">
+																		<input type="hidden" name="qq2" value="">
+																		<input type="hidden" name="qq3" value="">
+<input type="hidden" name="ktype" value="">
+
+<INPUT TYPE='HIDDEN' NAME='quest2' VALUE='6'/>
+<input type=hidden name=version value='Version 1.18'><input type=hidden name='testversion' value='1.18'><p>1) I value intimacy/intensity above all else.</p>
+<p>
+<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer2' onclick='answers[1]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer2' onclick='answers[1]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer2' onclick='answers[1]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer2' onclick='answers[1]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer2' onclick='answers[1]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
+<p>2) I tend to think social graces are important.</p>
+<p>
+<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer9' onclick='answers[2]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer9' onclick='answers[2]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer9' onclick='answers[2]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer9' onclick='answers[2]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer9' onclick='answers[2]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
+<p>3) I always need an intense connection to something (cause, interest, person). </p>
+<p>
+<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer21' onclick='answers[3]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer21' onclick='answers[3]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer21' onclick='answers[3]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer21' onclick='answers[3]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer21' onclick='answers[3]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
+<p>4) My behavior and decisions are generally calculated to maximize my safety/security regardless of whether that makes me likable to others.</p>
+<p>
+<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer13' onclick='answers[4]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer13' onclick='answers[4]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer13' onclick='answers[4]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer13' onclick='answers[4]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer13' onclick='answers[4]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
+<p>5) I dislike myself.</p>
+<p>
+<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer23' onclick='answers[5]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer23' onclick='answers[5]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer23' onclick='answers[5]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer23' onclick='answers[5]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer23' onclick='answers[5]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
+<p>6) I am constantly moving toward that sense of intense stimulation in my relationships. </p>
+<p>
+<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer1' onclick='answers[6]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer1' onclick='answers[6]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer1' onclick='answers[6]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer1' onclick='answers[6]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer1' onclick='answers[6]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
+<p>7) I am my body; I must take care of myself to survive.</p>
+<p>
+<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer20' onclick='answers[7]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer20' onclick='answers[7]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer20' onclick='answers[7]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer20' onclick='answers[7]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer20' onclick='answers[7]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
+<p>8) My identity in the community is something I am aware of.</p>
+<p>
+<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer10' onclick='answers[8]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer10' onclick='answers[8]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer10' onclick='answers[8]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer10' onclick='answers[8]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer10' onclick='answers[8]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
+<p>9) I'm very sexual</p>
+<p>
+<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer5' onclick='answers[9]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer5' onclick='answers[9]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer5' onclick='answers[9]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer5' onclick='answers[9]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer5' onclick='answers[9]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
+<p>10) Everything I do is intense: my interests are intense, my friendships are intense. </p>
+<p>
+<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer16' onclick='answers[10]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer16' onclick='answers[10]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer16' onclick='answers[10]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer16' onclick='answers[10]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer16' onclick='answers[10]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
+<p>11) I have a constant awareness of the 'chemistry' between myself and others. </p>
+<p>
+<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer22' onclick='answers[11]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer22' onclick='answers[11]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer22' onclick='answers[11]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer22' onclick='answers[11]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer22' onclick='answers[11]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
+<p>12) I come on very intensely, quickly, passionately.</p>
+<p>
+<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer4' onclick='answers[12]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer4' onclick='answers[12]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer4' onclick='answers[12]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer4' onclick='answers[12]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer4' onclick='answers[12]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
+<p>13) Status/rank in society matters to some degree.</p>
+<p>
+<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer7' onclick='answers[13]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer7' onclick='answers[13]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer7' onclick='answers[13]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer7' onclick='answers[13]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer7' onclick='answers[13]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
+<p>14) I derive energy from liking others and liking things.</p>
+<p>
+<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer19' onclick='answers[14]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer19' onclick='answers[14]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer19' onclick='answers[14]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer19' onclick='answers[14]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer19' onclick='answers[14]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
+<p>15) I am very happy with my life.</p>
+<p>
+<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer25' onclick='answers[15]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer25' onclick='answers[15]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer25' onclick='answers[15]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer25' onclick='answers[15]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer25' onclick='answers[15]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
+<p>16) I would rather be without a relationship or close friend than poor or a social reject.</p>
+<p>
+<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer18' onclick='answers[16]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer18' onclick='answers[16]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer18' onclick='answers[16]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer18' onclick='answers[16]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer18' onclick='answers[16]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
+<p>17) My instinct is to mostly focus on satisfactory self-survival.</p>
+<p>
+<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer11' onclick='answers[17]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer11' onclick='answers[17]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer11' onclick='answers[17]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer11' onclick='answers[17]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer11' onclick='answers[17]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
+<p>18) My reputation is very important to me.</p>
+<p>
+<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer6' onclick='answers[18]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer6' onclick='answers[18]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer6' onclick='answers[18]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer6' onclick='answers[18]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer6' onclick='answers[18]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
+<p>19) I have a strong immediate reaction against anything that threatens to harm my safety in any way.</p>
+<p>
+<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer14' onclick='answers[19]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer14' onclick='answers[19]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer14' onclick='answers[19]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer14' onclick='answers[19]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer14' onclick='answers[19]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
+<p>20) I err on the side of security even if it means playing it too safe or alternately confronting danger.</p>
+<p>
+<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer15' onclick='answers[20]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer15' onclick='answers[20]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer15' onclick='answers[20]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer15' onclick='answers[20]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer15' onclick='answers[20]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
+<p>21) I care what other people in my community think of me.</p>
+<p>
+<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer8' onclick='answers[21]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer8' onclick='answers[21]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer8' onclick='answers[21]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer8' onclick='answers[21]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer8' onclick='answers[21]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
+<p>22) Self-care an personal comfort are far more important to me than most people.</p>
+<p>
+<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer12' onclick='answers[22]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer12' onclick='answers[22]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer12' onclick='answers[22]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer12' onclick='answers[22]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer12' onclick='answers[22]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
+<p>23) Not having sufficient physical comfort and material security is (or would be) very disorienting to me.</p>
+<p>
+<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer17' onclick='answers[23]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer17' onclick='answers[23]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer17' onclick='answers[23]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer17' onclick='answers[23]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer17' onclick='answers[23]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
+<p>24) I am extremely sensual.</p>
+<p>
+<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer3' onclick='answers[24]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer3' onclick='answers[24]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer3' onclick='answers[24]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer3' onclick='answers[24]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer3' onclick='answers[24]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
+<p>25) I am very optimistic.</p>
+<p>
+<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer24' onclick='answers[25]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer24' onclick='answers[25]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer24' onclick='answers[25]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer24' onclick='answers[25]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer24' onclick='answers[25]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
+                                        </td>
+
+                                </tr>
+
+                        </table>
+
+                        <p>
+<input type="submit" value="SUBMIT RESULTS" onClick="return verify()"></p>
+
+                        </form>
+                </div>
+
+</body>
+</html>
