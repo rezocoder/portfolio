@@ -39,8 +39,8 @@
 	
 
 	
-		<link rel="canonical" href="https://greatergood.berkeley.edu/quizzes/ei_quiz" />
-		<meta property="og:url" content="https://greatergood.berkeley.edu/quizzes/ei_quiz" />
+		<link rel="canonical" href="https://greatergood.berkeley.edu/quizzes/ei_quiz/take_quiz" />
+		<meta property="og:url" content="https://greatergood.berkeley.edu/quizzes/ei_quiz/take_quiz" />
 	
 
 	
@@ -193,7 +193,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 								
 								
 								  <li>
-									  <a href="https://greatergood.berkeley.edu/_ajax/login-popup?path=quizzes/ei_quiz" class="link-popup">Log in</a>
+									  <a href="https://greatergood.berkeley.edu/_ajax/login-popup?path=quizzes/ei_quiz/take_quiz" class="link-popup">Log in</a>
 									  <a href="https://greatergood.berkeley.edu/_ajax/register-popup" class="link-popup">Register</a>
 								  </li>
 								  
@@ -593,7 +593,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script type="text/javascript">
 $(document).ready(function() {
 if("" == 'retake') {
-	location.replace("https://greatergood.berkeley.edu/quizzes/ei_quiz/"); // uses location.replace so that the /retake URL is entirely gone from history
+	location.replace("https://greatergood.berkeley.edu/quizzes/ei_quiz/take_quiz"); // uses location.replace so that the /retake URL is entirely gone from history
 }
 });
 </script>
@@ -622,22 +622,232 @@ How well do you read other people?  <!--  if you can identity the emotions conve
 					<div class="article-body">
 							
 							
-						<div class="article-entry">
-							<div class="form-actions">
-								<a href="https://greatergood.berkeley.edu/quizzes/ei_quiz/take_quiz" class="btn btn-primary btn-secondary btn-orange" id="ei-take-quiz-button">Take The Quiz</a>
-							</div><!-- /.form-actions -->
-							<p >  
-    <img src="https://ggsc.s3.amazonaws.com/images/made/images/uploads/dsmileAAF_376_250_s_c1.jpg" width="376" height="250" alt="Emotional Intelligence Quiz" class="alignleft" />
-  
-								
-Facial expressions are a universal language of emotion. How well do you read other people?
+							
+							<script>
+							function questionCallback(results) {
+								if (results.submitted_all) {
+									window.location = 'https://greatergood.berkeley.edu/quizzes/ei_quiz/results';
+								}
+							}
+							</script>
 
-
-
-							</p>
-
-						</div><!-- /.article-entry -->
+							
 					
+									  <script type="text/javascript">
+//<![CDATA[
+$(document).on('click', '.user_write_in', function () {
+	$(this).closest('.write_in_label').click();
+	$(this).focus();
+});
+var eequiz = {
+
+	getQuestionURL : "https://greatergood.berkeley.edu/?ACT=58",
+	submitQuestionURL : "https://greatergood.berkeley.edu/?ACT=57",
+	replacedQuestionBlock : "",
+	isLoading : false,
+	onQuestionUpdate : false,
+
+	submitQuestion : function(form) {
+		
+		if (eequiz.isLoading) return false;
+		
+		$("#eequiz_"+form.mapping_id.value).addClass("eequiz_loading");
+		eequiz.onLoadStart();
+		
+		$.post($(form).attr('action'), $(form).serialize(), eequiz.submitQuestionCallback, "json");
+		return false;
+	},
+	
+	submitQuestionCallback : function(json) {
+		// console.log(json);
+		
+		eequiz.onLoadEnd();
+		
+		if (!json.success) {
+			$("#eequiz_"+json.mapping_id).removeClass("eequiz_loading");
+			alert(json.message);
+			return;
+		}
+		
+		if (json.auto_advance) $('#eequiz_'+json.last_mapping_id).replaceWith(json.assets);
+		else $('#eequiz_'+json.mapping_id).replaceWith(json.assets);
+		
+		if (eequiz.onQuestionUpdate) eequiz.onQuestionUpdate(json);
+	},
+	
+	gotoQuestion : function(currentMappingID, newNumber) {
+		
+		if (eequiz.isLoading) return false;
+		
+		$("#eequiz_"+currentMappingID).addClass("eequiz_loading");
+		eequiz.onLoadStart();
+		
+		eequiz.replacedQuestionBlock = "eequiz_"+currentMappingID;
+		$.post(eequiz.getQuestionURL, "mapping_id="+currentMappingID+"&new_number="+newNumber, eequiz.gotoQuestionCallback, "json");
+	},
+	
+	gotoQuestionCallback : function(json) {
+		
+		eequiz.onLoadEnd();
+		
+		if (!json.success) {
+			$('#'+eequiz.replacedQuestionBlock).removeClass("eequiz_loading");
+			alert(json.message);
+			return;
+		}
+		$('#'+eequiz.replacedQuestionBlock).replaceWith(json.assets);
+		if (eequiz.onQuestionUpdate) eequiz.onQuestionUpdate(json);
+	},
+	
+	submitAllQuestions : function() {
+		
+		if (eequiz.isLoading) return false;
+		
+		var mappings = [];
+		var vars = [];
+		var quiz_id = 0;
+		
+		for (var form_i = 0; form_i < document.forms.length; form_i++) {
+			
+			var f = document.forms[form_i];
+			if (!($(f).attr("id"))) continue;
+			if (($(f).attr("id")).match(/^question_form_\d+$/)) {
+				
+				if (quiz_id <= 0) quiz_id = f.quiz_id.value;
+				
+				mappings.push(f.mapping_id.value);
+				
+				var outerObj = $(f).serializeArray();
+				for (var i = 0; i < outerObj.length; i++) {
+				
+					var innerObj = outerObj[i];
+					
+					if (innerObj.name == "mapping_id" || innerObj.name == "quiz_id") continue;
+					
+					var name = encodeURI(innerObj.name);
+					
+					var val = encodeURI(innerObj.value);
+					val = val.replace(/\+/g, "%2B");
+					val = val.replace(/&/g, "%26");
+					val = val.replace(/\?/g, "%3F");
+					val = val.replace(/=/g, "%3D");
+					val = val.replace(/;/g, "%3B");
+					val = val.replace(/:/g, "%3A");
+					val = val.replace(/\//g, "%2F");
+					val = val.replace(/,/g, "%2C");
+					val = val.replace(/@/g, "%40");
+					val = val.replace(/#/g, "%23");
+					val = val.replace(/[$]/g, "%24");
+					val = val.replace(/%20/g, "+");
+					
+					vars.push(name+"="+val);
+				}
+			}
+		}
+		
+		vars.push("all_mappings="+mappings.join("_"));
+		vars.push("quiz_id="+quiz_id);
+		
+		//alert(vars.join("&"));
+		
+		eequiz.onLoadStart();
+		$("div.eequiz").addClass("eequiz_loading");
+
+		$.post(eequiz.submitQuestionURL, vars.join("&"), eequiz.submitAllQuestionsCallback, "json");
+	},
+	
+	submitAllQuestionsCallback : function(json) {
+		
+		eequiz.onLoadEnd();
+		$("div.eequiz").removeClass("eequiz_loading");
+		
+		if (!json.success) {
+			alert(json.message);
+			return;
+		}
+		
+		for (var i in json.assets) $('#eequiz_'+i).replaceWith(json.assets[i])
+		
+		if (eequiz.onQuestionUpdate) eequiz.onQuestionUpdate(json);
+	},
+	
+	
+	
+	onLoadStart : function() {
+		eequiz.isLoading = true;
+		;
+	},
+	onLoadEnd : function() {
+		eequiz.isLoading = false;
+		;
+	}
+};
+
+//]]>
+</script><div id='eequiz_333' class='eequiz'>
+<form name='question_form_333' id='question_form_333' action='https://greatergood.berkeley.edu/?ACT=57' method='post' onsubmit='return eequiz.submitQuestion(this);' data-ajax='false'>
+<div style="display: none;">
+<input type='hidden' name='mapping_id' value='333' />
+<input type='hidden' name='quiz_id' value='17' />
+</div>
+
+
+<!-- THIS MUST BE IN HERE OR THE AJAX FORM DOESN'T WORK PROPERLY -->
+<input type="hidden" name="csrf_token" value="bbe0fe912a011241373440a9097a0cfdde6e2f61">
+<div class="article-entry">
+    <div class="question-tertiary ">
+    
+        
+        <div class="question-image">
+            <img src="/images/EIQuiz/q1_question_image.jpg" alt="Quiz Image" style="width: 100%;">
+        </div><!-- /.question-image -->
+        
+        <div class="question-content">
+            <h5><span>1.</span>This face is expressing...</h5>
+
+            <div class='answer_section'><ol class='multiple_choice_options'><li><input tabindex='0' type='radio' name='mapping333_user_answer' id='mapping333_user_answer_1' value='1'  /><label for='mapping333_user_answer_1'> Embarrassment</label></li><li><input tabindex='0' type='radio' name='mapping333_user_answer' id='mapping333_user_answer_2' value='2'  /><label for='mapping333_user_answer_2'> Fear</label></li><li><input tabindex='0' type='radio' name='mapping333_user_answer' id='mapping333_user_answer_3' value='3'  /><label for='mapping333_user_answer_3'> Sadness</label></li><li><input tabindex='0' type='radio' name='mapping333_user_answer' id='mapping333_user_answer_4' value='4'  /><label for='mapping333_user_answer_4'> Surprise</label></li></ol><div class='answer_footer'></div></div>
+        </div><!-- /.question-content -->    
+    
+        <div class="question-actions">
+            
+            
+                
+                    <input id='eequiz_submit_333' class='submit_answer_button' type='submit' value='Submit Answer' />
+                
+            
+            
+            
+        </div><!-- /.question-actions -->
+    </div><!-- /.question-tertiary -->
+</div><!-- /.article-entry -->
+
+<script>
+$(document).ready(function() {
+    
+console.log('1', '1', '1', '25');
+    var eiSubmitButtonSelectors = "div.question-actions .btn, .submit_answer_button";
+    var eiSubmitButtonPreviousVal = $(eiSubmitButtonSelectors).text() || $(eiSubmitButtonSelectors).val();
+    //Add .btn class to allow to use the disabled class. We do not want to change the submit_answer_button eequiz code since It might impact other quizzes.
+    $(".submit_answer_button").addClass("btn");
+
+    //Disabled button and add button text.
+    $(eiSubmitButtonSelectors).click(function(){
+        $(this).text("Loading...").val("Loading...");
+        $(this).addClass("disabled");
+    });
+
+    //Overload onLoadEnd to remove loading indicator. This will also allow us to remove disabled state when no answer is selected
+    eequiz.onLoadEnd = function() {
+		eequiz.isLoading = false;
+        $(eiSubmitButtonSelectors).removeClass("disabled");
+        $(eiSubmitButtonSelectors).text(eiSubmitButtonPreviousVal).val(eiSubmitButtonPreviousVal);
+	}
+});
+</script> 
+</form>
+</div> 
+									  
+									  
 					
 
 
@@ -678,7 +888,7 @@ Facial expressions are a universal language of emotion. How well do you read oth
 	<div class="subscribe">
 		<form action="https://greatergood.berkeley.edu/_ajax/newsletter-popup" method="POST">
 
-			<label for="email-607c187c6630a026567354" class="">
+			<label for="email-607c19eeb99e8626685166" class="">
 				
 					<img src="https://ggsc.s3.amazonaws.com/images/made/css/images/logo_square_only_48_50.png" width="48" height="50" alt="{title}" />
 				
@@ -688,10 +898,10 @@ Facial expressions are a universal language of emotion. How well do you read oth
 			<div class="subscribe-inner">
 
 
-				<input type="email" id="email-607c187c6630a026567354" name="mail1" value="" placeholder="Email Address" class="subscribe-field mail1">
+				<input type="email" id="email-607c19eeb99e8626685166" name="mail1" value="" placeholder="Email Address" class="subscribe-field mail1">
 				
-				<label for="mailsubmit-607c187c6630a026567354" class="sr-only">Submit</label>
-				<input name="submit" id="mailsubmit-607c187c6630a026567354" data-href="https://greatergood.berkeley.edu/_ajax/newsletter-popup" type="submit" value="Sign Up" class="subscribe-btn btn btn-primary btn-orange link-popup link-popup-trigger" >
+				<label for="mailsubmit-607c19eeb99e8626685166" class="sr-only">Submit</label>
+				<input name="submit" id="mailsubmit-607c19eeb99e8626685166" data-href="https://greatergood.berkeley.edu/_ajax/newsletter-popup" type="submit" value="Sign Up" class="subscribe-btn btn btn-primary btn-orange link-popup link-popup-trigger" >
 				
 			</div><!-- /.subscribe-inner -->
 
