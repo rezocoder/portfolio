@@ -1,219 +1,1294 @@
 
-<html>
+<!DOCTYPE html>
+<html lang="ka" data-env="prod">
 <head>
-<script language="javascript">
-<!--
-function pop(select,form) {
-	if(select.options[0].selected==false) {
-		select.disabled='true';
-		form.rating.value=select.value;
-		openMyPopup("",form.target,170,50);
-		form.submit();
-	} else {
-		alert("Please select your rating");
-	}
-}
-function openMyPopup(url,target,W,H)
-{
-   var X = (screen.width/2)-(W/2);
-   var Y = (screen.height/2)-(H/2);
-   var winPref = "width=" + W + ",height=" + H
-               + ",innerWidth=" + W + ",innerHeight=" + H
-               + ",left=" + X + ",top=" + Y
-               + ",screenX=" + X + ",screenY=" + Y
-               + ",dependent=yes,titlebar=no,scrollbars=no,resizable=no";
-   openMyPopup.popup = window.open( url, target, winPref );
-   openMyPopup.popup.focus();
-   return true;
-}
-//-->
-</script>
-<title>Questions</title>
 
-<script language="javascript">
-<!--
-answers=new Array(25);
-for (i=1; i<=25; i++) {answers[i]=0;}
-function verify()
-{
-var i, found=0, error="";
-for (i=1; i<=25; i++)
-    {
-    if (answers[i]==0)
-        {
-        if (error>"") {error=error+", ";}
-        error=error+i;
-        found++;
-        }
-    }
-if (found==1) {alert("You missed question #"+error+"!"); return false;}
-if (found>1) {alert("You missed "+found+" questions: "+error+"!"); return false;}
-}
-//-->
-</script>
-<meta name=viewport content="width=device-width, initial-scale=1">
-<LINK REL="STYLESHEET" HREF="/sminds.css" TYPE="text/css">
+    
+
+<link rel="manifest" href="/manifest.json"><link rel="shortcut icon" href="https://on.ge/favicon.ico"><link rel="apple-touch-icon" href="https://on.ge/apple-touch-icon.png"><!-- <link rel="alternate" type="application/rss+xml" title="On.ge RSS" href="url here"> TODO: RSS --><link rel="dns-prefetch" href="//account.on.ge/"><link rel="preconnect" href="//account.on.ge/"><link rel="dns-prefetch" href="//services.on.ge/"><link rel="preconnect" href="//services.on.ge/"><link rel="dns-prefetch" href="//static.on.ge/"><link rel="preconnect" href="//static.on.ge/"><link rel="dns-prefetch" href="//monica.on.ge/"><link rel="preconnect" href="//monica.on.ge/"><link rel="dns-prefetch" href="//rachel.on.ge/"><link rel="preconnect" href="//rachel.on.ge/"><link rel="dns-prefetch" href="//phoebe.on.ge/"><link rel="preconnect" href="//phoebe.on.ge/"><link rel="dns-prefetch" href="//ross.on.ge/"><link rel="preconnect" href="//ross.on.ge/"><link rel="dns-prefetch" href="//joey.on.ge/"><link rel="preconnect" href="//joey.on.ge/"><link rel="dns-prefetch" href="//chandler.on.ge/"><link rel="preconnect" href="//chandler.on.ge/"><link rel="dns-prefetch" href="//www.googletagmanager.com/"><link rel="preconnect" href="//www.googletagmanager.com/"><title>რა იცი ოპერაციულ სისტემებზე — ქვიზი</title><meta charset="utf-8"><meta content="text/html; charset=utf-8" http-equiv="content-type"><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="google-site-verification" content="3QDVrvaY_GDjRZxUvEBidXiNDY3excR-orZ3jC48hlI"><link rel="canonical" href="https://on.ge/story/80077-%E1%83%A0%E1%83%90-%E1%83%98%E1%83%AA%E1%83%98-%E1%83%9D%E1%83%9E%E1%83%94%E1%83%A0%E1%83%90%E1%83%AA%E1%83%98%E1%83%A3%E1%83%9A-%E1%83%A1%E1%83%98%E1%83%A1%E1%83%A2%E1%83%94%E1%83%9B%E1%83%94%E1%83%91%E1%83%96%E1%83%94-%E1%83%A5%E1%83%95%E1%83%98%E1%83%96%E1%83%98"><link rel="original-source" href="https://on.ge/story/80077-%E1%83%A0%E1%83%90-%E1%83%98%E1%83%AA%E1%83%98-%E1%83%9D%E1%83%9E%E1%83%94%E1%83%A0%E1%83%90%E1%83%AA%E1%83%98%E1%83%A3%E1%83%9A-%E1%83%A1%E1%83%98%E1%83%A1%E1%83%A2%E1%83%94%E1%83%9B%E1%83%94%E1%83%91%E1%83%96%E1%83%94-%E1%83%A5%E1%83%95%E1%83%98%E1%83%96%E1%83%98"><meta property="og:url" content="https://on.ge/story/80077-%E1%83%A0%E1%83%90-%E1%83%98%E1%83%AA%E1%83%98-%E1%83%9D%E1%83%9E%E1%83%94%E1%83%A0%E1%83%90%E1%83%AA%E1%83%98%E1%83%A3%E1%83%9A-%E1%83%A1%E1%83%98%E1%83%A1%E1%83%A2%E1%83%94%E1%83%9B%E1%83%94%E1%83%91%E1%83%96%E1%83%94-%E1%83%A5%E1%83%95%E1%83%98%E1%83%96%E1%83%98"><link rel="publisher" href="https://plus.google.com/115058634204106586810"><meta property="fb:pages" content="1057076117677093,680253108784240"><meta property="og:locale" content="ka_GE"><meta property="og:site_name" content="On.ge"><meta property="twitter:account_id" content="709701206621462528"><meta name="twitter:site" content="@OnGeLive" /><meta name="twitter:card" content="summary_large_image"><meta property="twitter:image" content="https://monica.on.ge/2021/04/16/1618592333.jpg"><meta name="twitter:title" content="რა იცი ოპერაციულ სისტემებზე — ქვიზი"><meta name="twitter:description" content="ის, რაც ჩვენს კომპიუტერებსა და სმარტფონებს მარტივ მოსახმარს ხდის, ოპერაციული სისტემაა.
+ოპერაციული სისტემების შექმნა გასული საუკუნის შუიდან დაიწყო. მაშინ&amp;hellip;"><meta property="og:image" content="https://monica.on.ge/2021/04/16/1618592333.jpg"><meta property="og:type" content="article"><meta property="og:title" content="რა იცი ოპერაციულ სისტემებზე — ქვიზი"><meta property="og:description" content="ის, რაც ჩვენს კომპიუტერებსა და სმარტფონებს მარტივ მოსახმარს ხდის, ოპერაციული სისტემაა.
+ოპერაციული სისტემების შექმნა გასული საუკუნის შუიდან დაიწყო. მაშინ&amp;hellip;"><meta name="description" content="ის, რაც ჩვენს კომპიუტერებსა და სმარტფონებს მარტივ მოსახმარს ხდის, ოპერაციული სისტემაა.
+ოპერაციული სისტემების შექმნა გასული საუკუნის შუიდან დაიწყო. მაშინ&amp;hellip;"><meta property="article:publisher" content="https://www.facebook.com/next.on.ge"><meta property="article:author" content=""><meta name="author" content=""><meta property="article:tag" content="Android, ქვიზი, ანდროიდი, iOS, Windows, macOS, Linux, Mac OS X"><meta property="article:published_time" content="2021-04-16T18:00:02+04:00"><meta property = "article:modified_time" content = "2021-04-16T18:00:02+04:00"><meta property="og:updated_time" content="2021-04-16T18:00:02+04:00"><link rel = "shortlink" href="https://go.on.ge/26yf"><meta property = "og:image:width" content="1500"><meta property="og:image:height" content="789"><meta name="pubdate" content="2021-04-16T21:05:02+04:00"><meta name="views" content="1748"><meta property="fb:app_id" content="1740035346240245"><script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Organization","name":"On.ge","logo":"https:\/\/static.on.ge\/global\/assets\/images\/logo-onge-color.svg","url":"https:\/\/on.ge","sameAs":["https:\/\/www.facebook.com\/news.on.ge","https:\/\/www.facebook.com\/hey.on.ge","https:\/\/www.facebook.com\/sport.on.ge","https:\/\/www.facebook.com\/next.on.ge","https:\/\/www.facebook.com\/edu.on.ge","https:\/\/www.twitter.com\/OnGeLive","https:\/\/plus.google.com\/115058634204106586810","https:\/\/instagram.com\/On.ge","https:\/\/www.youtube.com\/channel\/UCSxQX6C-4q-11Lte90q_iWw"]}</script><script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"NewsArticle","headline":"\u10e0\u10d0 \u10d8\u10ea\u10d8 \u10dd\u10de\u10d4\u10e0\u10d0\u10ea\u10d8\u10e3\u10da \u10e1\u10d8\u10e1\u10e2\u10d4\u10db\u10d4\u10d1\u10d6\u10d4 \u2014 \u10e5\u10d5\u10d8\u10d6\u10d8","name":"\u10e0\u10d0 \u10d8\u10ea\u10d8 \u10dd\u10de\u10d4\u10e0\u10d0\u10ea\u10d8\u10e3\u10da \u10e1\u10d8\u10e1\u10e2\u10d4\u10db\u10d4\u10d1\u10d6\u10d4 \u2014 \u10e5\u10d5\u10d8\u10d6\u10d8","datePublished":"2021-04-16T18:00:02+04:00","dateModified":"2021-04-16T21:05:38+04:00","articleSection":"\u10e2\u10d4\u10e5\u10dc\u10dd\u10da\u10dd\u10d2\u10d8\u10d4\u10d1\u10d8","keywords":["Android","\u10e5\u10d5\u10d8\u10d6\u10d8","\u10d0\u10dc\u10d3\u10e0\u10dd\u10d8\u10d3\u10d8","iOS","Windows","macOS","Linux","Mac OS X"],"creator":"On.ge","url":"https:\/\/on.ge\/story\/80077-%E1%83%A0%E1%83%90-%E1%83%98%E1%83%AA%E1%83%98-%E1%83%9D%E1%83%9E%E1%83%94%E1%83%A0%E1%83%90%E1%83%AA%E1%83%98%E1%83%A3%E1%83%9A-%E1%83%A1%E1%83%98%E1%83%A1%E1%83%A2%E1%83%94%E1%83%9B%E1%83%94%E1%83%91%E1%83%96%E1%83%94-%E1%83%A5%E1%83%95%E1%83%98%E1%83%96%E1%83%98","description":"\u10d8\u10e1, \u10e0\u10d0\u10ea \u10e9\u10d5\u10d4\u10dc\u10e1 \u10d9\u10dd\u10db\u10de\u10d8\u10e3\u10e2\u10d4\u10e0\u10d4\u10d1\u10e1\u10d0 \u10d3\u10d0 \u10e1\u10db\u10d0\u10e0\u10e2\u10e4\u10dd\u10dc\u10d4\u10d1\u10e1 \u10db\u10d0\u10e0\u10e2\u10d8\u10d5 \u10db\u10dd\u10e1\u10d0\u10ee\u10db\u10d0\u10e0\u10e1 \u10ee\u10d3\u10d8\u10e1, \u10dd\u10de\u10d4\u10e0\u10d0\u10ea\u10d8\u10e3\u10da\u10d8 \u10e1\u10d8\u10e1\u10e2\u10d4\u10db\u10d0\u10d0.\n\u10dd\u10de\u10d4\u10e0\u10d0\u10ea\u10d8\u10e3\u10da\u10d8 \u10e1\u10d8\u10e1\u10e2\u10d4\u10db\u10d4\u10d1\u10d8\u10e1 \u10e8\u10d4\u10e5\u10db\u10dc\u10d0 \u10d2\u10d0\u10e1\u10e3\u10da\u10d8 \u10e1\u10d0\u10e3\u10d9\u10e3\u10dc\u10d8\u10e1 \u10e8\u10e3\u10d8\u10d3\u10d0\u10dc \u10d3\u10d0\u10d8\u10ec\u10e7\u10dd. \u10db\u10d0\u10e8\u10d8\u10dc&hellip;","copyrightYear":"2021","publisher":{"@type":"Organization","name":"On.ge","logo":{"@type":"ImageObject","url":"https:\/\/static.on.ge\/on\/assets\/static\/images\/logo-schema.png","width":146,"height":60}},"provider":"On.ge","sourceOrganization":"On.ge","copyrightHolder":"On.ge","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/on.ge\/story\/80077-%E1%83%A0%E1%83%90-%E1%83%98%E1%83%AA%E1%83%98-%E1%83%9D%E1%83%9E%E1%83%94%E1%83%A0%E1%83%90%E1%83%AA%E1%83%98%E1%83%A3%E1%83%9A-%E1%83%A1%E1%83%98%E1%83%A1%E1%83%A2%E1%83%94%E1%83%9B%E1%83%94%E1%83%91%E1%83%96%E1%83%94-%E1%83%A5%E1%83%95%E1%83%98%E1%83%96%E1%83%98"},"image":{"@type":"ImageObject","url":"https:\/\/monica.on.ge\/2021\/04\/16\/1618592333.jpg","width":1500,"height":789},"author":{"@type":"Organization","name":"On.ge","logo":{"@type":"ImageObject","url":"https:\/\/static.on.ge\/on\/assets\/static\/images\/logo-schema.png","width":146,"height":60}}}</script><link href="//static.on.ge/on/assets/static/css/main.min.css?v=1611239226" rel="stylesheet"><!-- onbar --><link href="//account.on.ge/css/onbar-2.css?v=20170827" rel="stylesheet"><!-- /onbar --><script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script><script>
+        var OneSignal = window.OneSignal || [];
+        OneSignal.push(["init", {
+            appId: "ecf9e160-8d86-41ff-83dd-c88538b3a327",
+            safari_web_id: 'web.onesignal.auto.02093de6-f6ab-427c-bf3a-c7ddb76bfc75',
+            autoRegister: false,
+            welcomeNotification: {
+                disable: true
+            },
+            promptOptions: {
+                actionMessage: "მიიღეთ ვებ-შეტყობინებები On.ge-სგან ყველაზე მნიშვნელოვანი და საინტერესო ამბების შესახებ:",
+                acceptButtonText: "ჩართვა",
+                cancelButtonText: "არ მინდა"
+            }
+        }]);
+    </script><script src="https://cdn.admixer.net/scripts3/loader2.js" async data-inv="//inv-nets.admixer.net/" data-r="single" data-sender="admixer" data-bundle="desktop"></script><script type='text/javascript'>
+        (window.globalAmlAds = window.globalAmlAds || []).push(function() {
+            globalAml.defineSlot({z: '00b762d5-a01f-436e-aeb9-85d6a1d870d6', ph: 'admixer_00b762d5a01f436eaeb985d6a1d870d6_zone_56856_sect_16811_site_12547', i: 'inv-nets', s:'aab41507-d1b3-4a31-94bd-e2c127d9cc1d', sender: 'admixer'});
+            globalAml.singleRequest("admixer");});
+    </script><script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script><script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+
 </head>
 
-    <body  bgcolor="#eeeeee" marginwidth="0" marginheight="0" topmargin="0" leftmargin="0">
-                <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                        <tr>
-                                <td width="0%" bgcolor="#16163c"><img src="/minibarcode3.gif" width="22" height="17" border="0" align="top"><font color="white"><a class="header" href="/index.html">similarminds.com</a></font></td>
-                                <td bgcolor="#16163c">
-                                        <div align="right">
-						 &nbsp;</div>
-                                </td>
-                        </tr>
-                </table>
+
+<body data-edition="next" class=" cid-80077 ">
 
 
-                <div align="center">
+    
 
-                        <p>Personality Test</p>
+    <script>
+        var dataLayer = [];
+        var onge = {
+            staticPath : '//static.on.ge/on/assets/',
+            breakpoints : {
+                sm : 768,
+                md : 992
+            },
+                        pageType : 'article',
+            edition : 'next',
+            assetsVersion : '1611239226',
+            data : {},              ga : {
+                // obsolete, using dataLayer from now on
+                contentEdition : 'next'
+            },
+            fb : {
+                newsAppId : '1742502446022002',
+                magazineAppId : '1740035346240245',
+                sportAppId: '185542428605639',
+                nextAppId: '1740035346240245',
+                eduAppId: '1740035346240245'
+            }
+        };
+    </script>
 
-                        
-                        <table border="0" cellpadding="0" cellspacing="0" width="90%">
+    <!-- FB JS SDK -->     <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1740035346240245',
+          xfbml      : true,
+          version    : 'v2.8'
+        });
+        FB.AppEvents.logPageView();
+        console.log("Debug: FBSDK ready");
+        var fbroot = document.getElementById('fb-root');
+        fbroot.classList.add('onge-fb-ready');
+        fbroot.dispatchEvent(new CustomEvent('onge:fbload'));
+        console.log("Debug: FBSDK ready dispatched");
+      };
 
-                                <tr>
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/ka_GE/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- FB JS SDK -->
 
-                                        <td>
-                                               
-                                               <p><b>Answering these questions accurately requires honest reflection on how you really think, feel, and act <u>in general</u> and maybe taking the test on more than one occasion.</b> &nbsp;Some of the questions on this test measure personality traits differently than you might guess so trying to answer the test in a way you think would be ideal is just going to screw up your results, so just focus on being honest if you want the most accurate results.</p>
-						<div align="center">
-							<table border="0" cellpadding="0" cellspacing="0" bgcolor="white">
-								<tr>
-									<td>
-										<div align="center">
-											<b>PLEASE&nbsp;NOTE:&nbsp;SELECTING&nbsp;THE&nbsp;MIDDLE&nbsp;ANSWER MEANS A&nbsp;STATEMENT&nbsp;IS AROUND&nbsp;50%&nbsp;ACCURATE<br>
-												 </b></div>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<div align="center">
-											<table border='0' cellpadding='0' cellspacing='0' width='306'>
-												<tr>
-													<td>
-														<div align='center'>
-															
-														Very Inaccurate</div>
-													</td>
-													<td bgcolor='#c3c3c3'><input type=radio onClick='answers[1]=1;' value=0></td>
-													<td bgcolor='#d4d4d4'><input type=radio onClick='answers[1]=1;' value=0></td>
-													<td bgcolor='#e5e5e5'><input type=radio onClick='answers[1]=1;' value=0 checked></td>
-													<td bgcolor='#d4d4d4'><input type=radio onClick='answers[1]=1;' value=0></td>
-													<td bgcolor='#c3c3c3'><input type=radio onClick='answers[1]=1;' value=0></td>
-													<td>
-														<div align='center'>
-															
-														Very Accurate</div>
-													</td>
-												</tr>
-											</table>
-										</div>
-									</td>
-								</tr>
-							</table>
-						</div>
-                                                <form name="questions" action="" method="post">
-                                                <input type="hidden" name="action" value="result">
-                                                <input type="hidden" name="gender" value="male">
-																		<input type="hidden" name="ethnic" value="">
-                                                <input type="hidden" name="email" value="">
-																		<input type="hidden" name="email2" value="">
-                                                <input type="hidden" name="age" value="">
-                                                <input type="hidden" name="answer" value="">
-																		<input type="hidden" name="qq2" value="">
-																		<input type="hidden" name="qq3" value="">
-<input type="hidden" name="ktype" value="">
+    <script type="text/javascript" src="//static.on.ge/global/assets/js/ads.js"></script>
+    <script type="text/javascript">
+        if( typeof canRunAds == 'undefined' ) {
+            var canRunAds = 'enabled';
+        } else {
+            canRunAds = 'disabled';
+        }
+    </script>
 
-<INPUT TYPE='HIDDEN' NAME='quest2' VALUE='6'/>
-<input type=hidden name=version value='Version 1.18'><input type=hidden name='testversion' value='1.18'><p>1) I value intimacy/intensity above all else.</p>
-<p>
-<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer2' onclick='answers[1]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer2' onclick='answers[1]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer2' onclick='answers[1]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer2' onclick='answers[1]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer2' onclick='answers[1]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
-<p>2) I tend to think social graces are important.</p>
-<p>
-<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer9' onclick='answers[2]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer9' onclick='answers[2]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer9' onclick='answers[2]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer9' onclick='answers[2]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer9' onclick='answers[2]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
-<p>3) I always need an intense connection to something (cause, interest, person). </p>
-<p>
-<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer21' onclick='answers[3]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer21' onclick='answers[3]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer21' onclick='answers[3]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer21' onclick='answers[3]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer21' onclick='answers[3]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
-<p>4) My behavior and decisions are generally calculated to maximize my safety/security regardless of whether that makes me likable to others.</p>
-<p>
-<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer13' onclick='answers[4]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer13' onclick='answers[4]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer13' onclick='answers[4]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer13' onclick='answers[4]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer13' onclick='answers[4]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
-<p>5) I dislike myself.</p>
-<p>
-<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer23' onclick='answers[5]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer23' onclick='answers[5]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer23' onclick='answers[5]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer23' onclick='answers[5]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer23' onclick='answers[5]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
-<p>6) I am constantly moving toward that sense of intense stimulation in my relationships. </p>
-<p>
-<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer1' onclick='answers[6]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer1' onclick='answers[6]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer1' onclick='answers[6]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer1' onclick='answers[6]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer1' onclick='answers[6]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
-<p>7) I am my body; I must take care of myself to survive.</p>
-<p>
-<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer20' onclick='answers[7]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer20' onclick='answers[7]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer20' onclick='answers[7]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer20' onclick='answers[7]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer20' onclick='answers[7]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
-<p>8) My identity in the community is something I am aware of.</p>
-<p>
-<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer10' onclick='answers[8]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer10' onclick='answers[8]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer10' onclick='answers[8]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer10' onclick='answers[8]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer10' onclick='answers[8]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
-<p>9) I'm very sexual</p>
-<p>
-<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer5' onclick='answers[9]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer5' onclick='answers[9]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer5' onclick='answers[9]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer5' onclick='answers[9]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer5' onclick='answers[9]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
-<p>10) Everything I do is intense: my interests are intense, my friendships are intense. </p>
-<p>
-<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer16' onclick='answers[10]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer16' onclick='answers[10]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer16' onclick='answers[10]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer16' onclick='answers[10]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer16' onclick='answers[10]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
-<p>11) I have a constant awareness of the 'chemistry' between myself and others. </p>
-<p>
-<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer22' onclick='answers[11]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer22' onclick='answers[11]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer22' onclick='answers[11]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer22' onclick='answers[11]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer22' onclick='answers[11]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
-<p>12) I come on very intensely, quickly, passionately.</p>
-<p>
-<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer4' onclick='answers[12]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer4' onclick='answers[12]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer4' onclick='answers[12]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer4' onclick='answers[12]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer4' onclick='answers[12]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
-<p>13) Status/rank in society matters to some degree.</p>
-<p>
-<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer7' onclick='answers[13]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer7' onclick='answers[13]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer7' onclick='answers[13]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer7' onclick='answers[13]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer7' onclick='answers[13]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
-<p>14) I derive energy from liking others and liking things.</p>
-<p>
-<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer19' onclick='answers[14]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer19' onclick='answers[14]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer19' onclick='answers[14]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer19' onclick='answers[14]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer19' onclick='answers[14]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
-<p>15) I am very happy with my life.</p>
-<p>
-<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer25' onclick='answers[15]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer25' onclick='answers[15]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer25' onclick='answers[15]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer25' onclick='answers[15]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer25' onclick='answers[15]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
-<p>16) I would rather be without a relationship or close friend than poor or a social reject.</p>
-<p>
-<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer18' onclick='answers[16]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer18' onclick='answers[16]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer18' onclick='answers[16]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer18' onclick='answers[16]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer18' onclick='answers[16]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
-<p>17) My instinct is to mostly focus on satisfactory self-survival.</p>
-<p>
-<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer11' onclick='answers[17]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer11' onclick='answers[17]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer11' onclick='answers[17]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer11' onclick='answers[17]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer11' onclick='answers[17]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
-<p>18) My reputation is very important to me.</p>
-<p>
-<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer6' onclick='answers[18]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer6' onclick='answers[18]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer6' onclick='answers[18]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer6' onclick='answers[18]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer6' onclick='answers[18]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
-<p>19) I have a strong immediate reaction against anything that threatens to harm my safety in any way.</p>
-<p>
-<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer14' onclick='answers[19]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer14' onclick='answers[19]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer14' onclick='answers[19]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer14' onclick='answers[19]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer14' onclick='answers[19]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
-<p>20) I err on the side of security even if it means playing it too safe or alternately confronting danger.</p>
-<p>
-<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer15' onclick='answers[20]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer15' onclick='answers[20]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer15' onclick='answers[20]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer15' onclick='answers[20]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer15' onclick='answers[20]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
-<p>21) I care what other people in my community think of me.</p>
-<p>
-<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer8' onclick='answers[21]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer8' onclick='answers[21]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer8' onclick='answers[21]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer8' onclick='answers[21]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer8' onclick='answers[21]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
-<p>22) Self-care an personal comfort are far more important to me than most people.</p>
-<p>
-<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer12' onclick='answers[22]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer12' onclick='answers[22]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer12' onclick='answers[22]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer12' onclick='answers[22]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer12' onclick='answers[22]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
-<p>23) Not having sufficient physical comfort and material security is (or would be) very disorienting to me.</p>
-<p>
-<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer17' onclick='answers[23]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer17' onclick='answers[23]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer17' onclick='answers[23]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer17' onclick='answers[23]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer17' onclick='answers[23]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
-<p>24) I am extremely sensual.</p>
-<p>
-<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer3' onclick='answers[24]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer3' onclick='answers[24]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer3' onclick='answers[24]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer3' onclick='answers[24]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer3' onclick='answers[24]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
-<p>25) I am very optimistic.</p>
-<p>
-<table border='0' cellpadding='0' cellspacing='0' width='306'><tr><td><div align='center'>Very Inaccurate</div></td><td bgcolor='#c3c3c3'><input type='radio' value='0.5' name='answer24' onclick='answers[25]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='1.5' name='answer24' onclick='answers[25]=1;'></td><td bgcolor='#e5e5e5'><input type='radio' value='2.5' name='answer24' onclick='answers[25]=1;'></td><td bgcolor='#d4d4d4'><input type='radio' value='3.5' name='answer24' onclick='answers[25]=1;'></td><td bgcolor='#c3c3c3'><input type='radio' value='4.5' name='answer24' onclick='answers[25]=1;'></td><td><div align='center'>Very Accurate</div></td></tr></table></p>
-                                        </td>
 
-                                </tr>
 
-                        </table>
+<nav id="onbar">
+    <div class="onbar-logo">
+        <a class="onbar-logo-link" href="//on.ge"><img class="onbar-logo-image" src="//static.on.ge/global/assets/images/logo-onge-color.svg" alt="On.ge - ახალი ამბები"/></a>
+    </div>
+    <div class="onbar-menu">
+        <ul class="onbar-sites">
+            <li class="obs-newsonge"><a href="https://on.ge" target="_blank" class="active">ახალი ამბები</a></li>
+            <li class="obs-jobs"><a href="https://jobs.on.ge" target="_blank">ვაკანსიები<!-- <span class="obs-new"></span>--></a></li>
+            <li class="obs-newsonmag"><a href="https://on.ge/magazine" target="_blank">განტვირთვა</a></li>
+            <!--<li class="obs-goodnews"><a href="http://goodnews.ge" target="_blank">კარგი ამბები</a></li>-->
+            <li class="obs-teoria"><a href="http://teoria.on.ge" target="_blank">მართვის მოწმობა</a></li>
+            <li class="obs-spell"><a href="http://spell.on.ge" target="_blank">მართლწერა</a></li>
+            <li class="obs-search"><a href="https://search.on.ge" target="_blank">ძებნა</a></li>
+        </ul>
+    </div>
+    <div class="onbar-user">
 
-                        <p>
-<input type="submit" value="SUBMIT RESULTS" onClick="return verify()"></p>
+        <div class="onbar-user-guest">
+            <img class="onbar-user-icon-user" src="//static.on.ge/global/assets/images/icon-user-light.svg" alt=""/>
+            <a class="onbar-btn-secondary" href="//account.on.ge/signin">შესვლა</a>
+            ან
+            <a class="onbar-btn-primary" href="//account.on.ge/new">გაწევრიანება</a>
+        </div>
 
-                        </form>
+        <div class="onbar-user-member">
+            <div class="onbar-member-bar">
+                <img class="onbar-user-icon-user" src="//static.on.ge/global/assets/images/icon-user-light.svg" alt=""/>
+                <span class="onbar-data-username"></span>
+                <span class="onbar-caret">&#9662;</span>
+            </div>
+            <div class="onbar-member-card">
+                <img class="onbar-user-icon-user" src="//static.on.ge/global/assets/images/icon-user-light.svg" alt=""/>
+                <div class="onbar-member-menu">
+                    <div class="onbar-data-username"></div>
+                    <div class="onbar-data-id">On.ge ანგარიში #<span class="onbar-data-id-num">0</span></div>
+                    <a class="onbar-member-menu-item" href="//account.on.ge/profile">ანგარიშის პარამეტრები</a>
+                    <a class="onbar-member-menu-item" href="//account.on.ge/signout">გასვლა &rarr;</a>
                 </div>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+
+    <div id="div-gpt-onge-0" data-unit-name="onge__bg_article" data-sizes="[[1594,900]]" style="width:1594px;height:900px;" class="onad_bg_ad onad onad_desktop"></div>
+
+<div class="body-wrap body-wrap--narrow">
+            <header class="alt-header next-header">
+    <div id="div-gpt-onge-1" data-unit-name="onge__dm_01_next" data-sizes="[[970,90],[320,50],[320,50]]" class="x-padding-half-top onad onad_desktop onad_tablet onad_mobile"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4 col-sm-3 nh-col-logo">
+                <a href="https://bankofgeorgia.ge/" target="_blank" class="nh-bog"><img class="img" src="//static.on.ge/on/assets/static/images/powered-by-bog.svg" alt="Powered by Bank of Georgia"></a>
+                <a href="/next" class="ga-track nh-logo" data-event-category="Header" data-event-action="Main Logo" data-event-label="NEXT.On.ge" data-event-value="0" data-event-non-interaction="1" ><img class="img" src="//static.on.ge/on/assets/static/images/logo-next-on-ge-white-2.svg" alt="მეცნიერება და ტექნიკა - On.ge"></a>
+            </div>
+            <div class="col-xs-8 col-sm-9 nh-col-menu">
+                <form class="head-search" method="get" target="_blank" action="//search.on.ge">
+                    <input class="input" type="text" name="q" value="" placeholder="ძიება პორტალზე">
+                    <input type="hidden" name="where" value="on.ge">
+                    <button class="submit" type="submit"><svg role="image" class="icon-search submit-icon"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-search"></use></svg></button>
+                </form>
+                <ul class="ah-menu">
+                    <li><a href="/next/science" class="">მეცნიერება</a></li>
+                    <li><a href="/next/tech" class="">ტექნოლოგიები</a></li>
+                    <li><a href="/next/georgia" class="">NEXT საქართველო</a></li>
+                    <li><a href="/next/video" class="">ვიდეო</a></li>
+                    <li><a href="/next/podcast" class="">პოდკასტი</a></li>
+                </ul>
+                <span class="ah-hamburger">
+                    <span></span><span></span><span></span><span></span>
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 ah-col-mobile-menu"></div>
+        </div>
+    </div>
+</header>    
+    <div class="container-fluid">
+
+        
+        
+        <nav class="row election-sitewide-banner">
+            </nav>
+    
+    <div class="row single-article-wrap zoomable-images-group  " data-url="https://on.ge/story/80077-%E1%83%A0%E1%83%90-%E1%83%98%E1%83%AA%E1%83%98-%E1%83%9D%E1%83%9E%E1%83%94%E1%83%A0%E1%83%90%E1%83%AA%E1%83%98%E1%83%A3%E1%83%9A-%E1%83%A1%E1%83%98%E1%83%A1%E1%83%A2%E1%83%94%E1%83%9B%E1%83%94%E1%83%91%E1%83%96%E1%83%94-%E1%83%A5%E1%83%95%E1%83%98%E1%83%96%E1%83%98" data-cid="80077">
+        <div class="col-article-content x-border-right">
+
+            <article class="article view-default">
+
+                
+                <script>
+        
+</script>
+
+
+            
+<header class="article-header x-padding-half-top">
+    
+    <!-- M 12 -->
+    <div class="mobile-only x-padding-vert x-margin-top">
+        <script type = 'text/javascript' >
+            (window.globalAmlAds = window.globalAmlAds || []).push(function() {
+                globalAml.defineSlot({
+                    z: '65c8abd1-2359-45ad-8ed4-9a52fa258971',
+                    ph: 'admixer_65c8abd1235945ad8ed49a52fa258971_zone_59013_sect_16811_site_12547',
+                    i: 'inv-nets',
+                    s: 'aab41507-d1b3-4a31-94bd-e2c127d9cc1d',
+                    sender: 'admixer'
+                });
+                globalAml.singleRequest('admixer');
+            });
+        </script>
+        
+        <div id='admixer_65c8abd1235945ad8ed49a52fa258971_zone_59013_sect_16811_site_12547' data-sender='admixer'></div>
+        
+        <script type='text/javascript'>
+            (window.globalAmlAds = window.globalAmlAds || []).push(function() {
+                globalAml.display('admixer_65c8abd1235945ad8ed49a52fa258971_zone_59013_sect_16811_site_12547');
+            });
+        </script>
+        
+    </div>
+    
+    <div class="article-meta clearfix">
+        <time class="onge-date date" datetime="2021-04-16T21:05:02+04:00">16 Apr. 2021, 21:05</time>
+
+        <ul class="categories">
+            <li><a href="https://on.ge/category/%E1%83%A2%E1%83%94%E1%83%A5%E1%83%9C%E1%83%9D%E1%83%9A%E1%83%9D%E1%83%92%E1%83%98%E1%83%94%E1%83%91%E1%83%98">ტექნოლოგიები</a></li><li><a href="https://on.ge/category/sci-tech">Sci-Tech</a></li><li><a href="https://on.ge/category/%E1%83%A2%E1%83%94%E1%83%A5%E1%83%9C%E1%83%98%E1%83%99%E1%83%90">ტექნიკა</a></li>        </ul>
+    </div>
+    
+    
+    <h1 class="article-title">რა იცი ოპერაციულ სისტემებზე — ქვიზი</h1>
+    
+        
+        
+</header>
+
+            <figure class="article-main-media ">
+                        <div class="global-figure no-caption ">
+    <div class="global-figure-inner ">
+        <div class="global-figure-image-wrap" >
+            <img class="global-figure-image  " src="//phoebe.on.ge/2021/04/16/img_5b68e80f77e33.jpg" alt="">    
+        </div>
+            </div>
+</div>
+        </figure>
+        
+    
+    <div class="article-tools article-body-mirror clearfix">
+
+    <div class="stats">
+        <span class="stats-col">
+            <span class="stats-num js-reads"><span class="full-value hidden-xs">0</span><span class="k-value visible-xs-inline">0</span></span>
+            <span class="stats-label">წაკითხვა</span>
+        </span>
+        <span class="stats-col col-comms js-scroll-to-comments tooltip" title="კომენტარების ნახვა">
+            <span class="stats-num js-comms"><span class="full-value hidden-xs">0</span><span class="k-value visible-xs-inline">0</span></span>
+            <span class="stats-label">კომენტარი</span>
+        </span>
+        <span class="stats-col">
+            <span class="stats-num js-shares"><span class="full-value hidden-xs">0</span><span class="k-value visible-xs-inline">0</span></span>
+            <span class="stats-label">გაზიარება</span>
+        </span>
+    </div>
+    
+    
+<div class="sharing-buttons">
+    <a href="#" class="hvr-pop share-btn facebook tooltip" title="facebook-ზე გაზიარება" data-url="https://on.ge/story/80077-%E1%83%A0%E1%83%90-%E1%83%98%E1%83%AA%E1%83%98-%E1%83%9D%E1%83%9E%E1%83%94%E1%83%A0%E1%83%90%E1%83%AA%E1%83%98%E1%83%A3%E1%83%9A-%E1%83%A1%E1%83%98%E1%83%A1%E1%83%A2%E1%83%94%E1%83%9B%E1%83%94%E1%83%91%E1%83%96%E1%83%94-%E1%83%A5%E1%83%95%E1%83%98%E1%83%96%E1%83%98">
+        <svg role="image" class="icon-facebook share-icon"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-facebook"></use></svg>
+    </a>
+    <a href="#" class="hvr-pop share-btn twitter tooltip" title="twitter-ზე გაზიარება" data-url="http://go.on.ge/26yf" data-title="რა იცი ოპერაციულ სისტემებზე — ქვიზი" data-handle="@OnGeLive">
+        <svg role="image" class="icon-twitter share-icon"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-twitter"></use></svg>
+    </a>
+    <a href="#" class="hvr-pop share-btn email tooltip" title="ელფოსტაზე გაგზავნა" data-url="https://on.ge/story/80077-%E1%83%A0%E1%83%90-%E1%83%98%E1%83%AA%E1%83%98-%E1%83%9D%E1%83%9E%E1%83%94%E1%83%A0%E1%83%90%E1%83%AA%E1%83%98%E1%83%A3%E1%83%9A-%E1%83%A1%E1%83%98%E1%83%A1%E1%83%A2%E1%83%94%E1%83%9B%E1%83%94%E1%83%91%E1%83%96%E1%83%94-%E1%83%A5%E1%83%95%E1%83%98%E1%83%96%E1%83%98">
+        <svg role="image" class="icon-mail share-icon"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-mail"></use></svg>
+    </a>
+    <span class="share-link tooltip" title="მოკლე ბმულის დაკოპირება">
+        <svg role="image" class="icon-link link-icon"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-link"></use></svg>
+        <input type="url" value="http://go.on.ge/26yf" class="short-link-input">
+    </span>
+</div>
+    <div class="font-size tooltip hidden-xs" title="ტექსტის ზომის შეცვლა">
+        <span class="size-adjust js-font-size js-font-size-down"><svg role="image" class="icon-minus "><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-minus"></use></svg></span>
+        <span class="label-icon"><svg role="image" class="icon-text-height "><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-text-height"></use></svg></span>
+        <span class="size-adjust js-font-size js-font-size-up"><svg role="image" class="icon-plus "><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-plus"></use></svg></span>
+    </div>
+    
+            <!-- <div class="fb-quote" data-href="https://on.ge/story/80077-%E1%83%A0%E1%83%90-%E1%83%98%E1%83%AA%E1%83%98-%E1%83%9D%E1%83%9E%E1%83%94%E1%83%A0%E1%83%90%E1%83%AA%E1%83%98%E1%83%A3%E1%83%9A-%E1%83%A1%E1%83%98%E1%83%A1%E1%83%A2%E1%83%94%E1%83%9B%E1%83%94%E1%83%91%E1%83%96%E1%83%94-%E1%83%A5%E1%83%95%E1%83%98%E1%83%96%E1%83%98"></div> -->
+    
+    <div class="mobile-sharing-toolbar scroll-hidden visible-xs-block">
+        <a href="#" class="hvr-pop share-btn facebook" data-url="https://on.ge/story/80077-%E1%83%A0%E1%83%90-%E1%83%98%E1%83%AA%E1%83%98-%E1%83%9D%E1%83%9E%E1%83%94%E1%83%A0%E1%83%90%E1%83%AA%E1%83%98%E1%83%A3%E1%83%9A-%E1%83%A1%E1%83%98%E1%83%A1%E1%83%A2%E1%83%94%E1%83%9B%E1%83%94%E1%83%91%E1%83%96%E1%83%94-%E1%83%A5%E1%83%95%E1%83%98%E1%83%96%E1%83%98">
+            <span><svg role="image" class="icon-facebook share-icon"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-facebook"></use></svg></span>
+        </a>
+        <a href="#" class="hvr-pop share-btn twitter" data-url="http://go.on.ge/26yf" data-title="რა იცი ოპერაციულ სისტემებზე — ქვიზი" data-handle="@OnGeLive">
+            <span><svg role="image" class="icon-twitter share-icon"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-twitter"></use></svg></span>
+        </a>
+        <a href="#" class="hvr-pop share-btn email" data-url="https://on.ge/story/80077-%E1%83%A0%E1%83%90-%E1%83%98%E1%83%AA%E1%83%98-%E1%83%9D%E1%83%9E%E1%83%94%E1%83%A0%E1%83%90%E1%83%AA%E1%83%98%E1%83%A3%E1%83%9A-%E1%83%A1%E1%83%98%E1%83%A1%E1%83%A2%E1%83%94%E1%83%9B%E1%83%94%E1%83%91%E1%83%96%E1%83%94-%E1%83%A5%E1%83%95%E1%83%98%E1%83%96%E1%83%98">
+            <span><svg role="image" class="icon-mail share-icon"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-mail"></use></svg></span>
+        </a>
+        <a href="#" class="hvr-pop share-btn viber" data-url="http://go.on.ge/26yf" data-title="რა იცი ოპერაციულ სისტემებზე — ქვიზი">
+            <span><svg role="image" class="icon-viber-large share-icon"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-viber-large"></use></svg></span>
+        </a>
+        <a href="#" class="hvr-pop share-btn whatsapp" data-url="http://go.on.ge/26yf" data-title="რა იცი ოპერაციულ სისტემებზე — ქვიზი">
+            <span><svg role="image" class="icon-whatsapp share-icon"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-whatsapp"></use></svg></span>
+        </a>
+    </div>
+    
+</div>
+
+    <div id="div-gpt-onge-2" data-unit-name="onge__m_14_next" data-sizes="[[320,150]]" style="width:320px;height:150px;" class="x-padding-top x-margin-auto-horiz x-clear-both onad onad_mobile"></div>
+
+        
+        
+    
+
+
+         
+<div class="global-text-content article-body">
+    <p>ის, რაც ჩვენს კომპიუტერებსა და სმარტფონებს მარტივ მოსახმარს ხდის, ოპერაციული სისტემაა.</p>
+<p>ოპერაციული სისტემების შექმნა გასული საუკუნის შუიდან დაიწყო. მაშინ კომპიუტერი გაცილებით სუსტი და დიდი მოწყობილობა იყო, თუმცა სისტემა, რომელზეც იმუშავებდა მასაც სჭირდებოდა.</p>
+<p>სავარაუდოდ, ბევრი ოპერაციული სისტემის შესახებ ინფორმაცია უკვე გაქვთ. Windows, ლინუქსი და Mac OS &ndash; ეს სახელებიც, ალბათ, არაერთხელ გსმენიათ. დღევანდელ ქვიზით კი შევეცდებით გავიგოთ, თუ რამდენად კარგად გახსოვთ მათი ისტორია, ან თუ იცით ისეთი დეტალები, რომლებიც შეიძლება სხვებს გამორჩენოდათ.</p>
+<div class="bo bo-column-width bo-type-quiz">
+    
+    <div class="quiz quiz-trivia" data-feedback="1" data-share-image="result">
+        <div class="quiz-intro">
+        <div class="quiz-intro-inner">
+            <h2 class="x-margin-bottom">რა იცი ოპერაციულ სისტემებზე — ქვიზი</h2>
+            <a href="#" class="quiz-btn quiz-btn-alt quiz-start">ტესტის დაწყება <svg role="image" class="icon-chevron-right btn-icon"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-chevron-right"></use></svg></a>
+        </div>
+    </div>
+        
+        <section class="quiz-question question-pristine" data-answers-format="text">
+                            <h2 class="quiz-question-question"><span class="quiz-question-count">1 / 9</span> ჩამოთვლილთაგან რომელი არაა ოპერაციული სისტემა?</h2>
+                                                    <figure class="quiz-figure-image">
+    <img class="quiz-image" src="//phoebe.on.ge/2021/04/16/Top-10-Best-Operating-Systems-for-Laptops-and-Computers-4.jpg" alt="">
+    </figure>
+                        
+            <ul class="quiz-answers answers-text x-clean clearfix">
+                <li><a href="#" class="quiz-answer clearfix" data-key="ca7c617957170b2517ff8" data-aid="0"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">MacOS</span></a></li><li><a href="#" class="quiz-answer clearfix" data-key="324e020e9f4" data-aid="1"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">Photoshop</span></a></li><li><a href="#" class="quiz-answer clearfix" data-key="14b4ffd78dcc4" data-aid="2"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">Android</span></a></li><li><a href="#" class="quiz-answer clearfix" data-key="ce5653c2454" data-aid="3"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">Linux</span></a></li>            </ul>
+                            <div class="quiz-answer-feedback-container">
+                                                                        <div class="quiz-answer-feedback " data-aid="0">
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="4YOd4YOe4YOU4YOg4YOQ4YOq4YOY4YOj4YOaIOGDoeGDmOGDoeGDouGDlOGDm+GDlOGDkeGDqOGDmCDhg6Phg5zhg5Phg5Ag4YOS4YOQ4YOU4YOg4YOZ4YOV4YOY4YOdISBNYWNPUyBBcHBsZS3hg5jhg6Eg4YOb4YOY4YOU4YOgIOGDqOGDlOGDpeGDm+GDnOGDmOGDmuGDmCDhg6Hhg5jhg6Hhg6Lhg5Thg5vhg5Dhg5Au"></span>
+                                                            </div>
+                                                                                                <div class="quiz-answer-feedback with-media" data-aid="1">
+                                                                    <figure class="quiz-figure-image">
+    <img class="quiz-image" src="//rachel.on.ge/2021/04/16/giphy.gif" alt="">
+    </figure>
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="4YOb4YOQ4YOg4YOX4YOQ4YOa4YOYIOGDruGDkOGDoCwgQWRvYmUgUGhvdG9zaG9wIOGDpOGDneGDouGDneGDlOGDkeGDmOGDoSDhg5Phg5Dhg6Hhg5Dhg5vhg6Phg6jhg5Dhg5Xhg5Thg5Hhg5Thg5rhg5gg4YOe4YOg4YOd4YOS4YOg4YOQ4YOb4YOQ4YOQ"></span>
+                                                            </div>
+                                                                                                <div class="quiz-answer-feedback " data-aid="2">
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="R29vZ2xlLeGDm+GDkCDhg5Dhg5vhg5Phg5Thg5zhg5gg4YOY4YOb4YOY4YOi4YOd4YObIOGDmOGDrOGDleGDkOGDmuGDkCwg4YOg4YOd4YObIOGDqOGDlOGDnCBBbmRyb2lkLeGDmOGDoSDhg53hg57hg5Thg6Dhg5Dhg6rhg5jhg6Phg5rhg5gg4YOh4YOY4YOh4YOi4YOU4YOb4YOY4YOhIOGDqOGDlOGDoeGDkOGDruGDlOGDkSDhg5Dhg6Ag4YOS4YOq4YOd4YOT4YOc4YOd4YOT4YOQPw=="></span>
+                                                            </div>
+                                                                                                <div class="quiz-answer-feedback " data-aid="3">
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="4YOa4YOY4YOc4YOj4YOl4YOh4YOYIOGDoeGDlOGDoOGDleGDlOGDoOGDlOGDkeGDmOGDoeGDl+GDleGDmOGDoSDhg5Lhg5Dhg5vhg53hg5jhg6fhg5Thg5zhg5Thg5Hhg5Ag4YOT4YOQIOGDkOGDoeGDlOGDleGDlCDhg5Phg5Thg5Xhg5Thg5rhg53hg57hg5Thg6Dhg5Thg5Hhg5jhg6Eg4YOh4YOQ4YOn4YOV4YOQ4YOg4YOU4YOa4YOYIOGDoeGDmOGDoeGDouGDlOGDm+GDkOGDkA=="></span>
+                                                            </div>
+                                                            </div>
+                    </section>
+        
+        
+        <section class="quiz-question question-pristine" data-answers-format="text">
+                            <h2 class="quiz-question-question"><span class="quiz-question-count">2 / 9</span> ჩამოთვილილი სისტემებიდან რომელია Microsoft-ის შექმნილი</h2>
+                                                    <figure class="quiz-figure-image">
+    <img class="quiz-image" src="//ross.on.ge/2021/04/16/1549463983.jpg" alt="">
+            <figcaption class="quiz-image-credit x-noselect"><p title="Martin Bureau / AFP/Getty Images">Martin Bureau / AFP/Getty Images</p></figcaption>
+    </figure>
+                        
+            <ul class="quiz-answers answers-text x-clean clearfix">
+                <li><a href="#" class="quiz-answer clearfix" data-key="a2bd2643207852e96" data-aid="0"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">CP/M</span></a></li><li><a href="#" class="quiz-answer clearfix" data-key="2de31fb0edcb4" data-aid="1"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">OS X</span></a></li><li><a href="#" class="quiz-answer clearfix" data-key="4d37cb40f96c4" data-aid="2"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">Linux</span></a></li><li><a href="#" class="quiz-answer clearfix" data-key="fd3cef060432a2f2fe2e8" data-aid="3"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">Windows</span></a></li>            </ul>
+                            <div class="quiz-answer-feedback-container">
+                                                                        <div class="quiz-answer-feedback " data-aid="0">
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="Q1AvTSDhg53hg57hg5Thg6Dhg5Dhg6rhg5jhg6Phg5rhg5gg4YOh4YOY4YOh4YOi4YOU4YOb4YOQ4YOQLCDhg6Dhg53hg5vhg5Thg5rhg5jhg6ogNDcg4YOs4YOa4YOY4YOhIOGDrOGDmOGDnCwg4YOY4YOc4YOi4YOU4YOa4YOY4YOhIOGDm+GDmOGDmeGDoOGDneGDmeGDneGDm+GDnuGDmOGDo+GDouGDlOGDoOGDlOGDkeGDmOGDoeGDl+GDleGDmOGDoSDhg6jhg5Thg5jhg6Xhg5vhg5zhg5Au"></span>
+                                                            </div>
+                                                                                                <div class="quiz-answer-feedback " data-aid="1">
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="T1MgWCDhg5Thg6Thg5rhg6Eg4YOU4YOZ4YOj4YOX4YOV4YOc4YOY4YOhLCDhg6rhg53hg6Lhg5Dhg5fhg5gg4YOQ4YOq4YOT4YOYIOGDoeGDrOGDneGDoCDhg57hg5Dhg6Hhg6Phg67hg6E="></span>
+                                                            </div>
+                                                                                                <div class="quiz-answer-feedback " data-aid="2">
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="4YOa4YOY4YOc4YOj4YOl4YOh4YOYIOGDmuGDmOGDnOGDo+GDoSDhg6Lhg53hg6Dhg5Xhg5Dhg5rhg5Phg5jhg6Eg4YOo4YOU4YOl4YOb4YOc4YOY4YOa4YOYIOGDneGDnuGDlOGDoOGDkOGDquGDmOGDo+GDmuGDmCDhg6Hhg5jhg6Hhg6Lhg5Thg5vhg5Dhg5AsIOGDoOGDneGDm+GDlOGDmuGDmOGDqiAxOTkxIOGDrOGDlOGDmuGDoSDhg5Lhg5Dhg5vhg53hg5Xhg5jhg5Phg5A="></span>
+                                                            </div>
+                                                                                                <div class="quiz-answer-feedback with-media" data-aid="3">
+                                                                    <figure class="quiz-figure-image">
+    <img class="quiz-image" src="//ross.on.ge/2021/04/16/782578789c60ff95c9f9db701dfac609.gif" alt="">
+    </figure>
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="4YOdIOGDk+GDmOGDkOGDriwg4YOo4YOU4YOcIOGDneGDnuGDlOGDoOGDkOGDquGDmOGDo+GDmiDhg6Hhg5jhg6Hhg6Lhg5Thg5vhg5Thg5Hhg6jhg5gg4YOc4YOQ4YOb4YOT4YOV4YOY4YOa4YOQ4YOTIOGDlOGDoOGDmeGDleGDlOGDleGDmA=="></span>
+                                                            </div>
+                                                            </div>
+                    </section>
+        
+        
+        <section class="quiz-question question-pristine" data-answers-format="text">
+                            <h2 class="quiz-question-question"><span class="quiz-question-count">3 / 9</span> ჩამოთვლილთაგან რომელი სისტემა ეკუთვნის Samsung-ს</h2>
+                                                    <figure class="quiz-figure-image">
+    <img class="quiz-image" src="//phoebe.on.ge/2021/04/16/samsung-office-logo.jpg" alt="">
+            <figcaption class="quiz-image-credit x-noselect"><p title="Gizmodo">Gizmodo</p></figcaption>
+    </figure>
+                        
+            <ul class="quiz-answers answers-text x-clean clearfix">
+                <li><a href="#" class="quiz-answer clearfix" data-key="bed406553a4" data-aid="0"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">Tizen</span></a></li><li><a href="#" class="quiz-answer clearfix" data-key="ceb4e2ea7a4" data-aid="1"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">iOS</span></a></li><li><a href="#" class="quiz-answer clearfix" data-key="1fd22a8db39fbe56130e8" data-aid="2"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">One UI</span></a></li><li><a href="#" class="quiz-answer clearfix" data-key="cca16ad106bb5c64a77" data-aid="3"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">Android</span></a></li>            </ul>
+                            <div class="quiz-answer-feedback-container">
+                                                                        <div class="quiz-answer-feedback " data-aid="0">
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="4YOc4YOQ4YOb4YOT4YOV4YOY4YOa4YOQ4YOTLCBUaXplbiDhg6Hhg5Dhg5vhg6Hhg6Phg5zhg5Lhg5jhg6Eg4YOd4YOe4YOU4YOg4YOQ4YOq4YOY4YOj4YOa4YOYIOGDoeGDmOGDoeGDouGDlOGDm+GDkOGDkCwg4YOg4YOd4YOb4YOU4YOa4YOY4YOqIOGDoeGDkOGDkOGDl+GDlOGDkeGDmOGDoeGDkCDhg5Phg5Ag4YOh4YOu4YOV4YOQIOGDm+GDquGDmOGDoOGDlCDhg5Lhg5Dhg6/hg5Thg6Lhg5Thg5Hhg5jhg6Hhg5fhg5Xhg5jhg6Eg4YOo4YOU4YOY4YOl4YOb4YOc4YOQ"></span>
+                                                            </div>
+                                                                                                <div class="quiz-answer-feedback " data-aid="1">
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="QXBwbGUt4YOhIOGDmOGDm+GDmOGDoeGDl+GDleGDmOGDoSDhg5Dhg6Ag4YOj4YOs4YOV4YOQ4YOa4YOY4YOQLCDhg6Dhg53hg5sg4YOb4YOY4YOhIOGDm+GDl+GDkOGDleGDkOGDoCDhg5nhg53hg5zhg5nhg6Phg6Dhg5Thg5zhg6Lhg6jhg5gg4YOS4YOU4YOg4YOU4YOd4YOT4YOU4YOh"></span>
+                                                            </div>
+                                                                                                <div class="quiz-answer-feedback " data-aid="2">
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="T25lIFVJIOGDnOGDkOGDm+GDk+GDleGDmOGDmuGDkOGDkyDhg6Hhg5Dhg5vhg6Hhg6Phg5zhg5Lhg5jhg6Hhg5Dhg5AsIOGDl+GDo+GDm+GDquGDkCDhg5jhg6Eg4YOQ4YOc4YOT4YOg4YOd4YOY4YOT4YOY4YOhIOGDmuGDkOGDnOGDqeGDlOGDoOGDmOGDkCDhg5Phg5Ag4YOQ4YOg4YOQIOGDneGDnuGDlOGDoOGDkOGDquGDmOGDo+GDmuGDmCDhg6Hhg5jhg6Hhg6Lhg5Thg5vhg5A="></span>
+                                                            </div>
+                                                                                                <div class="quiz-answer-feedback " data-aid="3">
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="4YOQ4YOc4YOT4YOg4YOd4YOY4YOT4YOYIOGDkuGDo+GDkuGDmuGDmOGDoSDhg6Hhg5jhg6Hhg6Lhg5Thg5vhg5Dhg5AsIOGDoeGDkOGDm+GDoeGDo+GDnOGDkuGDmCDhg5vhg5Dhg6Eg4YOj4YOR4YOg4YOQ4YOa4YOd4YOTIOGDl+GDkOGDleGDmOGDoeGDmCDhg6Hhg5vhg5Dhg6Dhg6Lhg6Thg53hg5zhg5Thg5Hhg5jhg6Hhg5fhg5Xhg5jhg6Eg4YOY4YOn4YOU4YOc4YOU4YOR4YOh"></span>
+                                                            </div>
+                                                            </div>
+                    </section>
+        
+        
+        <section class="quiz-question question-pristine" data-answers-format="text">
+                            <h2 class="quiz-question-question"><span class="quiz-question-count">4 / 9</span> რომელი ოპერაციული სისტემის ბირთვზეა დაფუძნებული ანდროიდი?</h2>
+                                                    <figure class="quiz-figure-image">
+    <img class="quiz-image" src="//ross.on.ge/2021/04/16/A_sneak_peak_in_Android_12_-_Your_ICT_Magazine.jpg" alt="">
+    </figure>
+                        
+            <ul class="quiz-answers answers-text x-clean clearfix">
+                <li><a href="#" class="quiz-answer clearfix" data-key="20beaa905d327dc3a87" data-aid="0"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">Linux</span></a></li><li><a href="#" class="quiz-answer clearfix" data-key="672ef4591de87e6dc1928" data-aid="1"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">Windows</span></a></li><li><a href="#" class="quiz-answer clearfix" data-key="bb0a27e886d6a1d4b43e8" data-aid="2"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">OS X</span></a></li><li><a href="#" class="quiz-answer clearfix" data-key="8150ca1b4d2cf70d6" data-aid="3"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">Symbian</span></a></li>            </ul>
+                            <div class="quiz-answer-feedback-container">
+                                                                        <div class="quiz-answer-feedback with-media" data-aid="0">
+                                                                    <figure class="quiz-figure-image">
+    <img class="quiz-image" src="//phoebe.on.ge/2021/04/16/1200px-Tux.svg.jpg" alt="">
+    </figure>
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="4YOb4YOQ4YOg4YOX4YOQ4YOa4YOY4YOQLCDhg5Dhg5zhg5Phg6Dhg53hg5jhg5Phg5gg4YOa4YOY4YOc4YOj4YOl4YOh4YOW4YOU4YOQIOGDk+GDkOGDpOGDo+GDq+GDnOGDlOGDkeGDo+GDmuGDmC4g4YOY4YOhIOGDp+GDleGDlOGDmuGDkOGDoeGDkOGDl+GDleGDmOGDoSDhg6bhg5jhg5Dhg5Ag4YOT4YOQIOGDm+GDmOGDoeGDmCDhg5Phg5Dhg5Phg5Thg5Hhg5jhg5fhg5gg4YOb4YOu4YOQ4YOg4YOU4YOqIOGDoeGDrOGDneGDoOGDlOGDkyDhg5Thg6Hhg5Dhg5A="></span>
+                                                            </div>
+                                                                                                <div class="quiz-answer-feedback " data-aid="1">
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="V2luZG93cyBNaWNyb3NvZnQt4YOhIOGDlOGDmeGDo+GDl+GDleGDnOGDmOGDoSwg4YOT4YOQ4YOu4YOj4YOg4YOj4YOa4YOYIOGDoeGDmOGDoeGDouGDlOGDm+GDkOGDkCDhg5Phg5Ag4YOZ4YOd4YOT4YOhIOGDkOGDoOGDkOGDleGDmOGDoSDhg5Lhg5Xhg5Dhg5zhg5Dhg67hg5Thg5Hhg5Thg5w="></span>
+                                                            </div>
+                                                                                                <div class="quiz-answer-feedback " data-aid="2">
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="T1MgWCBBcHBsZS3hg5jhg6EgTWFjLeGDlOGDkeGDmOGDoeGDl+GDleGDmOGDoSDhg6jhg5Thg5jhg6Xhg5vhg5zhg5Ag4YOT4YOQIOGDkOGDnOGDk+GDoOGDneGDmOGDk+GDl+GDkOGDnCDhg5Dhg6Dhg5Dhg6Thg5Thg6Dhg5gg4YOU4YOh4YOQ4YOl4YOb4YOU4YOR4YOQ"></span>
+                                                            </div>
+                                                                                                <div class="quiz-answer-feedback " data-aid="3">
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="U3ltYmlhbiAyMDAwLeGDmOGDkOGDnOGDmCDhg6zhg5rhg5Thg5Hhg5jhg6Eg4YOn4YOV4YOU4YOa4YOQ4YOW4YOUIOGDnuGDneGDnuGDo+GDmuGDkOGDoOGDo+GDmuGDmCDhg6Hhg5jhg6Hhg6Lhg5Thg5vhg5Ag4YOY4YOn4YOdLCDhg6Dhg53hg5vhg5Thg5rhg5bhg5QgTm9raWEt4YOhIOGDk+GDkCDhg6Hhg67hg5Xhg5Ag4YOr4YOV4YOU4YOa4YOYIOGDkuGDmOGDkuGDkOGDnOGDouGDlOGDkeGDmOGDoSDhg5vhg53hg5Hhg5jhg5rhg6Phg6Dhg5Thg5Hhg5gg4YOb4YOj4YOo4YOQ4YOd4YOR4YOT4YOc4YOU4YOc"></span>
+                                                            </div>
+                                                            </div>
+                    </section>
+        
+        
+        <section class="quiz-question question-pristine" data-answers-format="text">
+                            <h2 class="quiz-question-question"><span class="quiz-question-count">5 / 9</span> როდის და ვინ წარმოგვიდგინა პირველად Mac OS X</h2>
+                                                    <figure class="quiz-figure-image">
+    <img class="quiz-image" src="//chandler.on.ge/2021/04/16/gsmarena_013.jpg" alt="">
+    </figure>
+                        
+            <ul class="quiz-answers answers-text x-clean clearfix">
+                <li><a href="#" class="quiz-answer clearfix" data-key="7f9fc080543aed846" data-aid="0"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">Mac OS X IBM-ის სუპერკომპიუტერებისთვის შეიქმნა</span></a></li><li><a href="#" class="quiz-answer clearfix" data-key="7a4a0f4697c54" data-aid="1"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">2001 წელს Apple-მა პირველად წარადგინა Mac OS X</span></a></li><li><a href="#" class="quiz-answer clearfix" data-key="16b6ee3e354" data-aid="2"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">Mac OS X პირველად ბილ გეიტსმა წარადგინა</span></a></li><li><a href="#" class="quiz-answer clearfix" data-key="a33eb666dfad81696" data-aid="3"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">Max OS X ეფლმა პირველად 2007 წელს წარადგინა</span></a></li>            </ul>
+                            <div class="quiz-answer-feedback-container">
+                                                                        <div class="quiz-answer-feedback " data-aid="0">
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="SUJNIOGDnOGDkOGDm+GDk+GDleGDmOGDmuGDkOGDkyDhg5Thg6Dhg5ct4YOU4YOg4YOX4YOYIOGDnuGDmOGDneGDnOGDlOGDoOGDmOGDkCDhg5jhg5zhg5Phg6Phg6Hhg6Lhg6Dhg5jhg5Dhg6jhg5gsIOGDl+GDo+GDm+GDquGDkCBNYWMgT1MgWCDhg5vhg5Dhg5cg4YOQ4YOgIOGDlOGDmeGDo+GDl+GDleGDnOGDmOGDlw=="></span>
+                                                            </div>
+                                                                                                <div class="quiz-answer-feedback with-media" data-aid="1">
+                                                                    <figure class="quiz-figure-image">
+    <img class="quiz-image" src="//monica.on.ge/2021/04/16/Mac-OS-X.jpg" alt="">
+    </figure>
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="4YOh4YOs4YOd4YOg4YOY4YOQLCDhg6jhg5Thg5wg4YOc4YOQ4YOb4YOT4YOV4YOY4YOa4YOQ4YOTIOGDmeGDkOGDoOGDkuGDmCDhg5vhg5Thg67hg6Hhg5jhg5Thg6Dhg5Thg5Hhg5Ag4YOS4YOQ4YOl4YOV4YOh"></span>
+                                                            </div>
+                                                                                                <div class="quiz-answer-feedback with-media" data-aid="2">
+                                                                    <figure class="quiz-figure-image">
+    <img class="quiz-image" src="//ross.on.ge/2021/04/16/200w.gif" alt="">
+    </figure>
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="4YOU4YOhIOGDnuGDkOGDoeGDo+GDruGDmCDhg6Dhg53hg5Lhg53hg6Ag4YOQ4YOb4YOd4YOY4YOg4YOp4YOY4YOUIOGDkOGDoCDhg5Xhg5jhg6rhg5g="></span>
+                                                            </div>
+                                                                                                <div class="quiz-answer-feedback " data-aid="3">
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="4YOQ4YOS4YOU4YOg4YOY4YOQLCAyMDA3IOGDrOGDlOGDmuGDoSDhg5Thg6Thg5rhg5vhg5Ag4YOe4YOY4YOg4YOV4YOU4YOa4YOQ4YOTIGlPUyDhg5Phg5Ag4YOe4YOY4YOg4YOV4YOU4YOa4YOYIOGDkOGDmOGDpOGDneGDnOGDmCDhg6zhg5Dhg6Dhg5Dhg5Phg5Lhg5jhg5zhg5A="></span>
+                                                            </div>
+                                                            </div>
+                    </section>
+        
+        
+        <section class="quiz-question question-pristine" data-answers-format="text">
+                            <h2 class="quiz-question-question"><span class="quiz-question-count">6 / 9</span> რომელ წელს იხილა სამყარომ პირველი Windows?</h2>
+                                                    <figure class="quiz-figure-image">
+    <img class="quiz-image" src="//rachel.on.ge/2021/04/16/windows-10-cropped-for-promo_60799866d13e2.jpg" alt="">
+    </figure>
+                        
+            <ul class="quiz-answers answers-text x-clean clearfix">
+                <li><a href="#" class="quiz-answer clearfix" data-key="7ea900d4b74a4" data-aid="0"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">Windows 1&#8239;1985 წლის ნოემბერში გამოვიდა</span></a></li><li><a href="#" class="quiz-answer clearfix" data-key="0f8b100f111d4" data-aid="1"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">Windows პირველად 1984 წელს ვიხილეთ</span></a></li><li><a href="#" class="quiz-answer clearfix" data-key="2ee122fad64" data-aid="2"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">Windows არასდროს შექმნილა და რასაც ჩვენ ვხედავთ ბილ გეიტსის შექმნილი სიმულაციაა</span></a></li><li><a href="#" class="quiz-answer clearfix" data-key="e3b987fa6ff562496" data-aid="3"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">Windows ის პირველი ვერსია 2001 წელს გამოვიდა</span></a></li>            </ul>
+                            <div class="quiz-answer-feedback-container">
+                                                                        <div class="quiz-answer-feedback with-media" data-aid="0">
+                                                                    <figure class="quiz-figure-image">
+    <img class="quiz-image" src="//ross.on.ge/2021/04/16/Windows1.0_60799866db5a5.jpg" alt="">
+    </figure>
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="4YOb4YOQ4YOg4YOX4YOQ4YOa4YOY4YOQLCBNaWNyb3NvZnQt4YOb4YOQIOGDleGDmOGDnOGDk+GDoeGDneGDo+GDoeGDmOGDoSDhg57hg5jhg6Dhg5Xhg5Thg5rhg5gg4YOV4YOU4YOg4YOh4YOY4YOQIDE5ODUg4YOs4YOU4YOa4YOhIOGDrOGDkOGDoOGDkOGDk+GDkuGDmOGDnOGDkC4="></span>
+                                                            </div>
+                                                                                                <div class="quiz-answer-feedback with-media" data-aid="1">
+                                                                    <figure class="quiz-figure-image">
+    <img class="quiz-image" src="//phoebe.on.ge/2021/04/16/Macintosh_classic.jpg" alt="">
+    </figure>
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="MTk4NCDhg6zhg5Thg5rhg6EgQXBwbGUt4YOb4YOQIE1hY2ludG9zaCDhg6zhg5Dhg6Dhg5Dhg5Phg5Lhg5jhg5zhg5Phg5AsIE1pY3Jvc29mdC3hg5vhg5Ag4YOZ4YOYIOGDleGDmOGDnOGDk+GDneGDo+GDoeGDmCDhg5Thg6Dhg5fhg5gg4YOs4YOa4YOY4YOhIOGDqOGDlOGDm+GDk+GDlOGDkiDhg5Lhg5Xhg5Dhg5zhg5Dhg67hg5A="></span>
+                                                            </div>
+                                                                                                <div class="quiz-answer-feedback with-media" data-aid="2">
+                                                                    <figure class="quiz-figure-image">
+    <img class="quiz-image" src="//joey.on.ge/2021/04/16/2bfa74934085c6a7ca17bbe962e6b754.jpg" alt="">
+    </figure>
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="4YOj4YOZ4YOd4YOb4YOU4YOc4YOi4YOQ4YOg4YOd4YOT"></span>
+                                                            </div>
+                                                                                                <div class="quiz-answer-feedback with-media" data-aid="3">
+                                                                    <figure class="quiz-figure-image">
+    <img class="quiz-image" src="//monica.on.ge/2021/04/16/WindowsXP-1000x600.jpg" alt="">
+    </figure>
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="MjAwMSDhg6zhg5rhg5jhg6EgMjUg4YOd4YOl4YOi4YOd4YOb4YOR4YOU4YOg4YOhLCBNaWNyb3NvZnQt4YOb4YOQIOGDm+GDoeGDneGDpOGDmuGDmOGDneGDoSBXaW5kb3dzIFhQIOGDrOGDkOGDoOGDo+GDk+GDkuGDmOGDnOGDk+GDkA=="></span>
+                                                            </div>
+                                                            </div>
+                    </section>
+        
+        
+        <section class="quiz-question question-pristine" data-answers-format="text">
+                            <h2 class="quiz-question-question"><span class="quiz-question-count">7 / 9</span> წლების განმავლობაში, რის მიხედვით არჩევდა ანდროიდის სახელებს Google?</h2>
+                                                    <figure class="quiz-figure-image">
+    <img class="quiz-image" src="//rachel.on.ge/2021/04/16/android-through-the-ages-20-420-100_60799fa84875c.jpg" alt="">
+    </figure>
+                        
+            <ul class="quiz-answers answers-text x-clean clearfix">
+                <li><a href="#" class="quiz-answer clearfix" data-key="d94e1de0ae4" data-aid="0"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">Google-ს ანდროიდის სახელებთან დაკავშირებით არანაირი პატერნი არ გააჩნია</span></a></li><li><a href="#" class="quiz-answer clearfix" data-key="dbf20c8ae44" data-aid="1"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">გუგლი ანბანს მიყვებოდა და ყოველ ახალ ასოზე ახალ ტკბილეულს ირჩევდა</span></a></li><li><a href="#" class="quiz-answer clearfix" data-key="ae1373a99b80e55" data-aid="2"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">ანდროიდები მხოლოც ციფრებს მიყვება, კონკრეტული სახელები საერთოდ არ აქვთ</span></a></li><li><a href="#" class="quiz-answer clearfix" data-key="9c0f9f32024" data-aid="3"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">ანდროიდის სახელებს გუგლი ტკბილეულობიდან ირჩევდა</span></a></li>            </ul>
+                            <div class="quiz-answer-feedback-container">
+                                                                        <div class="quiz-answer-feedback " data-aid="0">
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="4YOU4YOhIOGDouGDp+GDo+GDmOGDmuGDmOGDkCwg4YOS4YOj4YOS4YOa4YOhIOGDp+GDneGDleGDlOGDmuGDl+GDleGDmOGDoSDhg5Dhg6Xhg5Xhg6Eg4YOS4YOQ4YOg4YOZ4YOV4YOU4YOj4YOa4YOYIOGDkuGDluGDlOGDkeGDmCwg4YOg4YOd4YOb4YOa4YOU4YOR4YOh4YOQ4YOqIOGDm+GDmOGDp+GDleGDlOGDkeGDkA=="></span>
+                                                            </div>
+                                                                                                <div class="quiz-answer-feedback " data-aid="1">
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="4YOb4YOQ4YOg4YOX4YOQ4YOa4YOY4YOQLCDhg5Dhg5zhg5Phg6Dhg53hg5jhg5Phg5Thg5Hhg5jhg6Eg4YOh4YOQ4YOu4YOU4YOa4YOU4YOR4YOYIOGDmuGDkOGDl+GDmOGDnOGDo+GDoCDhg5Dhg5zhg5Hhg5Dhg5zhg6Eg4YOb4YOY4YOn4YOV4YOU4YOR4YOd4YOT4YOQIOGDk+GDkCDhg6fhg5Xhg5Thg5rhg5Ag4YOQ4YOh4YOd4YOW4YOUIOGDkOGDruGDkOGDmuGDmCDhg6Lhg5nhg5Hhg5jhg5rhg5Thg6Phg5rhg5jhg6Eg4YOh4YOQ4YOu4YOU4YOa4YOhIOGDmOGDq+GDlOGDnOGDk+GDkC4u"></span>
+                                                            </div>
+                                                                                                <div class="quiz-answer-feedback with-media" data-aid="2">
+                                                                    <figure class="quiz-figure-image">
+    <img class="quiz-image" src="//phoebe.on.ge/2021/04/16/unnamed.gif" alt="">
+    </figure>
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="4YOo4YOU4YOcIOGDoeGDkOGDleGDkOGDoOGDkOGDo+GDk+GDneGDkyBpUGhvbmUt4YOY4YOhIOGDm+GDneGDm+GDruGDm+GDkOGDoOGDlOGDkeGDlOGDmuGDmCDhg67hg5Dhg6A="></span>
+                                                            </div>
+                                                                                                <div class="quiz-answer-feedback " data-aid="3">
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="4YOQ4YOu4YOa4YOd4YOhIOGDmOGDp+GDkOGDleGDmCwg4YOb4YOQ4YOS4YOg4YOQ4YObIOGDlOGDoOGDl+GDmCDhg5Phg5Thg6Lhg5Dhg5rhg5gg4YOS4YOQ4YOb4YOd4YOS4YOg4YOp4YOQ"></span>
+                                                            </div>
+                                                            </div>
+                    </section>
+        
+        
+        <section class="quiz-question question-pristine" data-answers-format="text">
+                            <h2 class="quiz-question-question"><span class="quiz-question-count">8 / 9</span> ამ ოპერაციული სისტემებიდან რომელია შექმნილი სმარტფონებისათვის</h2>
+                                                    <figure class="quiz-figure-image">
+    <img class="quiz-image" src="//monica.on.ge/2021/04/16/mobile-operating-systems.jpg" alt="">
+    </figure>
+                        
+            <ul class="quiz-answers answers-text x-clean clearfix">
+                <li><a href="#" class="quiz-answer clearfix" data-key="22298ba371d486226" data-aid="0"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">Fedora</span></a></li><li><a href="#" class="quiz-answer clearfix" data-key="04e5e01e9e4" data-aid="1"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">Harmony OS</span></a></li><li><a href="#" class="quiz-answer clearfix" data-key="eb02e12ad8344" data-aid="2"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">Android</span></a></li><li><a href="#" class="quiz-answer clearfix" data-key="6e4d80178cab835" data-aid="3"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">Harmony OS და Android</span></a></li>            </ul>
+                            <div class="quiz-answer-feedback-container">
+                                                                        <div class="quiz-answer-feedback " data-aid="0">
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="RmVkb3JhIFVidW50dS3hg6Eg4YOb4YOh4YOS4YOQ4YOV4YOh4YOQ4YOTIExpbnV4LeGDmOGDoSDhg5Thg6Dhg5ct4YOU4YOg4YOX4YOYIOGDoeGDpeGDmOGDnOGDmOGDkCwg4YOX4YOj4YOb4YOq4YOQIOGDmOGDoSDhg6Hhg5vhg5Dhg6Dhg6Lhg6Thg53hg5zhg5bhg5Qg4YOQ4YOg4YOQ4YOh4YOT4YOg4YOd4YOhIOGDkuGDkOGDm+GDneGDoeGDo+GDmuGDkA=="></span>
+                                                            </div>
+                                                                                                <div class="quiz-answer-feedback " data-aid="1">
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="SGFybW9ueSBPUyDhg5zhg5Dhg5vhg5Phg5Xhg5jhg5rhg5Dhg5Mg4YOh4YOb4YOQ4YOg4YOi4YOk4YOd4YOc4YOU4YOR4YOY4YOh4YOX4YOV4YOY4YOhIOGDqOGDlOGDmOGDpeGDm+GDnOGDkCwg4YOY4YOhIOGDsOGDo+GDkOGDleGDlOGDmOGDoSDhg5Thg5nhg6Phg5fhg5Xhg5zhg5jhg6Eg4YOT4YOQIOGDkOGDnOGDk+GDoOGDneGDmOGDk+GDmOGDoSDhg5Dhg5zhg5Dhg5rhg53hg5Lhg5jhg5A="></span>
+                                                            </div>
+                                                                                                <div class="quiz-answer-feedback " data-aid="2">
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="4YOQ4YOc4YOT4YOg4YOd4YOY4YOT4YOYIOGDkuGDo+GDkuGDmuGDoSDhg5Thg5nhg6Phg5fhg5Xhg5zhg5jhg6EsIOGDl+GDo+GDm+GDquGDkCDhg5Thg6Eg4YOQ4YObIOGDmeGDmOGDl+GDruGDleGDmOGDoSDhg5Thg6Dhg5fhg5Dhg5Phg5Thg6Dhg5fhg5gg4YOh4YOs4YOd4YOg4YOYIOGDnuGDkOGDoeGDo+GDruGDmCDhg5Dhg6Ag4YOQ4YOg4YOY4YOh"></span>
+                                                            </div>
+                                                                                                <div class="quiz-answer-feedback with-media" data-aid="3">
+                                                                    <figure class="quiz-figure-image">
+    <img class="quiz-image" src="//ross.on.ge/2021/04/16/Screenshot_2021-04-16_192641.jpg" alt="">
+    </figure>
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="4YOb4YOQ4YOg4YOX4YOQ4YOa4YOY4YOQLCDhg53hg6Dhg5jhg5Xhg5Qg4YOh4YOb4YOQ4YOg4YOi4YOk4YOd4YOc4YOU4YOR4YOY4YOh4YOX4YOV4YOY4YOhIOGDqOGDlOGDmOGDpeGDm+GDnOGDkCwg4YOU4YOg4YOX4YOYIOGDsOGDo+GDkOGDleGDlOGDmOGDoSDhg5Thg5nhg6Phg5fhg5Xhg5zhg5jhg6EsIOGDm+GDlOGDneGDoOGDlCDhg5nhg5gg4YOS4YOj4YOS4YOa4YOh"></span>
+                                                            </div>
+                                                            </div>
+                    </section>
+        
+        
+        <section class="quiz-question question-pristine" data-answers-format="text">
+                            <h2 class="quiz-question-question"><span class="quiz-question-count">9 / 9</span> ვინ შექმნა პირველი ოპერაციული სისტემა?</h2>
+                                                    <figure class="quiz-figure-image">
+    <img class="quiz-image" src="//phoebe.on.ge/2021/04/16/Windows_OS_Logos.jpg" alt="">
+    </figure>
+                        
+            <ul class="quiz-answers answers-text x-clean clearfix">
+                <li><a href="#" class="quiz-answer clearfix" data-key="f5a100e4114" data-aid="0"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">პირველი ოპერაციული სისტემა IBM-მა შექმნა</span></a></li><li><a href="#" class="quiz-answer clearfix" data-key="74e6978ee153175" data-aid="1"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">პირველი ოპერაციული სისტემა Nvidia-მ შექმნა</span></a></li><li><a href="#" class="quiz-answer clearfix" data-key="0519cbedeac6f45" data-aid="2"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">პირველი ოპერაციული სისტემა Microsoft-ს ეკუთვნის</span></a></li><li><a href="#" class="quiz-answer clearfix" data-key="0453fe3f5b664b7afa7" data-aid="3"><svg role="image" class="icon-checkbox-checked answer-tick tick-checked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-checked"></use></svg><svg role="image" class="icon-checkbox-unchecked answer-tick tick-unchecked"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-checkbox-unchecked"></use></svg><svg role="image" class="icon-close answer-tick tick-wrong"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-close"></use></svg><span class="quiz-answer-text">პირველი სისტემა Apple-ს ეკუთვნოდა</span></a></li>            </ul>
+                            <div class="quiz-answer-feedback-container">
+                                                                        <div class="quiz-answer-feedback with-media" data-aid="0">
+                                                                    <figure class="quiz-figure-image">
+    <img class="quiz-image" src="//ross.on.ge/2021/04/16/IBM_System_360_model_30_profile.agr_6079ae2664235.jpg" alt="">
+    </figure>
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="4YOb4YOQ4YOg4YOX4YOQ4YOa4YOY4YOQLCDhg57hg5jhg6Dhg5Xhg5Thg5rhg5gg4YOd4YOe4YOU4YOg4YOQ4YOq4YOY4YOj4YOa4YOYIOGDoeGDmOGDoeGDouGDlOGDm+GDkCBJQk0gU3lzdGVtcy8zNjAg4YOY4YOn4YOd"></span>
+                                                            </div>
+                                                                                                <div class="quiz-answer-feedback " data-aid="1">
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="TnZpZGlhIOGDkOGDm+GDlOGDoOGDmOGDmeGDo+GDmuGDmCDhg5nhg53hg5vhg57hg5Dhg5zhg5jhg5Dhg5AsIOGDoOGDneGDm+GDlOGDmuGDmOGDqiDhg5Xhg5jhg5Phg5Thg50g4YOR4YOQ4YOg4YOQ4YOX4YOU4YOR4YOhIOGDpeGDm+GDnOGDmOGDoQ=="></span>
+                                                            </div>
+                                                                                                <div class="quiz-answer-feedback " data-aid="2">
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="TWljcm9zb2Z0IOGDneGDnuGDlOGDoOGDkOGDquGDmOGDo+GDmuGDmCDhg6Hhg5jhg6Hhg6Lhg5Thg5vhg5Thg5Hhg5jhg6Eg4YOR4YOQ4YOW4YOQ4YOg4YOW4YOUIDE5ODUg4YOs4YOU4YOa4YOhIOGDkuGDkOGDm+GDneGDqeGDnOGDk+GDkA=="></span>
+                                                            </div>
+                                                                                                <div class="quiz-answer-feedback " data-aid="3">
+                                                                                                    <span class="quiz-answer-feedback-text" data-html-on="no" data-text="QXBwbGUg4YOY4YOc4YOT4YOj4YOh4YOi4YOg4YOY4YOQ4YOo4YOYIOGDlOGDoOGDly3hg5Thg6Dhg5cg4YOb4YOd4YOs4YOY4YOc4YOQ4YOV4YOUIOGDkOGDk+GDkuGDmOGDmuGDoSDhg5jhg5nhg5Dhg5Xhg5Thg5Hhg6EsIOGDl+GDo+GDm+GDquGDkCDhg57hg5jhg6Dhg5Xhg5Thg5rhg5gg4YOd4YOe4YOU4YOg4YOQ4YOq4YOY4YOj4YOa4YOYIOGDoeGDmOGDoeGDouGDlOGDm+GDkCDhg5vhg5Dhg6Eg4YOc4YOQ4YOb4YOT4YOV4YOY4YOa4YOQ4YOTIOGDkOGDoCDhg6jhg5Thg6Phg6Xhg5vhg5zhg5jhg5A="></span>
+                                                            </div>
+                                                            </div>
+                    </section>
+        
+    
+    <div class="quiz-loading">
+        <img src="//static.on.ge/on/assets/static/images/loading-on.svg" alt="იტვირთება..." class="quiz-loading-img">
+        <div class="quiz-loading-label">ერთი წუთით...</div>
+    </div>
+
+    <aside class="quiz-result">
+        
+        <h4 class="quiz-result-repeated-title">რა იცი ოპერაციულ სისტემებზე — ქვიზი</h4>
+        
+                    <section class="quiz-result-block result-1 clearfix" data-result-name="" data-result-range="[0,3]">
+                <h2 class="quiz-result-title uppercase-georgian"></h2>
+                                    <div class="quiz-trivia-counter">
+                        <span class="c-num c-corrects">
+                            <span class="js-corrects">0</span>
+                            <span class="c-label">სწორი</span>
+                        </span>
+                        <span class="c-div"></span>
+                        <span class="c-num c-total">
+                            <span class="js-total">0</span>
+                            <span class="c-label">კითხვიდან</span>
+                        </span>
+                    </div>
+                                                                        <figure class="quiz-figure-image">
+    <img class="quiz-image" src="//chandler.on.ge/2021/04/16/1200px-Bsodwindows10_60799e361f7f6.jpg" alt="">
+    </figure>
+                                                    <p class="quiz-result-text">
+                                                    ოპერაციული სისტემები და მათი ისტორია თქვენი ძლიერი მხარე ნამდვილად არ არის, თუმცა
+                                            </p>
+                            </section>
+                    <section class="quiz-result-block result-2 clearfix" data-result-name="" data-result-range="[4,6]">
+                <h2 class="quiz-result-title uppercase-georgian"></h2>
+                                    <div class="quiz-trivia-counter">
+                        <span class="c-num c-corrects">
+                            <span class="js-corrects">0</span>
+                            <span class="c-label">სწორი</span>
+                        </span>
+                        <span class="c-div"></span>
+                        <span class="c-num c-total">
+                            <span class="js-total">0</span>
+                            <span class="c-label">კითხვიდან</span>
+                        </span>
+                    </div>
+                                                                        <figure class="quiz-figure-image">
+    <img class="quiz-image" src="//phoebe.on.ge/2021/04/16/200.gif" alt="">
+    </figure>
+                                                    <p class="quiz-result-text">
+                                                    საკმაოდ ნორმალური შედეგია, თუ მეტს მოინდომებთ, შეიძლება ნერდების გულიც მოიგოთ
+                                            </p>
+                            </section>
+                    <section class="quiz-result-block result-3 clearfix" data-result-name="" data-result-range="[7,9]">
+                <h2 class="quiz-result-title uppercase-georgian"></h2>
+                                    <div class="quiz-trivia-counter">
+                        <span class="c-num c-corrects">
+                            <span class="js-corrects">0</span>
+                            <span class="c-label">სწორი</span>
+                        </span>
+                        <span class="c-div"></span>
+                        <span class="c-num c-total">
+                            <span class="js-total">0</span>
+                            <span class="c-label">კითხვიდან</span>
+                        </span>
+                    </div>
+                                                                        <figure class="quiz-figure-image">
+    <img class="quiz-image" src="//joey.on.ge/2021/04/16/giphy.gif" alt="">
+    </figure>
+                                                    <p class="quiz-result-text">
+                                                    შენ ნამდვილად კარგად იცი ოპერაციული სისტემების ისტორია და მათი დეტალები.
+                                            </p>
+                            </section>
+                
+        <div class="quiz-result-share">
+            <h2 class="quiz-result-share-title uppercase-georgian">შეეჯიბრე მეგობრებს:</h2>
+            <a href="#" class="global-shadowy-button global-fb-share" data-url="https://on.ge/story/80077-%E1%83%A0%E1%83%90-%E1%83%98%E1%83%AA%E1%83%98-%E1%83%9D%E1%83%9E%E1%83%94%E1%83%A0%E1%83%90%E1%83%AA%E1%83%98%E1%83%A3%E1%83%9A-%E1%83%A1%E1%83%98%E1%83%A1%E1%83%A2%E1%83%94%E1%83%9B%E1%83%94%E1%83%91%E1%83%96%E1%83%94-%E1%83%A5%E1%83%95%E1%83%98%E1%83%96%E1%83%98" data-share-title="ჩემი შედეგია &quot;%n&quot; (%c/%t-დან). სინჯე შენც!"><svg role="image" class="icon-facebook fb-icon"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-facebook"></use></svg> ჩემი შედეგის გაზიარება</a>
+            <br><br>
+            <a href="https://on.ge/story/80077-%E1%83%A0%E1%83%90-%E1%83%98%E1%83%AA%E1%83%98-%E1%83%9D%E1%83%9E%E1%83%94%E1%83%A0%E1%83%90%E1%83%AA%E1%83%98%E1%83%A3%E1%83%9A-%E1%83%A1%E1%83%98%E1%83%A1%E1%83%A2%E1%83%94%E1%83%9B%E1%83%94%E1%83%91%E1%83%96%E1%83%94-%E1%83%A5%E1%83%95%E1%83%98%E1%83%96%E1%83%98" class="quiz-btn quiz-btn-alt">თავიდან დაწყება <svg role="image" class="icon-chevron-left btn-icon"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-chevron-left"></use></svg></a>
+        </div>
+        
+    </aside>
+
+    <aside class="quiz-nav">
+        <a href="#" class="quiz-btn quiz-next">შემდეგი <svg role="image" class="icon-chevron-right btn-icon"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-chevron-right"></use></svg></a>
+        <a href="#" class="quiz-btn quiz-btn-alt quiz-finish">შედეგების ნახვა <svg role="image" class="icon-chevron-right btn-icon"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-chevron-right"></use></svg></a>
+    </aside>
+    
+</div></div>
+</div>
+<footer class="article-footer article-body-mirror">
+
+        
+        
+        
+            <p class="footer-item tags">
+                გაიგეთ მეტი: 
+                                    <a href="https://on.ge/about/android" class="">
+                                                Android</a>, 
+                                    <a href="https://on.ge/about/%E1%83%A5%E1%83%95%E1%83%98%E1%83%96%E1%83%98" class="">
+                                                ქვიზი</a>, 
+                                    <a href="https://on.ge/about/%E1%83%90%E1%83%9C%E1%83%93%E1%83%A0%E1%83%9D%E1%83%98%E1%83%93%E1%83%98" class="">
+                                                ანდროიდი</a>, 
+                                    <a href="https://on.ge/about/ios" class="">
+                                                iOS</a>, 
+                                    <a href="https://on.ge/about/windows" class="">
+                                                Windows</a>, 
+                                    <a href="https://on.ge/about/macos" class="">
+                                                macOS</a>, 
+                                    <a href="https://on.ge/about/linux" class="">
+                                                Linux</a><a href="https://on.ge/about/mac-os-x" class="hidden">
+                                                Mac OS X</a></p>    </footer>
+
+<!-- M 15 -->
+<div class="mobile-only x-margin-vert">
+    <script type = 'text/javascript' >
+            (window.globalAmlAds = window.globalAmlAds || []).push(function() {
+                globalAml.defineSlot({
+                    z: 'df59c0e4-53fa-4a3c-82e0-27334fc5b860',
+                    ph: 'admixer_df59c0e453fa4a3c82e027334fc5b860_zone_57499_sect_17068_site_12547',
+                    i: 'inv-nets',
+                    s: 'aab41507-d1b3-4a31-94bd-e2c127d9cc1d',
+                    sender: 'admixer'
+                });
+                globalAml.singleRequest('admixer');
+            });
+        </script>
+        
+        <div id='admixer_df59c0e453fa4a3c82e027334fc5b860_zone_57499_sect_17068_site_12547' data-sender='admixer'></div>
+        
+        <script type='text/javascript'>
+            (window.globalAmlAds = window.globalAmlAds || []).push(function() {
+                globalAml.display('admixer_df59c0e453fa4a3c82e027334fc5b860_zone_57499_sect_17068_site_12547');
+            });
+        </script>
+        
+</div>
+
+<aside class="x-padding-top x-padding-bottom x-leak-border x-no-padding-xs-top  x-border-bottom">
+    <div class="article-engage clearfix article-body-mirror x-margin-half-bottom x-no-margin-xs-bottom">
+        
+                
+        <div class="col col-left x-margin-xs-bottom">
+            <a href="#" class="global-shadowy-button engage-btn share-btn facebook clearfix" data-url="https://on.ge/story/80077-%E1%83%A0%E1%83%90-%E1%83%98%E1%83%AA%E1%83%98-%E1%83%9D%E1%83%9E%E1%83%94%E1%83%A0%E1%83%90%E1%83%AA%E1%83%98%E1%83%A3%E1%83%9A-%E1%83%A1%E1%83%98%E1%83%A1%E1%83%A2%E1%83%94%E1%83%9B%E1%83%94%E1%83%91%E1%83%96%E1%83%94-%E1%83%A5%E1%83%95%E1%83%98%E1%83%96%E1%83%98">
+                <svg role="image" class="icon-facebook engage-icon"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-facebook"></use></svg>
+                <span class="engage-label">გაზიარება</span>
+                <span class="js-shares num"><span class="k-value">0</span></span>
+            </a>
+        </div>
+        
+                <div class="col col-right">
+            <a href="#" class="global-shadowy-button-light engage-btn share-btn comments clearfix js-scroll-to-comments" data-url="https://on.ge/story/80077-%E1%83%A0%E1%83%90-%E1%83%98%E1%83%AA%E1%83%98-%E1%83%9D%E1%83%9E%E1%83%94%E1%83%A0%E1%83%90%E1%83%AA%E1%83%98%E1%83%A3%E1%83%9A-%E1%83%A1%E1%83%98%E1%83%A1%E1%83%A2%E1%83%94%E1%83%9B%E1%83%94%E1%83%91%E1%83%96%E1%83%94-%E1%83%A5%E1%83%95%E1%83%98%E1%83%96%E1%83%98">
+                <svg role="image" class="icon-comments engage-icon"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-comments"></use></svg>
+                <span class="engage-label">კომენტარები</span>
+                <span class="num"><svg role="image" class="icon-chevron-down arrow-icon"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-chevron-down"></use></svg></span>
+            </a>
+        </div>
+                
+    </div>
+</aside>
+
+
+<script>
+        dataLayer.push({"contentEdition":"next","contentAuthor":"\u10d7\u10dd\u10e0\u10dc\u10d8\u10d9\u10d4 \u10d9\u10d8\u10d9\u10dc\u10d0\u10eb\u10d4","contentCategory":"\u10e2\u10d4\u10e5\u10dc\u10dd\u10da\u10dd\u10d2\u10d8\u10d4\u10d1\u10d8"});
+    </script>
+            </article>
+
+            
+    
+    
+    
+    <aside class="x-border-bottom x-leak-border x-padding-top">
+    
+        <h1 class="global-section-title x-color-news">ბოლო ამბები:</h1>
+        
+        <section class="listing-items-simple-row touch-single-row-scroll x-padding-vert">
+            <ul class="list listing-row">
+                    <li class="col-sm-4 listing-item item-regular item">
+                <div class="thumb thumb--wide" >
+        <img src="//monica.on.ge/2021/04/16/droshi_mogzauroba2_6079c34e346f5.jpg" alt="" class="thumb-img">
+                <span class="thumb-podcast" title="პოდკასტი"></span>
+    </div>
+
+
+                <span class="global-listing-category category">Sci-Tech</span>
+                <strong class="global-listing-title faux-link title">შემდეგი პოდკასტი: დროში მოგზაურობა — მეოთხე განზომილების დამორჩილება</strong>
+                <a class="overlay-link link js-link " href="https://on.ge/story/80098-%E1%83%A8%E1%83%94%E1%83%9B%E1%83%93%E1%83%94%E1%83%92%E1%83%98-%E1%83%9E%E1%83%9D%E1%83%93%E1%83%99%E1%83%90%E1%83%A1%E1%83%A2%E1%83%98-%E1%83%93%E1%83%A0%E1%83%9D%E1%83%A8%E1%83%98-%E1%83%9B%E1%83%9D%E1%83%92%E1%83%96%E1%83%90%E1%83%A3%E1%83%A0%E1%83%9D%E1%83%91%E1%83%90-%E1%83%9B%E1%83%94%E1%83%9D%E1%83%97%E1%83%AE%E1%83%94-%E1%83%92%E1%83%90%E1%83%9C%E1%83%96%E1%83%9D%E1%83%9B%E1%83%98%E1%83%9A%E1%83%94%E1%83%91%E1%83%98%E1%83%A1-%E1%83%93%E1%83%90%E1%83%9B%E1%83%9D%E1%83%A0%E1%83%A9%E1%83%98%E1%83%9A%E1%83%94%E1%83%91%E1%83%90" >შემდეგი პოდკასტი: დროში მოგზაურობა — მეოთხე განზომილების დამორჩილება</a>
+            </li>
+                    <li class="col-sm-4 listing-item item-regular item">
+                <div class="thumb thumb--wide" >
+        <img src="//phoebe.on.ge/2021/04/15/SCZJIO4CXRHNLDYWL57TQWD3A4_607850af8e1c8.jpg" alt="" class="thumb-img">
+                <span class="thumb-quickread ">
+            <svg role="image" class="icon-eye icn"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-eye"></use></svg>
+            გადახედვა
+        </span>
+    </div>
+
+
+                <span class="global-listing-category category">დედამიწა</span>
+                <strong class="global-listing-title faux-link title">აგვისტოდან ქართულ საწარმოში პლასტმასას ჩამნაცვლებელ შეფუთვებს &quot;გაზრდიან&quot;</strong>
+                <a class="overlay-link link js-link " href="https://on.ge/story/79966-%E1%83%90%E1%83%92%E1%83%95%E1%83%98%E1%83%A1%E1%83%A2%E1%83%9D%E1%83%93%E1%83%90%E1%83%9C-%E1%83%A5%E1%83%90%E1%83%A0%E1%83%97%E1%83%A3%E1%83%9A-%E1%83%A1%E1%83%90%E1%83%AC%E1%83%90%E1%83%A0%E1%83%9B%E1%83%9D%E1%83%A8%E1%83%98-%E1%83%91%E1%83%98%E1%83%9D%E1%83%93%E1%83%94%E1%83%92%E1%83%A0%E1%83%90%E1%83%93%E1%83%98%E1%83%A0%E1%83%94%E1%83%91%E1%83%90%E1%83%93-%E1%83%A8%E1%83%94%E1%83%A4%E1%83%A3%E1%83%97%E1%83%95%E1%83%94%E1%83%91%E1%83%A1-%E1%83%92%E1%83%90%E1%83%96%E1%83%A0%E1%83%93%E1%83%98%E1%83%90%E1%83%9C" >აგვისტოდან ქართულ საწარმოში პლასტმასას ჩამნაცვლებელ შეფუთვებს &quot;გაზრდიან&quot;</a>
+            </li>
+                    <li class="col-sm-4 listing-item item-regular item">
+                <div class="thumb thumb--wide" >
+        <img src="//ross.on.ge/2021/04/16/vaaaa_6079afe2ecdf6.jpg" alt="" class="thumb-img">
+                <span class="thumb-quickread ">
+            <svg role="image" class="icon-eye icn"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-eye"></use></svg>
+            გადახედვა
+        </span>
+    </div>
+
+
+                <span class="global-listing-category category">Sci-Tech</span>
+                <strong class="global-listing-title faux-link title">აღმოაჩინეს ხუთი მულტივარსკვლავური სისტემა, სადაც, შესაძლოა, სიცოცხლე იყოს</strong>
+                <a class="overlay-link link js-link " href="https://on.ge/story/80094-%E1%83%90%E1%83%A6%E1%83%9B%E1%83%9D%E1%83%90%E1%83%A9%E1%83%98%E1%83%9C%E1%83%94%E1%83%A1-%E1%83%AE%E1%83%A3%E1%83%97%E1%83%98-%E1%83%9B%E1%83%A3%E1%83%9A%E1%83%A2%E1%83%98-%E1%83%95%E1%83%90%E1%83%A0%E1%83%A1%E1%83%99%E1%83%95%E1%83%9A%E1%83%90%E1%83%95%E1%83%A3%E1%83%A0%E1%83%98-%E1%83%A1%E1%83%98%E1%83%A1%E1%83%A2%E1%83%94%E1%83%9B%E1%83%90-%E1%83%A1%E1%83%90%E1%83%93%E1%83%90%E1%83%AA-%E1%83%A8%E1%83%94%E1%83%A1%E1%83%90%E1%83%AB%E1%83%9A%E1%83%9D%E1%83%90-%E1%83%A1%E1%83%98%E1%83%AA%E1%83%9D%E1%83%AA%E1%83%AE%E1%83%9A%E1%83%94-%E1%83%98%E1%83%A7%E1%83%9D%E1%83%A1" >აღმოაჩინეს ხუთი მულტივარსკვლავური სისტემა, სადაც, შესაძლოა, სიცოცხლე იყოს</a>
+            </li>
+            </ul>
+</section>
+        
+    </aside>
+    <aside class="x-border-bottom x-leak-border">
+        <section class="listing-items-simple-row touch-single-row-scroll x-padding-vert">
+            <ul class="list listing-row">
+                    <li class="col-sm-6 listing-item item-regular item">
+                <div class="thumb thumb--wide" >
+        <img src="//monica.on.ge/2021/04/16/chkvi_607972cfdc4a0.jpg" alt="" class="thumb-img">
+                <span class="thumb-quickread ">
+            <svg role="image" class="icon-eye icn"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-eye"></use></svg>
+            გადახედვა
+        </span>
+    </div>
+
+
+                <span class="global-listing-category category">Sci-Tech</span>
+                <strong class="global-listing-title faux-link title">ჭკვიანი საცვლები — ტანსაცმლის ტექნოლოგიური მომავალი</strong>
+                <a class="overlay-link link js-link " href="https://on.ge/story/80055-%E1%83%AD%E1%83%99%E1%83%95%E1%83%98%E1%83%90%E1%83%9C%E1%83%98-%E1%83%A1%E1%83%90%E1%83%AA%E1%83%95%E1%83%9A%E1%83%94%E1%83%91%E1%83%98-%E1%83%9B%E1%83%9D%E1%83%93%E1%83%98%E1%83%A1-%E1%83%9B%E1%83%9D%E1%83%9B%E1%83%90%E1%83%95%E1%83%90%E1%83%9A%E1%83%98" >ჭკვიანი საცვლები — ტანსაცმლის ტექნოლოგიური მომავალი</a>
+            </li>
+                    <li class="col-sm-6 listing-item item-regular item">
+                <div class="thumb thumb--wide" >
+        <img src="//joey.on.ge/2021/04/14/ttv.jpg" alt="" class="thumb-img">
+                <span class="thumb-quickread ">
+            <svg role="image" class="icon-eye icn"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-eye"></use></svg>
+            გადახედვა
+        </span>
+    </div>
+
+
+                <span class="global-listing-category category">Sci-Tech</span>
+                <strong class="global-listing-title faux-link title">პირველი რეალითი შოუ კოსმოსში — Space Hero და NASA თანამშრომლობას გეგმავენ</strong>
+                <a class="overlay-link link js-link " href="https://on.ge/story/79850-%E1%83%9E%E1%83%98%E1%83%A0%E1%83%95%E1%83%94%E1%83%9A%E1%83%98-%E1%83%A0%E1%83%94%E1%83%90%E1%83%9A%E1%83%98%E1%83%97%E1%83%98-%E1%83%A8%E1%83%9D%E1%83%A3-%E1%83%99%E1%83%9D%E1%83%A1%E1%83%9B%E1%83%9D%E1%83%A1%E1%83%A8%E1%83%98-space-hero-%E1%83%93%E1%83%90-nasa-%E1%83%97%E1%83%90%E1%83%9C%E1%83%90%E1%83%9B%E1%83%A8%E1%83%A0%E1%83%9D%E1%83%9B%E1%83%9A%E1%83%9D%E1%83%91%E1%83%90%E1%83%A1-%E1%83%92%E1%83%94%E1%83%92%E1%83%9B%E1%83%90%E1%83%95%E1%83%94%E1%83%9C" >პირველი რეალითი შოუ კოსმოსში — Space Hero და NASA თანამშრომლობას გეგმავენ</a>
+            </li>
+            </ul>
+</section>
+            
+    </aside>
+
+
+
+    <section class="article-comments x-padding-vert x-border-bottom x-leak-border js-comments-box">
+        
+        
+                    <h1 class="global-section-title x-margin-half-bottom"><svg role="image" class="icon-comments "><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-comments"></use></svg> კომენტარები</h1>
+                
+        
+        <div class="fb-comments" data-href="https://on.ge/story/80077-%E1%83%A0%E1%83%90-%E1%83%98%E1%83%AA%E1%83%98-%E1%83%9D%E1%83%9E%E1%83%94%E1%83%A0%E1%83%90%E1%83%AA%E1%83%98%E1%83%A3%E1%83%9A-%E1%83%A1%E1%83%98%E1%83%A1%E1%83%A2%E1%83%94%E1%83%9B%E1%83%94%E1%83%91%E1%83%96%E1%83%94-%E1%83%A5%E1%83%95%E1%83%98%E1%83%96%E1%83%98" data-numposts="3" data-width="100%"></div>
+    </section>
+
+
+
+
+
+        </div>
+        <section class="col-article-sidebar x-border-inner-left hidden-sm hidden-xs">
+
+                    
+                            <div id="div-gpt-onge-3" data-unit-name="onge__d_08_09_next" data-sizes="[[250,500]]" style="width:250px;height:500px;" class="x-padding-vert x-border-bottom x-neg-margin-half-horiz x-no-padding-horiz onad onad_desktop onad_tablet"></div>
+            
+            <section class="listing-numbered-progress x-padding-top x-padding-bottom x-border-bottom x-margin-bottom x-leak-border">
+    <h1 class="global-section-title listing-title">კვირის ტოპ-5</h1>
+    <ol class="list global-custom-ol" data-dimension="ნახვა">
+                <li class="item" data-number="4344">
+            <a href="https://on.ge/story/79757-youtube-vanced-%E1%83%A9%E1%83%90%E1%83%99%E1%83%94%E1%83%AA%E1%83%95%E1%83%90%E1%83%93%E1%83%98-%E1%83%93%E1%83%90-%E1%83%A3%E1%83%A0%E1%83%94%E1%83%99%E1%83%9A%E1%83%90%E1%83%9B%E1%83%9D-youtube-%E1%83%97%E1%83%A5%E1%83%95%E1%83%94%E1%83%9C%E1%83%98-android-%E1%83%98%E1%83%A1%E1%83%97%E1%83%95%E1%83%98%E1%83%A1" class="global-listing-title title js-link"><span class="actual-title">YouTube Vanced — ჩაკეცვადი და ურეკლამო YouTube თქვენი Android-ისთვის</span></a>
+        </li>
+                <li class="item" data-number="4332">
+            <a href="https://on.ge/story/79807-%E1%83%91%E1%83%90%E1%83%95%E1%83%A8%E1%83%95%E1%83%98-%E1%83%A1%E1%83%90%E1%83%9B%E1%83%98-%E1%83%9E%E1%83%94%E1%83%9C%E1%83%98%E1%83%A1%E1%83%98%E1%83%97-%E1%83%9B%E1%83%A1%E1%83%9D%E1%83%A4%E1%83%9A%E1%83%98%E1%83%9D%E1%83%A8%E1%83%98-%E1%83%9E%E1%83%98%E1%83%A0%E1%83%95%E1%83%94%E1%83%9A%E1%83%98-%E1%83%A1%E1%83%90%E1%83%9B%E1%83%94%E1%83%93%E1%83%98%E1%83%AA%E1%83%98%E1%83%9C%E1%83%9D-%E1%83%A8%E1%83%94%E1%83%9B%E1%83%97%E1%83%AE%E1%83%95%E1%83%94%E1%83%95%E1%83%90" class="global-listing-title title js-link"><span class="actual-title">ბავშვი სამი პენისით — მსოფლიოში პირველი სამედიცინო შემთხვევა</span></a>
+        </li>
+                <li class="item" data-number="3258">
+            <a href="https://on.ge/story/79562-%E1%83%A0%E1%83%90-%E1%83%99%E1%83%90%E1%83%95%E1%83%A8%E1%83%98%E1%83%A0%E1%83%A8%E1%83%98%E1%83%90-%E1%83%97%E1%83%A5%E1%83%95%E1%83%94%E1%83%9C%E1%83%98-%E1%83%9B%E1%83%AC%E1%83%95%E1%83%90%E1%83%93%E1%83%98-%E1%83%92%E1%83%9A%E1%83%9D%E1%83%91%E1%83%90%E1%83%9A%E1%83%A3%E1%83%A0-%E1%83%93%E1%83%90%E1%83%97%E1%83%91%E1%83%9D%E1%83%91%E1%83%90%E1%83%A1%E1%83%97%E1%83%90%E1%83%9C" class="global-listing-title title js-link"><span class="actual-title">რა კავშირშია თქვენი მწვადი გლობალურ დათბობასთან</span></a>
+        </li>
+                <li class="item" data-number="1828">
+            <a href="https://on.ge/story/79648-%E1%83%90%E1%83%AE%E1%83%90%E1%83%9A%E1%83%98-%E1%83%A2%E1%83%94%E1%83%A1%E1%83%A2%E1%83%98-%E1%83%A1%E1%83%98%E1%83%A1%E1%83%AE%E1%83%9A%E1%83%98%E1%83%A1-%E1%83%9C%E1%83%98%E1%83%9B%E1%83%A3%E1%83%A8%E1%83%98%E1%83%97-%E1%83%93%E1%83%94%E1%83%9E%E1%83%A0%E1%83%94%E1%83%A1%E1%83%98%E1%83%90%E1%83%A1-%E1%83%93%E1%83%90-%E1%83%9B%E1%83%98%E1%83%A1-%E1%83%93%E1%83%9D%E1%83%9C%E1%83%94%E1%83%A1-%E1%83%90%E1%83%93%E1%83%92%E1%83%94%E1%83%9C%E1%83%A1-%E1%83%99%E1%83%95%E1%83%9A%E1%83%94%E1%83%95%E1%83%90" class="global-listing-title title js-link"><span class="actual-title">ახალი ტესტი სისხლის ნიმუშით დეპრესიას და მის დონეს ადგენს — კვლევა</span></a>
+        </li>
+                <li class="item" data-number="1752">
+            <a href="https://on.ge/story/79699-%E1%83%A1%E1%83%90%E1%83%9B%E1%83%A7%E1%83%90%E1%83%A0%E1%83%9D-%E1%83%9B%E1%83%90%E1%83%9C%E1%83%A5%E1%83%90%E1%83%9C%E1%83%A3%E1%83%A0%E1%83%98-%E1%83%A1%E1%83%AC%E1%83%90%E1%83%95%E1%83%9A%E1%83%94%E1%83%91%E1%83%98%E1%83%A1-%E1%83%90%E1%83%9A%E1%83%92%E1%83%9D%E1%83%A0%E1%83%98%E1%83%97%E1%83%9B%E1%83%98%E1%83%90-%E1%83%9B%E1%83%90%E1%83%98%E1%83%99%E1%83%A0%E1%83%9D%E1%83%A1%E1%83%9D%E1%83%A4%E1%83%A2%E1%83%98%E1%83%A1-%E1%83%9B%E1%83%99%E1%83%95%E1%83%9A%E1%83%94%E1%83%95%E1%83%A0%E1%83%94%E1%83%91%E1%83%98" class="global-listing-title title js-link"><span class="actual-title">სამყარო მანქანური დასწავლის ალგორითმია — Microsoft-ის მკვლევრები</span></a>
+        </li>
+            </ol>
+</section>
+
+            <section class="listing-single-column x-padding-bottom">
+            <h1 class="global-section-title listing-title">გირჩევთ</h1>
+        <ul class="list">
+                <li class="listing-item item-regular item">
+            <div class="thumb thumb--wide" >
+        <img src="//ross.on.ge/2021/04/16/Next.On.ge.ge.jpg" alt="" class="thumb-img">
+        </div>
+
+
+            <span class="global-listing-category category">ტექნოლოგიები</span>
+            <strong class="global-listing-title faux-link title">კრიპტალზე VISA და Mastercard-ის გამოყენებით ლარის განაღდება უფასო გახდა</strong>
+            <a class="overlay-link link js-link" href="https://on.ge/story/80062-%E1%83%99%E1%83%A0%E1%83%98%E1%83%9E%E1%83%A2%E1%83%90%E1%83%9A%E1%83%96%E1%83%94-visa-%E1%83%93%E1%83%90-mastercard-%E1%83%98%E1%83%A1-%E1%83%92%E1%83%90%E1%83%9B%E1%83%9D%E1%83%A7%E1%83%94%E1%83%9C%E1%83%94%E1%83%91%E1%83%98%E1%83%97-%E1%83%9A%E1%83%90%E1%83%A0%E1%83%98%E1%83%A1-%E1%83%92%E1%83%90%E1%83%9C%E1%83%90%E1%83%A6%E1%83%93%E1%83%94%E1%83%91%E1%83%90-%E1%83%A3%E1%83%A4%E1%83%90%E1%83%A1%E1%83%9D-%E1%83%92%E1%83%90%E1%83%AE%E1%83%93%E1%83%90">კრიპტალზე VISA და Mastercard-ის გამოყენებით ლარის განაღდება უფასო გახდა</a>
+        </li>
+                <li class="listing-item item-regular item">
+            <div class="thumb thumb--wide" >
+        <img src="//ross.on.ge/2021/04/16/1618572356_6079745687e9f.jpg" alt="" class="thumb-img">
+                <span class="thumb-quickread ">
+            <svg role="image" class="icon-eye icn"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-eye"></use></svg>
+            გადახედვა
+        </span>
+    </div>
+
+
+            <span class="global-listing-category category">კოსმოსი</span>
+            <strong class="global-listing-title faux-link title">დედამიწის მაგნიტური ველის ანომალიას პლანეტა თეიას ნარჩენებს უკავშირებენ</strong>
+            <a class="overlay-link link js-link" href="https://on.ge/story/80053-%E1%83%9B%E1%83%94%E1%83%AA%E1%83%9C%E1%83%98%E1%83%94%E1%83%A0%E1%83%94%E1%83%91%E1%83%9B%E1%83%90-%E1%83%93%E1%83%94%E1%83%93%E1%83%90%E1%83%9B%E1%83%98%E1%83%AC%E1%83%98%E1%83%A1-%E1%83%9B%E1%83%90%E1%83%92%E1%83%9C%E1%83%98%E1%83%A2%E1%83%A3%E1%83%A0%E1%83%98-%E1%83%95%E1%83%94%E1%83%9A%E1%83%98%E1%83%A1-%E1%83%90%E1%83%9C%E1%83%9D%E1%83%9B%E1%83%90%E1%83%9A%E1%83%98%E1%83%90%E1%83%A1-%E1%83%A8%E1%83%94%E1%83%A1%E1%83%90%E1%83%AB%E1%83%9A%E1%83%9D-%E1%83%90%E1%83%AE%E1%83%A1%E1%83%9C%E1%83%90-%E1%83%A3%E1%83%9E%E1%83%9D%E1%83%95%E1%83%94%E1%83%A1">დედამიწის მაგნიტური ველის ანომალიას პლანეტა თეიას ნარჩენებს უკავშირებენ</a>
+        </li>
+                <li class="listing-item item-regular item">
+            <div class="thumb thumb--wide" >
+        <img src="//phoebe.on.ge/2021/04/16/potka.jpg" alt="" class="thumb-img">
+                <span class="thumb-quickread ">
+            <svg role="image" class="icon-eye icn"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-eye"></use></svg>
+            გადახედვა
+        </span>
+    </div>
+
+
+            <span class="global-listing-category category">Sci-Tech</span>
+            <strong class="global-listing-title faux-link title">ისტორიაში პირველად, ადამიანის და მაიმუნის უჯრედებისგან შემდგარი ემბრიონები შექმნეს</strong>
+            <a class="overlay-link link js-link" href="https://on.ge/story/80038-%E1%83%98%E1%83%A1%E1%83%A2%E1%83%9D%E1%83%A0%E1%83%98%E1%83%90%E1%83%A8%E1%83%98-%E1%83%9E%E1%83%98%E1%83%A0%E1%83%95%E1%83%94%E1%83%9A%E1%83%90%E1%83%93-%E1%83%90%E1%83%93%E1%83%90%E1%83%9B%E1%83%98%E1%83%90%E1%83%9C%E1%83%98%E1%83%A1-%E1%83%93%E1%83%90-%E1%83%9B%E1%83%90%E1%83%98%E1%83%9B%E1%83%A3%E1%83%9C%E1%83%98%E1%83%A1-%E1%83%A3%E1%83%AF%E1%83%A0%E1%83%94%E1%83%93%E1%83%94%E1%83%91%E1%83%98%E1%83%A1%E1%83%92%E1%83%90%E1%83%9C-%E1%83%92%E1%83%90%E1%83%94%E1%83%A0%E1%83%97%E1%83%98%E1%83%90%E1%83%9C%E1%83%94%E1%83%91%E1%83%A3%E1%83%9A%E1%83%98-%E1%83%94%E1%83%9B%E1%83%91%E1%83%A0%E1%83%98%E1%83%9D%E1%83%9C%E1%83%94%E1%83%91%E1%83%98-%E1%83%A8%E1%83%94%E1%83%A5%E1%83%9B%E1%83%9C%E1%83%94%E1%83%A1">ისტორიაში პირველად, ადამიანის და მაიმუნის უჯრედებისგან შემდგარი ემბრიონები შექმნეს</a>
+        </li>
+                <li class="listing-item item-regular item">
+            <div class="thumb thumb--wide" >
+        <img src="//phoebe.on.ge/2021/04/16/image.jpg" alt="" class="thumb-img">
+                <span class="thumb-quickread ">
+            <svg role="image" class="icon-eye icn"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-eye"></use></svg>
+            გადახედვა
+        </span>
+    </div>
+
+
+            <span class="global-listing-category category">ტექნოლოგიები</span>
+            <strong class="global-listing-title faux-link title">ამიერიდან, Google Earth-ში დედამიწის თაიმლეფსის ნახვას შეძლებთ</strong>
+            <a class="overlay-link link js-link" href="https://on.ge/story/80036-%E1%83%90%E1%83%9B%E1%83%98%E1%83%94%E1%83%A0%E1%83%98%E1%83%93%E1%83%90%E1%83%9C-google-earth-%E1%83%A8%E1%83%98-%E1%83%93%E1%83%94%E1%83%93%E1%83%90%E1%83%9B%E1%83%98%E1%83%AC%E1%83%98%E1%83%A1-%E1%83%97%E1%83%90%E1%83%98%E1%83%9B%E1%83%9A%E1%83%94%E1%83%A4%E1%83%A1%E1%83%98%E1%83%A1-%E1%83%9C%E1%83%90%E1%83%AE%E1%83%95%E1%83%90%E1%83%A1-%E1%83%A8%E1%83%94%E1%83%AB%E1%83%9A%E1%83%94%E1%83%91%E1%83%97">ამიერიდან, Google Earth-ში დედამიწის თაიმლეფსის ნახვას შეძლებთ</a>
+        </li>
+                <li class="listing-item item-regular item">
+            <div class="thumb thumb--wide" >
+        <img src="//phoebe.on.ge/2021/04/16/_xlarge_607947fd918ea.jpg" alt="" class="thumb-img">
+                <span class="thumb-quickread ">
+            <svg role="image" class="icon-eye icn"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-eye"></use></svg>
+            გადახედვა
+        </span>
+    </div>
+
+
+            <span class="global-listing-category category">კოსმოსი</span>
+            <strong class="global-listing-title faux-link title">აშშ-ის ჯაშუშების მიხედვით, ჩინეთი კოსმოსური შეიარაღების შექმნას გეგმავს</strong>
+            <a class="overlay-link link js-link" href="https://on.ge/story/80029-%E1%83%90%E1%83%A8%E1%83%A8-%E1%83%A1-%E1%83%AF%E1%83%90%E1%83%A8%E1%83%A3%E1%83%A8%E1%83%94%E1%83%91%E1%83%98%E1%83%A1-%E1%83%9B%E1%83%98%E1%83%AE%E1%83%94%E1%83%93%E1%83%95%E1%83%98%E1%83%97-%E1%83%A9%E1%83%98%E1%83%9C%E1%83%94%E1%83%97%E1%83%98-%E1%83%99%E1%83%9D%E1%83%A1%E1%83%9B%E1%83%9D%E1%83%A1%E1%83%A8%E1%83%98-%E1%83%A8%E1%83%94%E1%83%98%E1%83%90%E1%83%A0%E1%83%90%E1%83%A6%E1%83%94%E1%83%91%E1%83%98%E1%83%A1-%E1%83%92%E1%83%90%E1%83%96%E1%83%A0%E1%83%93%E1%83%90%E1%83%A1-%E1%83%92%E1%83%94%E1%83%92%E1%83%9B%E1%83%90%E1%83%95%E1%83%A1">აშშ-ის ჯაშუშების მიხედვით, ჩინეთი კოსმოსური შეიარაღების შექმნას გეგმავს</a>
+        </li>
+                <li class="listing-item item-regular item">
+            <div class="thumb thumb--wide" >
+        <img src="//rachel.on.ge/2021/04/15/seksi.jpg" alt="" class="thumb-img">
+                <span class="thumb-quickread ">
+            <svg role="image" class="icon-eye icn"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-eye"></use></svg>
+            გადახედვა
+        </span>
+    </div>
+
+
+            <span class="global-listing-category category">Sci-Tech</span>
+            <strong class="global-listing-title faux-link title">ხერხემლის იმპლანტით ორგაზმის მიღწევა იქნება შესაძლებელი — ექსპერტი</strong>
+            <a class="overlay-link link js-link" href="https://on.ge/story/79995-%E1%83%AE%E1%83%94%E1%83%A0%E1%83%AE%E1%83%94%E1%83%9B%E1%83%9A%E1%83%98%E1%83%A1-%E1%83%98%E1%83%9B%E1%83%9E%E1%83%9A%E1%83%90%E1%83%9C%E1%83%A2%E1%83%98%E1%83%97-%E1%83%9D%E1%83%A0%E1%83%92%E1%83%90%E1%83%96%E1%83%9B%E1%83%98%E1%83%A1-%E1%83%9B%E1%83%98%E1%83%A6%E1%83%AC%E1%83%94%E1%83%95%E1%83%90-%E1%83%98%E1%83%A5%E1%83%9C%E1%83%94%E1%83%91%E1%83%90-%E1%83%A8%E1%83%94%E1%83%A1%E1%83%90%E1%83%AB%E1%83%9A%E1%83%94%E1%83%91%E1%83%94%E1%83%9A%E1%83%98-%E1%83%94%E1%83%A5%E1%83%A1%E1%83%9E%E1%83%94%E1%83%A0%E1%83%A2%E1%83%98">ხერხემლის იმპლანტით ორგაზმის მიღწევა იქნება შესაძლებელი — ექსპერტი</a>
+        </li>
+                <li class="listing-item item-regular item">
+            <div class="thumb thumb--wide" >
+        <img src="//chandler.on.ge/2021/04/15/monkeydactyl-dinosaur.1618419842479_1.jpeg" alt="" class="thumb-img">
+                <span class="thumb-quickread ">
+            <svg role="image" class="icon-eye icn"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-eye"></use></svg>
+            გადახედვა
+        </span>
+    </div>
+
+
+            <span class="global-listing-category category">ფლორა და ფაუნა</span>
+            <strong class="global-listing-title faux-link title">მეცნიერებმა მფრინავი დინოზავრი აღმოაჩინეს, რომელსაც განცალკევებული ცერა თითები ჰქონდა</strong>
+            <a class="overlay-link link js-link" href="https://on.ge/story/79968-%E1%83%9B%E1%83%94%E1%83%AA%E1%83%9C%E1%83%98%E1%83%94%E1%83%A0%E1%83%94%E1%83%91%E1%83%9B%E1%83%90-%E1%83%98%E1%83%A3%E1%83%A0%E1%83%A3%E1%83%9A%E1%83%98-%E1%83%9E%E1%83%94%E1%83%A0%E1%83%98%E1%83%9D%E1%83%93%E1%83%98%E1%83%A1-%E1%83%AA%E1%83%94%E1%83%A0%E1%83%90-%E1%83%97%E1%83%98%E1%83%97%E1%83%94%E1%83%91%E1%83%98%E1%83%90%E1%83%9C%E1%83%98-%E1%83%9B%E1%83%A4%E1%83%A0%E1%83%98%E1%83%9C%E1%83%90%E1%83%95%E1%83%98-%E1%83%93%E1%83%98%E1%83%9C%E1%83%9D%E1%83%96%E1%83%90%E1%83%95%E1%83%A0%E1%83%98-%E1%83%9B%E1%83%90%E1%83%98%E1%83%9B%E1%83%A3%E1%83%9C%E1%83%93%E1%83%90%E1%83%A5%E1%83%A2%E1%83%98%E1%83%9A%E1%83%98-%E1%83%90%E1%83%A6%E1%83%9B%E1%83%9D%E1%83%90%E1%83%A9%E1%83%98%E1%83%9C%E1%83%94%E1%83%A1">მეცნიერებმა მფრინავი დინოზავრი აღმოაჩინეს, რომელსაც განცალკევებული ცერა თითები ჰქონდა</a>
+        </li>
+                <li class="listing-item item-regular item">
+            <div class="thumb thumb--wide" >
+        <img src="//phoebe.on.ge/2021/04/15/13TB-ANTS1-facebookJumbo.jpg" alt="" class="thumb-img">
+                <span class="thumb-quickread ">
+            <svg role="image" class="icon-eye icn"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-eye"></use></svg>
+            გადახედვა
+        </span>
+    </div>
+
+
+            <span class="global-listing-category category">ფლორა და ფაუნა</span>
+            <strong class="global-listing-title faux-link title">ეს ჭიანჭველები ტახტის მოსაპოვებლად ტვინის ზომას იცვლიან</strong>
+            <a class="overlay-link link js-link" href="https://on.ge/story/79955-%E1%83%94%E1%83%A1-%E1%83%AD%E1%83%98%E1%83%90%E1%83%9C%E1%83%AD%E1%83%95%E1%83%94%E1%83%9A%E1%83%94%E1%83%91%E1%83%98-%E1%83%A2%E1%83%90%E1%83%AE%E1%83%A2%E1%83%98%E1%83%A1-%E1%83%9B%E1%83%9D%E1%83%A1%E1%83%90%E1%83%9E%E1%83%9D%E1%83%95%E1%83%94%E1%83%91%E1%83%9A%E1%83%90%E1%83%93-%E1%83%A3%E1%83%AA%E1%83%9C%E1%83%90%E1%83%A3%E1%83%A0-%E1%83%A2%E1%83%A0%E1%83%90%E1%83%9C%E1%83%A1%E1%83%A4%E1%83%9D%E1%83%A0%E1%83%9B%E1%83%90%E1%83%AA%E1%83%98%E1%83%94%E1%83%91%E1%83%A1-%E1%83%92%E1%83%90%E1%83%93%E1%83%98%E1%83%90%E1%83%9C">ეს ჭიანჭველები ტახტის მოსაპოვებლად ტვინის ზომას იცვლიან</a>
+        </li>
+                <li class="listing-item item-regular item">
+            <div class="thumb thumb--wide" >
+        <img src="//phoebe.on.ge/2021/04/15/zel.jpg" alt="" class="thumb-img">
+                <span class="thumb-quickread ">
+            <svg role="image" class="icon-eye icn"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-eye"></use></svg>
+            გადახედვა
+        </span>
+    </div>
+
+
+            <span class="global-listing-category category">Sci-Tech</span>
+            <strong class="global-listing-title faux-link title">ახალი ზელანდია ფინანსურ სექტორს გარემოსდაცვითი ღონისძიებების გატარებას დაავალდებულებს</strong>
+            <a class="overlay-link link js-link" href="https://on.ge/story/79946-%E1%83%90%E1%83%AE%E1%83%90%E1%83%9A%E1%83%98-%E1%83%96%E1%83%94%E1%83%9A%E1%83%90%E1%83%9C%E1%83%93%E1%83%98%E1%83%90-%E1%83%A4%E1%83%98%E1%83%9C%E1%83%90%E1%83%9C%E1%83%A1%E1%83%A3%E1%83%A0-%E1%83%A1%E1%83%94%E1%83%A5%E1%83%A2%E1%83%9D%E1%83%A0%E1%83%A1-%E1%83%92%E1%83%90%E1%83%A0%E1%83%94%E1%83%9B%E1%83%9D%E1%83%A1%E1%83%93%E1%83%90%E1%83%AA%E1%83%95%E1%83%98%E1%83%97%E1%83%98-%E1%83%A6%E1%83%9D%E1%83%9C%E1%83%98%E1%83%A1%E1%83%AB%E1%83%98%E1%83%94%E1%83%91%E1%83%94%E1%83%91%E1%83%98%E1%83%A1-%E1%83%92%E1%83%90%E1%83%A2%E1%83%90%E1%83%A0%E1%83%94%E1%83%91%E1%83%90%E1%83%A1-%E1%83%93%E1%83%90%E1%83%90%E1%83%95%E1%83%90%E1%83%9A%E1%83%93%E1%83%94%E1%83%91%E1%83%A3%E1%83%9A%E1%83%94%E1%83%91%E1%83%A1">ახალი ზელანდია ფინანსურ სექტორს გარემოსდაცვითი ღონისძიებების გატარებას დაავალდებულებს</a>
+        </li>
+                <li class="listing-item item-regular item">
+            <div class="thumb thumb--wide" >
+        <img src="//joey.on.ge/2021/04/15/14-april_pulse-drone-weapon-1_6077f8b65f0b2.jpg" alt="" class="thumb-img">
+                <span class="thumb-quickread ">
+            <svg role="image" class="icon-eye icn"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-eye"></use></svg>
+            გადახედვა
+        </span>
+    </div>
+
+
+            <span class="global-listing-category category">ტექნოლოგიები</span>
+            <strong class="global-listing-title faux-link title">ახალი იარაღი სამხედრო დრონებს მიკროტალღებით ჩამოაგდებს</strong>
+            <a class="overlay-link link js-link" href="https://on.ge/story/79937-%E1%83%90%E1%83%AE%E1%83%90%E1%83%9A%E1%83%98-%E1%83%98%E1%83%90%E1%83%A0%E1%83%90%E1%83%A6%E1%83%98-%E1%83%A1%E1%83%90%E1%83%9B%E1%83%AE%E1%83%94%E1%83%93%E1%83%A0%E1%83%9D-%E1%83%93%E1%83%A0%E1%83%9D%E1%83%9C%E1%83%94%E1%83%91%E1%83%98%E1%83%A1-%E1%83%9B%E1%83%97%E1%83%94%E1%83%9A-%E1%83%92%E1%83%A3%E1%83%9C%E1%83%93%E1%83%A1-%E1%83%9B%E1%83%98%E1%83%99%E1%83%A0%E1%83%9D%E1%83%A2%E1%83%90%E1%83%9A%E1%83%A6%E1%83%94%E1%83%91%E1%83%98%E1%83%A1-%E1%83%A1%E1%83%90%E1%83%A8%E1%83%A3%E1%83%90%E1%83%9A%E1%83%94%E1%83%91%E1%83%98%E1%83%97-%E1%83%90%E1%83%A3%E1%83%95%E1%83%9C%E1%83%94%E1%83%91%E1%83%9A%E1%83%94%E1%83%91%E1%83%A1">ახალი იარაღი სამხედრო დრონებს მიკროტალღებით ჩამოაგდებს</a>
+        </li>
+            </ul>
+</section>
+            
+                        
+        
+        </section>
+    </div>
+    </div>
+
+            <div id="div-gpt-onge-4" data-unit-name="onge__dm_07_article" data-sizes="[[970,90],[320,50],[320,50]]" class="x-padding-vert x-border-top onad onad_desktop onad_tablet onad_mobile"></div>
+    </div>
+
+<footer class="footer">
+        <div class="footer-top">
+            <div class="footer-wrap footer-wrap--narrow">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-3 col-sm-2 logo">
+                            <a href="/"  data-event-category="Footer" data-event-action="Small Logo" data-event-label="" data-event-value="0" data-event-non-interaction="1" ><img src="//static.on.ge/global/assets/images/logo-onge-bluish.svg" alt="On.ge"></a>
+                        </div>
+                        <nav class="col-xs-9 col-sm-10 info-menu">
+                            <a class="ga-track" href="/about"  data-event-category="Footer" data-event-action="Meta Nav" data-event-label="ჩვენ შესახებ" data-event-value="0" data-event-non-interaction="1" >ჩვენ შესახებ</a>
+                            <a class="ga-track" href="/ads"  data-event-category="Footer" data-event-action="Meta Nav" data-event-label="რეკლამა" data-event-value="0" data-event-non-interaction="1" >რეკლამა</a>
+                            <a class="ga-track" href="/code"  data-event-category="Footer" data-event-action="Meta Nav" data-event-label="სარედაქციო კოდექსი" data-event-value="0" data-event-non-interaction="1" >სარედაქციო კოდექსი</a>
+                            <a class="ga-track" href="/reuse"  data-event-category="Footer" data-event-action="Meta Nav" data-event-label="მასალის გამოყენების პირობები" data-event-value="0" data-event-non-interaction="1" >მასალის გამოყენების პირობები</a>
+                            <a class="ga-track" href="/contact"  data-event-category="Footer" data-event-action="Meta Nav" data-event-label="კონტაქტი" data-event-value="0" data-event-non-interaction="1" >კონტაქტი</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content x-padding-vert x-padding-half-xs-vert">
+            <div class="footer-wrap x-padding-vert x-padding-half-xs-vert footer-wrap--narrow">
+                <div class="container-fluid">
+                    <div class="row">
+                        <nav class="col-sm-9 hidden-xs cats-menu">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <ul class="list">
+                                        <li class="top-level"><a class="ga-track" href="/category/%E1%83%9E%E1%83%9D%E1%83%9A%E1%83%98%E1%83%A2%E1%83%98%E1%83%99%E1%83%90"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Top level link" data-event-value="0" data-event-non-interaction="1" >პოლიტიკა</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%9E%E1%83%90%E1%83%A0%E1%83%9A%E1%83%90%E1%83%9B%E1%83%94%E1%83%9C%E1%83%A2%E1%83%98">პარლამენტი</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%A2%E1%83%94%E1%83%A0%E1%83%9D%E1%83%A0%E1%83%98%E1%83%96%E1%83%9B%E1%83%98">ტერორიზმი</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%9B%E1%83%A1%E1%83%9D%E1%83%A4%E1%83%9A%E1%83%98%E1%83%9D">მსოფლიო</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%99%E1%83%90%E1%83%95%E1%83%99%E1%83%90%E1%83%A1%E1%83%98%E1%83%90">კავკასია</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%99%E1%83%9D%E1%83%9C%E1%83%A4%E1%83%9A%E1%83%98%E1%83%A5%E1%83%A2%E1%83%94%E1%83%91%E1%83%98">კონფლიქტები</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%A1%E1%83%90%E1%83%9B%E1%83%AE%E1%83%94%E1%83%93%E1%83%A0%E1%83%9D">სამხედრო</a></li>
+                                    </ul>
+                                    <ul class="list">
+                                        <li class="top-level"><a class="ga-track" href="/category/%E1%83%A1%E1%83%90%E1%83%96%E1%83%9D%E1%83%92%E1%83%90%E1%83%93%E1%83%9D%E1%83%94%E1%83%91%E1%83%90"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Top level link" data-event-value="0" data-event-non-interaction="1" >საზოგადოება</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%94%E1%83%99%E1%83%9D%E1%83%9A%E1%83%9D%E1%83%92%E1%83%98%E1%83%90">ეკოლოგია</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%92%E1%83%90%E1%83%9C%E1%83%90%E1%83%97%E1%83%9A%E1%83%94%E1%83%91%E1%83%90">განათლება</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%AF%E1%83%90%E1%83%9C%E1%83%93%E1%83%90%E1%83%AA%E1%83%95%E1%83%90">ჯანდაცვა</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%97%E1%83%91%E1%83%98%E1%83%9A%E1%83%98%E1%83%A1%E1%83%98">თბილისი</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%A0%E1%83%94%E1%83%92%E1%83%98%E1%83%9D%E1%83%9C%E1%83%94%E1%83%91%E1%83%98">რეგიონები</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%A1%E1%83%90%E1%83%9B%E1%83%90%E1%83%A0%E1%83%97%E1%83%90%E1%83%9A%E1%83%98">სამართალი</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%98%E1%83%9C%E1%83%A4%E1%83%A0%E1%83%90%E1%83%A1%E1%83%A2%E1%83%A0%E1%83%A3%E1%83%A5%E1%83%A2%E1%83%A3%E1%83%A0%E1%83%90">ინფრასტრუქტურა</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%9B%E1%83%94%E1%83%93%E1%83%98%E1%83%90">მედია</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-4">
+                                    <ul class="list">
+                                        <li class="top-level"><a class="ga-track" href="/category/%E1%83%94%E1%83%99%E1%83%9D%E1%83%9C%E1%83%9D%E1%83%9B%E1%83%98%E1%83%99%E1%83%90"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Top level link" data-event-value="0" data-event-non-interaction="1" >ეკონომიკა</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%91%E1%83%90%E1%83%9C%E1%83%99%E1%83%94%E1%83%91%E1%83%98-%E1%83%A4%E1%83%98%E1%83%9C%E1%83%90%E1%83%9C%E1%83%A1%E1%83%94%E1%83%91%E1%83%98">ბანკები და ფინანსები</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%91%E1%83%98%E1%83%96%E1%83%9C%E1%83%94%E1%83%A1%E1%83%98">ბიზნესი</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%91%E1%83%98%E1%83%A3%E1%83%AF%E1%83%94%E1%83%A2%E1%83%98">სახელმწიფო ბიუჯეტი</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%A1%E1%83%9D%E1%83%A4%E1%83%9A%E1%83%98%E1%83%A1-%E1%83%9B%E1%83%94%E1%83%A3%E1%83%A0%E1%83%9C%E1%83%94%E1%83%9D%E1%83%91%E1%83%90">სოფლის მეურნეობა</a></li>
+                                    </ul>
+                                    <ul class="list">
+                                        <li class="top-level"><a class="ga-track" href="/category/sci-tech"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Top level link" data-event-value="0" data-event-non-interaction="1" >Sci-Tech</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%A2%E1%83%94%E1%83%A5%E1%83%9C%E1%83%9D%E1%83%9A%E1%83%9D%E1%83%92%E1%83%98%E1%83%94%E1%83%91%E1%83%98">ტექნოლოგიები</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%98%E1%83%9C%E1%83%A2%E1%83%94%E1%83%A0%E1%83%9C%E1%83%94%E1%83%A2%E1%83%98">ინტერნეტი</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%9B%E1%83%94%E1%83%AA%E1%83%9C%E1%83%98%E1%83%94%E1%83%A0%E1%83%94%E1%83%91%E1%83%90">მეცნიერება</a></li>
+                                    </ul>
+                                    <ul class="list">
+                                        <li class="top-level"><a class="ga-track" href="/category/%E1%83%99%E1%83%A3%E1%83%9A%E1%83%A2%E1%83%A3%E1%83%A0%E1%83%90"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Top level link" data-event-value="0" data-event-non-interaction="1" >კულტურა</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%AE%E1%83%94%E1%83%9A%E1%83%9D%E1%83%95%E1%83%9C%E1%83%94%E1%83%91%E1%83%90">ხელოვნება</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%A8%E1%83%9D%E1%83%A3-%E1%83%91%E1%83%98%E1%83%96%E1%83%9C%E1%83%94%E1%83%A1%E1%83%98">შოუ-ბიზნესი</a></li>
+                                    </ul>
+                                    <ul class="list">
+                                        <li class="top-level"><a class="ga-track" href="/category/%E1%83%A1%E1%83%9E%E1%83%9D%E1%83%A0%E1%83%A2%E1%83%98"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Top level link" data-event-value="0" data-event-non-interaction="1" >სპორტი</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%A4%E1%83%94%E1%83%AE%E1%83%91%E1%83%A3%E1%83%A0%E1%83%97%E1%83%98">ფეხბურთი</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%A0%E1%83%90%E1%83%92%E1%83%91%E1%83%98">რაგბი</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%99%E1%83%90%E1%83%9A%E1%83%90%E1%83%97%E1%83%91%E1%83%A3%E1%83%A0%E1%83%97%E1%83%98">კალათბურთი</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-4">
+                                    <ul class="list">
+                                        <li class="top-level"><a class="ga-track" href="/category/%E1%83%AF%E1%83%90%E1%83%9C%E1%83%9B%E1%83%A0%E1%83%97%E1%83%94%E1%83%9A%E1%83%9D%E1%83%91%E1%83%90"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Top level link" data-event-value="0" data-event-non-interaction="1" >ჯანმრთელობა</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%A4%E1%83%A1%E1%83%98%E1%83%A5%E1%83%9D%E1%83%9A%E1%83%9D%E1%83%92%E1%83%98%E1%83%90">ფსიქოლოგია</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%9B%E1%83%94%E1%83%93%E1%83%98%E1%83%AA%E1%83%98%E1%83%9C%E1%83%90">მედიცინა</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%91%E1%83%90%E1%83%95%E1%83%A8%E1%83%95%E1%83%94%E1%83%91%E1%83%98%E1%83%A1-%E1%83%90%E1%83%A6%E1%83%96%E1%83%A0%E1%83%93%E1%83%90">ბავშვების აღზრდა</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%97%E1%83%90%E1%83%95%E1%83%98%E1%83%A1-%E1%83%9B%E1%83%9D%E1%83%95%E1%83%9A%E1%83%90">თავის მოვლა</a></li>
+                                    </ul>
+                                    <ul class="list">
+                                        <li class="top-level"><a class="ga-track" href="/category/%E1%83%AA%E1%83%AE%E1%83%9D%E1%83%95%E1%83%A0%E1%83%94%E1%83%91%E1%83%90"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Top level link" data-event-value="0" data-event-non-interaction="1" >ცხოვრების სტილი</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%A1%E1%83%98%E1%83%9A%E1%83%90%E1%83%9B%E1%83%90%E1%83%96%E1%83%94">სილამაზე</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%9B%E1%83%9D%E1%83%92%E1%83%96%E1%83%90%E1%83%A3%E1%83%A0%E1%83%9D%E1%83%91%E1%83%90">მოგზაურობა</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%90%E1%83%95%E1%83%A2%E1%83%9D%E1%83%9B%E1%83%9D%E1%83%91%E1%83%98%E1%83%9A%E1%83%94%E1%83%91%E1%83%98">ავტომობილები</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%99%E1%83%A3%E1%83%9A%E1%83%98%E1%83%9C%E1%83%90%E1%83%A0%E1%83%98%E1%83%90">კულინარია</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%92%E1%83%90%E1%83%A0%E1%83%97%E1%83%9D%E1%83%91%E1%83%90">გართობა</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%98%E1%83%A3%E1%83%9B%E1%83%9D%E1%83%A0%E1%83%98">იუმორი</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%A1%E1%83%90%E1%83%9B%E1%83%A1%E1%83%90%E1%83%AE%E1%83%A3%E1%83%A0%E1%83%98">სამსახური</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%A1%E1%83%98%E1%83%A7%E1%83%95%E1%83%90%E1%83%A0%E1%83%A3%E1%83%9A%E1%83%98-%E1%83%A1%E1%83%94%E1%83%A5%E1%83%A1%E1%83%98">სიყვარული და სექსი</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%98%E1%83%9C%E1%83%A1%E1%83%9E%E1%83%98%E1%83%A0%E1%83%90%E1%83%AA%E1%83%98%E1%83%90">ინსპირაცია</a></li>
+                                        <li><a class="ga-track"  data-event-category="Footer" data-event-action="Categories Nav" data-event-label="Second level link" data-event-value="0" data-event-non-interaction="1"  href="/category/%E1%83%A0%E1%83%A9%E1%83%94%E1%83%95%E1%83%94%E1%83%91%E1%83%98">რჩევები</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                        <aside class="col-xs-12 col-sm-3 footer-social">
+                            <h2 class="footer-title">გაიგე მეტი პირველმა:</h2>
+                            <ul class="list">
+                                <li>
+                                    <a class="footer-social-link fb-news ga-track" href="https://facebook.com/news.on.ge" target="_blank"  data-event-category="Footer" data-event-action="Social Nav" data-event-label="Facebook Link [News]" data-event-value="0" data-event-non-interaction="1" >
+                                        <span class="wrap">
+                                            <svg role="image" class="icon-facebook social-icon"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-facebook"></use></svg>
+                                        </span>
+                                        <span class="text">
+                                            ახალი ამბები
+                                        </span>
+                                        <svg role="image" class="icon-chevron-right chevron"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-chevron-right"></use></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer-social-link fb-mag ga-track" href="https://facebook.com/hey.on.ge" target="_blank"  data-event-category="Footer" data-event-action="Social Nav" data-event-label="Facebook Link [Magazine]" data-event-value="0" data-event-non-interaction="1" >
+                                        <span class="wrap">
+                                            <svg role="image" class="icon-facebook social-icon"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-facebook"></use></svg>
+                                        </span>
+                                        <span class="text">
+                                            ჟურნალი
+                                        </span>
+                                        <svg role="image" class="icon-chevron-right chevron"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-chevron-right"></use></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer-social-link fb-next ga-track" href="https://facebook.com/next.on.ge" target="_blank"  data-event-category="Footer" data-event-action="Social Nav" data-event-label="Facebook Link [Next]" data-event-value="0" data-event-non-interaction="1" >
+                                        <span class="wrap">
+                                            <svg role="image" class="icon-facebook social-icon"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-facebook"></use></svg>
+                                        </span>
+                                        <span class="text">
+                                            NEXT
+                                        </span>
+                                        <svg role="image" class="icon-chevron-right chevron"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-chevron-right"></use></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer-social-link fb-edu ga-track" href="https://facebook.com/edu.on.ge" target="_blank"  data-event-category="Footer" data-event-action="Social Nav" data-event-label="Facebook Link [Edu]" data-event-value="0" data-event-non-interaction="1" >
+                                        <span class="wrap">
+                                            <svg role="image" class="icon-facebook social-icon"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-facebook"></use></svg>
+                                        </span>
+                                        <span class="text">
+                                            EDU
+                                        </span>
+                                        <svg role="image" class="icon-chevron-right chevron"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-chevron-right"></use></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer-social-link fb-sport ga-track" href="https://facebook.com/sport.on.ge" target="_blank"  data-event-category="Footer" data-event-action="Social Nav" data-event-label="Facebook Link [Sport]" data-event-value="0" data-event-non-interaction="1" >
+                                        <span class="wrap">
+                                            <svg role="image" class="icon-facebook social-icon"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-facebook"></use></svg>
+                                        </span>
+                                        <span class="text">
+                                            სპორტი
+                                        </span>
+                                        <svg role="image" class="icon-chevron-right chevron"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-chevron-right"></use></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer-social-link instagram ga-track" href="https://instagram.com/on.ge" target="_blank"  data-event-category="Footer" data-event-action="Social Nav" data-event-label="Instagram Link" data-event-value="0" data-event-non-interaction="1" >
+                                        <span class="wrap">
+                                            <svg role="image" class="icon-instagram social-icon"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-instagram"></use></svg>
+                                        </span>
+                                        <span class="text">
+                                            ფოტო-ამბები
+                                        </span>
+                                        <svg role="image" class="icon-chevron-right chevron"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-chevron-right"></use></svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="footer-social-link twitter ga-track" href="https://twitter.com/OnGeLive" target="_blank"  data-event-category="Footer" data-event-action="Social Nav" data-event-label="Twitter Link" data-event-value="0" data-event-non-interaction="1" >
+                                        <span class="wrap">
+                                            <svg role="image" class="icon-twitter social-icon"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-twitter"></use></svg>
+                                        </span>
+                                        <span class="text">
+                                            ყველაზე მნიშვნელოვანი
+                                        </span>
+                                        <svg role="image" class="icon-chevron-right chevron"><use xlink:href="/assets/static/images/icons/_defs.svg?v=1611239226#icon-chevron-right"></use></svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom x-padding-vert x-padding-half-xs-vert">
+            <div class="footer-wrap x-padding-vert x-padding-half-xs-vert footer-wrap--narrow">
+                <div class="container-fluid">
+                    <div class="row">
+                        <aside class="col-xs-12 col-sm-10 copy">
+                            <p>
+                                &copy; <a href="http://omedia.ge" target="_blank">ომედია</a>, 2015&ndash;2021
+                            </p>
+                            <p>
+                                ვებსაიტით სარგებლობისას ეთანხმებით ჩვენს <a href="/terms">სამომხმარებლო შეთანხმებას</a>
+                                და <a href="/privacy-policy">პირადი ინფორმაციის პოლიტიკას</a>.
+                            </p>
+                        </aside>
+                        <div class="col-xs-12 col-sm-2 counter">
+                            <!-- TOP.GE COUNTER CODE -->
+<script language="JavaScript" type="text/javascript" src="https://counter.top.ge/cgi-bin/cod?100+97558"></script>
+<noscript>
+<a target="_top" href="http://counter.top.ge/cgi-bin/showtop?97558">
+<img src="https://counter.top.ge/cgi-bin/count?ID:97558+JS:false" border="0" alt="TOP.GE" /></a>
+</noscript>
+<!-- / END OF TOP.GE COUNTER CODE -->                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+<div id="mobile-menu" class="mobile-menu"></div>
+<div class="mobile-bottom">
+  
+  </div>
+<div class="onge-util"></div>
+
+
+
+<script src="//static.on.ge/global/assets/js/jquery.2.2.0.min.js"></script>
+
+<!-- onbar -->
+<script type="text/javascript" src="//account.on.ge/js/onbar.js?v=20160511"></script>
+<!-- /onbar -->
+
+    <script src="//static.on.ge/on/assets/static/js/main.min.js?v=1611239226"></script>
+
+
+    
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WFSNJQ"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WFSNJQ');</script>
+    <!-- End Google Tag Manager -->
+
+    
+
+
+
+    
 
 </body>
 </html>
