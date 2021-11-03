@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://media.pocketgamer.com/artwork/na-mvylf/tanksmobile02.jpg"/>
+    <link rel="stylesheet" href="style.css">
+    <title>War Game</title>
+</head>
+<body>
+    <div class="game">
+        <div class="score">score</div>
+        <div class="game-space">
+            <div class="my-tank">
+                <div class="my-life">
+                    <div class="my-life-child"></div>
+                </div>
+                <img src="./images/Georgian flag.png" class="georgian-flag">
+                <div class="my-tank-explosion"></div>
+            </div>
+            <div class="game-over">
+                <div class="russia-won">
+                    <h1>Game Over</h1>
+                    <h2>Russia Won</h2>
+                    <h2 class="lose-reason"></h2>
+                    <div class="score-section">
+                        <h2>Total Score:&nbsp;</h2>
+                        <h2 class="total-score">&nbsp;</h2>
+                    </div>
+                </div>
+                <button class="play-again">Play Again</button>               
+                <div class="russian-tank"></div>              
+            </div>
+
+            <div class="you-won">
+                <div class="georgia-won">
+                    <h1>Congratulations</h1>
+                    <h2>You Won</h2>
+                    <div class="score-section">
+                        <h2>Total Score:&nbsp;</h2>
+                        <h2 class="won-total-score"></h2>
+                    </div>                  
+                </div>
+                <button class="won-play-again">Play Again</button>
+                
+                <div class="georgian-tank">
+                    <img src="./images/tank flag.png" alt="">
+                </div>              
+            </div>
+        </div>       
+    </div>
+
+    <div class="check"></div>
+
+    <audio id="hunt" src="./images/Gun+Silencer.mp3"></audio>
+    <audio id="die" src="./sounds/myTank-explosion.mp3"></audio>
+    <audio id="dieb" src="./sounds/myTank-explosion 1.mp3"></audio>
+    <audio id="background-music" src="./background music/bg music.mp3"></audio>
+    <audio id="suka-blyat" src="./sounds/ay_blyat.mp3"></audio>
+    <audio id="putin-sound" src="./sounds/callPutin.wav"></audio>
+    <audio id="balistic-sound" src="./sounds/balistic sound.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
