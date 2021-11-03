@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+    font-size: 15px;
+    line-height: 1.5;  
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background-color: #f1f1f1;
+    font-family: "Raleway", sans-serif;;
+}
+
+#title {
+    max-width:1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 16px;
+    height: 180px;
+}
+
+#title h1 {
+    font-size: 36px;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+    margin: 10px 0;
+}
+
+#title span{
+    color: #fff;
+    background-color: #000;
+    padding: 3px 6px;
+}
+
+.main {
+    width: 100%;
+    padding: 15px;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+}
+
+@media (max-width: 992px) {
+    .content {
+        flex-direction: column;
+    }
+
+    #hide {
+        display: none;
+    }
+}
+
+
+.left {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    margin-right: 16px;
+}
+
+@media (max-width: 992px) {
+    .left {
+        margin-right: 0;
+    }
+}
+
+.section {
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+.left .section {
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+.left .section img {
+    width: 100%;
+}
+
+.left .text {
+    width: 100%;
+    padding: 0 16px;
+}
+
+.text h2 {
+    font-size: 24px;
+}
+
+.text span {
+    color: gray
+}
+
+.text-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.text-footer input {
+    background: none;
+    border: 1px solid rgb(180, 180, 180, 0.7);
+    font-size: 15px;
+    font: inherit;
+    letter-spacing: -0.4px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0,);
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.text-footer input:hover {
+    background: rgb(211, 211, 211);
+}
+
+.text-footer p {
+    font-weight: bold;
+}
+
+.text-footer span {
+    color: white;
+    background: #000;
+    padding: 3px 8px 3px 5px;
+    text-align: center;
+}
+
+#round {
+    border-radius: 50%;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 16px;
+}
+
+@media (max-width: 992px) {
+    .right{
+        margin-left: 0;
+    } 
+}
+
+.right .section {
+    background-color: #fff;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+}
+
+.girl .text {
+    padding: 8px 16px;
+}
+
+.right .title {
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+.right .title h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.right img {
+    width: 100%;
+}
+
+.pop-posts {
+    padding-bottom: 0 !important;
+}
+
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.gallery {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid rgb(207, 207, 207, 0.8);
+    padding: 16px;
+}
+
+.gallery:hover {
+    background-color: rgb(192, 192, 192);
+}
+
+.gallery img {
+    width: 50px;
+}
+
+.gallery-text {
+    margin-left: 16px;
+}
+
+.gallery-text p {
+    font-size: 18px;
+}
+
+.tags {
+    padding-bottom: 0 !important;
+}
+
+.tags ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15px 16px;
+}
+
+.tags ul li {
+    list-style-type: none;
+    background-color: rgb(219, 219, 219);
+    padding: 0 8px;
+    margin-bottom: 16px;
+    font-size: 12px;
+}
+
+footer {
+    height: 114px;
+    background-color: #666666;
+    padding: 32px 16px;
+    box-sizing:content-box;
+    color: #fff;
+}
+
+footer button {
+    background-color: #000;
+    padding: 12px 24px;
+    border: none;
+    color: #fff;
+}
+
+footer .prev {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+footer .prev:hover {
+    background-color: #b6b6b6;
+    opacity: 1;
+    color: rgb(77, 77, 77);
+}
+
+footer .next {
+    cursor: pointer;
+}
+
+footer .next:hover {
+    background-color: #dddddd;
+    color: #000;
+}
+
+footer p {
+    margin-top: 30px;
+}
+
+footer a {
+    color: #fff;
+}
