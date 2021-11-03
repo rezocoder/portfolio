@@ -1,52 +1,29 @@
-class Calculator {
-    constructor(previousOperandTextElement, currentOperandTextElement) {
-        this.previousOperandTextElement = previousOperandTextElement
-        this.currentOperandTextElement = currentOperandTextElement
+const display = document.querySelector('#display');
+const button = document.querySelector('.buttons');
+
+button.addEventListener('click', function(e) {
+    const value = e.target.innerText;
+    if(value == 'C') {
+        display.innerText = '';
+    } 
+
+    else if(value == 'DEL') {
+        var output = display.innerText;
+        output = output.slice(0, output.length - 1);
+        display.innerText = output;
     }
 
-    clear() {
-        this.currentOperand = ''
-        this.previousOperand = ''
-        this.operation = undefined
-    }
-
-    delete() {
+    else if(value == '=') {
+        let output = display.innerText;
         
-    }
+        try {
+            display.innerText = eval(output).toFixed(10);
+        }
 
-    appendNumber(number) {
-        this.currentOperand = number;
-    }
-
-    chooseOperation(operation) {
-
-    }
-
-    compute() {
-
-    }
-
-    updateDisplay() {
-        this.currentOperandTextElement.innerText = this.currentOperand;
-    }
-}
-
-
-const numberButtons = document.querySelectorAll('[data-number]')
-const operationButtons = document.querySelectorAll('[data-operation]')
-const equalsButton = document.querySelector('[data-equals]')
-const deleteButton = document.querySelector('[data-delete]')
-const allClearButton = document.querySelector('[data-all-clear]')
-const previousOperandTextElement = document.querySelector('[data-previous-operand]')
-const currentOperandTextElement = document.querySelector('[data-current-operand]')
-
-const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement)
-
-numberButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    calculator.appendNumber(button.innerText)
-    calculator.updateDisplay()
-  })
-})
-
-
+        catch(err) {
+            display.innerText = 'error';
+          }       
+    } else {
+        display.innerText += value;
+      } 
+    })
