@@ -17,7 +17,7 @@ button.addEventListener('click', function(e) {
         let output = display.innerText;
         
         try {
-            display.innerText = eval(output).toFixed(10);
+            display.innerText = eval(output);
         }
 
         catch(err) {
