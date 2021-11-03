@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pizza</title>
+</head>
+<body>
+    <div class="topnav">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header>
+        <div class="graphic">
+            <span>Open from 10am to 12pm</span>
+        </div>
+        <div class="heading">
+            <h1>thin <br>CRUST PIZZA</h1>
+            <button>Let me see the menu</button>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="section menu">
+            <h2>The Menu</h2>
+            <div class="menu-card">
+                <div class="card-header">
+                    <ul>
+                        <li id="first"  onclick="openPizza()">Pizza</li>
+                        <li id="second" onclick="openSalads()">Salads</li>
+                        <li id="third"  onclick="openStarter()">Starter</li>
+                    </ul>
+                </div>
+
+                <div class="pizza" id="pizza">
+                    <div class="item">
+                        <div class="name">
+                            <h2><b>Margherita</b></h2>
+                            <span class="price">$12.50</span>
+                        </div>
+                        <div class="desc">
+                            <p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                        </div>
+                        
+                    </div>
+                    <div class="item">
+                        <div class="name">
+                            <h2><b>Margherita</b></h2>
+                            <span class="price">$12.50</span>
+                        </div>
+                        <div class="desc">
+                            <p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="name">
+                            <h2><b>Margherita</b></h2>
+                            <span class="price">$12.50</span>
+                        </div>
+                        <div class="desc">
+                            <p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="name">
+                            <h2><b>Margherita</b></h2>
+                            <span class="price">$12.50</span>
+                        </div>
+                        <div class="desc">
+                            <p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="name">
+                            <h2><b>Margherita <span id="red">Hot</span></b></h2>
+                            <span class="price">$12.50</span>
+                        </div>
+                        <div class="desc">
+                            <p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="name">
+                            <h2><b>Margherita <span id="gray">New</span></b></h2>
+                            <span class="price">$12.50</span>
+                        </div>
+                        <div class="desc">
+                            <p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="salads" id="salads">
+                    <div class="item">
+                        <div class="name">
+                            <h2><b>Lasagna Popular</b></h2>
+                            <span class="price">$12.50</span>
+                        </div>
+                        <div class="desc">
+                            <p>Special sauce, mozzarella, parmesan, ground beef</p>
+                        </div>
+                        
+                    </div>
+                    <div class="item">
+                        <div class="name">
+                            <h2><b>Margherita</b></h2>
+                            <span class="price">$12.50</span>
+                        </div>
+                        <div class="desc">
+                            <p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="name">
+                            <h2><b>Margherita</b></h2>
+                            <span class="price">$12.50</span>
+                        </div>
+                        <div class="desc">
+                            <p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="name">
+                            <h2><b>Margherita</b></h2>
+                            <span class="price">$12.50</span>
+                        </div>
+                        <div class="desc">
+                            <p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="name">
+                            <h2><b>Margherita <span id="red">Hot</span></b></h2>
+                            <span class="price">$12.50</span>
+                        </div>
+                        <div class="desc">
+                            <p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="name">
+                            <h2><b>Margherita <span id="gray">New</span></b></h2>
+                            <span class="price">$12.50</span>
+                        </div>
+                        <div class="desc">
+                            <p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="starter" id="starter">
+                    <div class="item">
+                        <div class="name">
+                            <h2><b>Margherita</b></h2>
+                            <span class="price">$12.50</span>
+                        </div>
+                        <div class="desc">
+                            <p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                        </div>
+                        
+                    </div>
+                    <div class="item">
+                        <div class="name">
+                            <h2><b>Margherita</b></h2>
+                            <span class="price">$12.50</span>
+                        </div>
+                        <div class="desc">
+                            <p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="name">
+                            <h2><b>Margherita</b></h2>
+                            <span class="price">$12.50</span>
+                        </div>
+                        <div class="desc">
+                            <p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="name">
+                            <h2><b>Margherita</b></h2>
+                            <span class="price">$12.50</span>
+                        </div>
+                        <div class="desc">
+                            <p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="name">
+                            <h2><b>Margherita <span id="red">Hot</span></b></h2>
+                            <span class="price">$12.50</span>
+                        </div>
+                        <div class="desc">
+                            <p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="name">
+                            <h2><b>Margherita <span id="gray">New</span></b></h2>
+                            <span class="price">$12.50</span>
+                        </div>
+                        <div class="desc">
+                            <p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="section about">
+            <div class="about-content">
+                <h2>About</h2>
+                <p>The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="chef">
+                    <div class="item chef-info">
+                        <p>The Chef? Mr. Italiano himself</p>
+                        <p>We are proud of our interiors.</p>
+                    </div>
+                    <div class="item chef-image">
+                        <img src="./images/chef.jpg" alt="">
+                    </div>
+                </div>
+                <img src="./images/onepage_restaurant.jpg" alt="">
+                <h3>Opening Hours</h3>
+
+                <div class="opening-hours">
+                    <div class="item">
+                        <ul>
+                            <li>Mon & Tue CLOSED</li>
+                            <li>Wednesday 10.00 - 24.00</li>
+                            <li>Thursday 10:00 - 24:00</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <ul>
+                            <li>Friday 10:00 - 12:00</li>
+                            <li>Saturday 10:00 - 23:00</li>
+                            <li>Sunday Closed</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section map">
+            <img src="./images/map.jpg" alt="">
+        </div>
+
+        <div class="section contact">
+            <div class="contact-content">
+                <h2>Contact</h2>
+                <p>Find us at some address at some place or call us at 05050515-122330</p>
+                <p>FYI! We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+                <h3>Reserve a table, ask for today's special or just send us a message:</h3>
+
+                <form action="submit">
+                    <input type="text" placeholder="Name" required>
+                    <input type="number" placeholder="How Many People" required>
+                    <input type="datetime-local" required name="date" value="2020-11-16T20:00">
+                    <input type="text" placeholder="Message/Special Requirements" required>
+                    <button>Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Powered by <a href="https://rezocoder.github.io/portfolio/" target="_blank">rezo tetunashvili</a></p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

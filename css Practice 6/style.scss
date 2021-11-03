@@ -1,0 +1,451 @@
+@import './config.scss';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $mainFont;
+    line-height: $mainLineHeight;
+}
+
+.topnav {
+    width: 100%;
+    background-color: #000;
+    opacity: 0.6;
+    height: 52px;
+    position: fixed;
+    z-index: 1;
+
+    &:hover {
+        opacity: 1;
+    }
+    ul {
+        display: flex;
+
+        li {
+            list-style-type: none;
+            padding: 8px 16px;
+            font-size: 24px;
+            font-family: $mainFont;
+            cursor: pointer;
+            text-transform: uppercase;
+
+            &:hover {
+                background-color: gray;
+            }
+
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+header {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./images/pizza.jpg");
+    height: 90vh;
+    filter: grayscale(50%);
+
+    .graphic {
+        position: absolute;
+        height: 100%;
+        width: 300px;
+        display: flex;
+        align-items: flex-end;
+        padding: 8px 16px;
+        span {
+            color: #fff;
+            background-color: #000;
+            padding: 4px 6px;
+            font-size: 24px;
+            padding: 0 8px;
+        }
+    }
+
+
+    .heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        h1 {
+            color: #fff;
+            text-align: center;
+            font-size: 100px;
+            font-weight: 100;
+            margin-top: -16px;
+        }
+
+        button {
+            color: #fff;
+            background-color: #000;
+            padding: 8px 16px;
+            border: none;
+            cursor: pointer;
+            font-size: 36px;
+            margin-top: 16px;
+
+            &:hover {
+                color: #000;
+                background-color: gray;
+            }
+        }
+    }
+}
+
+
+.section {
+
+&.menu {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 64px 16px 128px 16px;
+
+    h2 {
+        color: #fff;
+        font-size: 64px;
+        margin-bottom: 64px;
+        font-weight: 100;
+        text-transform: uppercase;
+    }
+
+    @media (min-width: 1000px) {
+        .menu-card {
+            width: 990px;
+        }
+    }
+    .menu-card {
+        max-width: 980px;
+        border: 1px solid #616161;
+
+        .card-header {
+            ul {
+                width: 100%;
+                display: flex;
+
+                li {
+                    color: #fff;
+                    list-style-type: none;
+                    width: 33.333%;
+                    background-color: #000;
+                    cursor: pointer;
+                    font-size: 36px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 12px 0;
+
+                    &:hover {
+                        background-color: red;
+                    }
+                }
+
+                li:first-child {
+                    background-color: red;
+                }
+            }
+        }
+
+        .pizza {
+            @extend %dishSection;
+
+            .item {
+                @extend %menuItems;
+
+                .name {
+                    @extend %nameAndPrice;
+
+                    h2 {
+                        @extend %itemsHeading;
+
+                        #red, #gray {
+                            @extend %price;
+                            color: #000;
+                            display: inherit;
+                        }
+
+                        #red {
+                            background-color: red;
+                        }
+
+                        #gray {
+                            background-color: gray;
+                        }
+                    }
+                    
+
+                    .price {
+                        @extend %price;
+                        background-color: #616161;
+                    }
+                }
+
+                .desc {
+                    @extend %itemsDescription;
+                }
+
+            }
+        }
+
+        .salads {
+            display: none;
+            @extend %dishSection;
+
+            .item {
+                @extend %menuItems;
+
+                .name {
+                    @extend %nameAndPrice;
+
+                    h2 {
+                        @extend %itemsHeading;
+
+                        #red, #gray {
+                            @extend %price;
+                            color: #000;
+                            display: inherit;
+                        }
+
+                        #red {
+                            background-color: red;
+                        }
+
+                        #gray {
+                            background-color: gray;
+                        }
+                    }
+                    
+
+                    .price {
+                        @extend %price;
+                        background-color: #616161;
+                    }
+                }
+            }       
+        }
+
+        .starter {
+            display: none;
+            @extend %dishSection;
+
+            .item {
+                @extend %menuItems;
+
+                .name {
+                    @extend %nameAndPrice;
+
+                    h2 {
+                        @extend %itemsHeading;
+
+                        #red, #gray {
+                            @extend %price;
+                            color: #000;
+                            display: inherit;
+                        }
+
+                        #red {
+                            background-color: red;
+                        }
+
+                        #gray {
+                            background-color: gray;
+                        }
+                    }
+                    
+
+                    .price {
+                        @extend %price;
+                        background-color: #616161;
+                    }
+                }
+            }       
+        }
+    }
+  }
+
+  &.about {
+      width: 100%;
+      background-color: #f44336;
+      filter: grayscale(75%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #fff;
+      padding: 64px 16px;
+
+      .about-content {
+          max-width: 980px;
+          display: flex;
+          flex-direction: column;
+
+          h2 {
+              font-size: 64px;
+              margin: 10px 0 64px 0;
+              text-align: center;
+          }
+
+          p {
+              font-size: 24px;
+          }
+
+          .chef {
+              display: flex;
+              justify-content: space-between;
+              width: 100%;
+              font-size: 24px;
+
+              .chef-info {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-evenly;
+              }
+
+              .chef-image {
+                  width: 150px;
+
+                  img {
+                      width: 100%;
+                      border-radius: 50%;
+                  }
+              }
+          }
+
+          img {
+              margin-top: 50px;
+              width: 100%;
+          }
+
+          h3 {
+              font-size: 36px;
+              margin: 10px 0;
+          }
+
+          .opening-hours {
+              width: 65%;
+              display: flex;
+              justify-content: space-between;
+
+              .item {
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    li {
+                        list-style-type: none;
+                        font-size: 24px;
+                        margin: 12px 0;
+                    }
+                }
+              }
+          }
+      }
+   }
+
+   &.map {
+       width: 100%;
+
+       img {
+           width: 100%;
+           filter: grayscale(70%);
+       }
+   }
+
+   &.contact {
+       width: 100%;
+       background-color: #607d8b;
+       filter: grayscale(50%);
+       padding: 64px 16px;
+       display: flex;
+       justify-content: center;
+       margin-top: -6px;
+
+       .contact-content {
+           max-width: 980px;
+
+           h2 {
+               text-align: center;
+               color: #fff;
+               font-size: 64px;
+               font-weight: 400;
+               margin: 10px 0 64px 0;
+           }
+
+           p {
+               font-size: 24px;
+               color: #fff;
+               margin: 24px 0;
+           }
+
+           h3 {
+               font-size: 36px;
+               color: #fff;
+               font-weight: 400;
+               margin: 36px 0;
+           }
+
+           form {
+               width: 100%;
+
+               input {
+                   width:100%;
+                   background-color: #fff;
+                   border: 1px solid #ccc;
+                   padding: 16px 8px;
+                   margin: 12px 0;
+                   font-size: 24px;
+                }
+
+                ::placeholder {
+                    font-size: 24px;
+                  }
+
+                  button {
+                      width: 100%;
+                      background-color: #f1f1f1;
+                      cursor: pointer;
+                      padding: 8px 16px;
+                      font-size: 24px;
+                      margin: 8px 0;
+                      border: none;
+
+                      &:hover {
+                          background-color: lightgrey;
+                      }
+                  }
+           }
+       }
+   }
+}
+
+footer {
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 0;
+
+    p {
+        color: white;
+        font-size: 36px;
+        margin: 36px 0;
+
+        a {
+            color: white;
+
+            &:hover {
+                color: green;
+            }
+        }
+    }
+}

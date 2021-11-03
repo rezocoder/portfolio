@@ -1,0 +1,47 @@
+$mainFont: "Amatic SC", sans-serif;
+$mainLineHeight: 1.5;
+
+%menuItems {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #eee;
+}
+
+%nameAndPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+%price {
+    padding: 0 8px;
+    font-size: 36px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 80%;
+    border-radius: 4px;
+    color: #fff;
+}
+
+%itemsHeading {
+    color: #000;
+    font-size: 36px;
+    font-weight: 400;
+    margin: 10px;
+}
+
+%itemsDescription {
+    color: #757575;
+    font-size: 36px;
+    margin: 36px 0;
+}
+
+%dishSection {
+    width: 100%;
+    padding: 32px 16px;
+    background-color: #fff;                
+}
