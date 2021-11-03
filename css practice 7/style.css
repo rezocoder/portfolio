@@ -1,0 +1,482 @@
+* {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+.topnav .logo, .topnav .search {
+  font-size: 24px;
+  padding: 8px 16px;
+  cursor: pointer;
+  color: #f44336;
+  font-weight: 600;
+}
+
+.topnav .logo:hover, .topnav .search:hover {
+  background-color: #f44336;
+  color: #fff;
+}
+
+header .travel .flight button, header .travel .hotel button, header .travel .rental button, .offers .subscribe .content button, .contact .content form button {
+  padding: 8px 16px;
+  background-color: #616161;
+  margin: 15px 0;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+}
+
+header .travel .flight button:hover, header .travel .hotel button:hover, header .travel .rental button:hover, .offers .subscribe .content button:hover, .contact .content form button:hover {
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+.offers, .contact {
+  max-width: 1100px;
+  display: block;
+  margin: auto;
+}
+
+.offers .image-gallery .cinqueterre p, .offers .image-gallery .gallery .item p {
+  position: absolute;
+  bottom: 15px;
+  color: white;
+  font-size: 20px;
+  padding: 8px 16px;
+}
+
+.offers .image-gallery, .offers .second-gallery, .offers .subscribe, .offers .subscribe .content, .contact .content {
+  width: 100%;
+  padding: 0 16px;
+  margin-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header .travel .flight .inputs .from input, header .travel .flight .inputs .to input, header .travel .hotel input, header .travel .rental input, .offers .subscribe .content input, .contact .content form input {
+  width: 100%;
+  padding: 8px;
+}
+
+body {
+  background-color: #f1f1f1;
+  overflow: overlay;
+}
+
+.topnav {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.topnav .search {
+  color: #757575;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header img {
+  width: 100%;
+}
+
+header .travel {
+  width: 65%;
+  height: 256px;
+  background-color: #fff;
+  z-index: 1;
+  position: absolute;
+}
+
+header .travel .travel-header {
+  background-color: #000;
+  width: 100%;
+  color: #fff;
+}
+
+header .travel .travel-header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .travel .travel-header ul li {
+  list-style-type: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: lighter;
+}
+
+header .travel .travel-header ul li:hover {
+  background-color: lightgray;
+  color: #000;
+}
+
+header .travel .travel-header ul li:first-child {
+  background-color: #f44336;
+}
+
+header .travel .travel-header ul li:first-child:hover {
+  background-color: lightgray;
+  color: #000;
+}
+
+header .travel .flight {
+  padding: 10px;
+}
+
+header .travel .flight h2 {
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+header .travel .flight .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .travel .flight .inputs .from, header .travel .flight .inputs .to {
+  width: 50%;
+  padding: 0 8px;
+}
+
+header .travel .hotel {
+  display: none;
+}
+
+header .travel .hotel h2 {
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+header .travel .rental {
+  display: none;
+}
+
+header .travel .rental h2 {
+  margin: 10px 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+@media (max-width: 600px) {
+  header {
+    display: none;
+  }
+}
+
+.offers .heading {
+  padding: 0 16px;
+  margin-top: 16px;
+}
+
+.offers .heading h3 {
+  font-size: 24px;
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+.offers .heading p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.offers .image-gallery .cinqueterre {
+  width: 50%;
+  position: relative;
+}
+
+.offers .image-gallery .cinqueterre img {
+  width: 100%;
+  padding: 0 0 11px 0;
+}
+
+@media (max-width: 600px) {
+  .offers .image-gallery .cinqueterre {
+    width: 100%;
+  }
+}
+
+.offers .image-gallery .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
+  position: relative;
+}
+
+.offers .image-gallery .gallery .item {
+  width: 50%;
+  padding: 0 0 16px 16px;
+  position: relative;
+}
+
+.offers .image-gallery .gallery .item img {
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .offers .image-gallery .gallery .item {
+    width: 100%;
+    padding: 0;
+    margin-top: 10px;
+  }
+  .offers .image-gallery .gallery .item:nth-child(1) {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .offers .image-gallery .gallery {
+    width: 100%;
+  }
+}
+
+.offers .second-gallery {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.offers .second-gallery .item {
+  width: 50%;
+  background-color: #fff;
+}
+
+.offers .second-gallery .item img {
+  width: 100%;
+}
+
+.offers .second-gallery .item .text {
+  background-color: #fff;
+}
+
+.offers .second-gallery .item .text h3 {
+  margin: -5px 0;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 10px 16px;
+}
+
+.offers .second-gallery .item .text p {
+  margin: 10px 0;
+  font-size: 18px;
+  padding: 0 16px;
+  font-weight: 400;
+}
+
+.offers .second-gallery .item .text .lighter {
+  opacity: 0.6;
+}
+
+.offers .second-gallery .item .text button {
+  background: none;
+  margin: 16px;
+  font-weight: 400;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.offers .second-gallery .item .text button:hover {
+  background-color: #ccc;
+}
+
+.offers .second-gallery .item:last-child {
+  background-color: #f1f1f1;
+  padding-left: 8px;
+}
+
+.offers .second-gallery .item:first-child {
+  background-color: #f1f1f1;
+  padding-right: 8px;
+}
+
+@media (max-width: 600px) {
+  .offers .second-gallery {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .offers .second-gallery .item {
+    width: 100%;
+  }
+  .offers .second-gallery .item:first-child {
+    padding-right: 0;
+    margin-top: 20px;
+  }
+  .offers .second-gallery .item:last-child {
+    padding-left: 0;
+    margin-top: 15px;
+  }
+}
+
+.offers .subscribe .content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+  background-color: #000;
+  opacity: 0.6;
+}
+
+.offers .subscribe .content:hover {
+  opacity: 1;
+}
+
+.offers .subscribe .content h2 {
+  font-size: 30px;
+  font-weight: 100;
+  margin: 10px 0;
+}
+
+.offers .subscribe .content p {
+  font-size: 15px;
+  margin: 15px 0;
+}
+
+.offers .subscribe .content button {
+  background-color: #f44336;
+  width: 70px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.contact .content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .content h2 {
+  font-size: 32px;
+  font-weight: 100;
+  margin: 16px 0;
+}
+
+.contact .content p {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.contact .content ul li {
+  list-style-type: none;
+}
+
+.contact .content form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 16px;
+}
+
+.contact .content form input {
+  margin: 8px 0;
+  padding: 16px 8px;
+}
+
+.contact .content form button {
+  background-color: #000;
+  width: 115px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.contact .content form button:hover {
+  background-color: #ccc;
+}
+
+footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 167px;
+}
+
+footer p {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #7e7e7e;
+}
+
+footer p a {
+  color: #7e7e7e;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+}
+
+footer ul li {
+  list-style-type: none;
+  margin-left: 5px;
+  font-size: 24px;
+  opacity: 0.6;
+}
+
+footer ul li:hover {
+  opacity: 0.3;
+}
+
+@media (max-width: 980px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
