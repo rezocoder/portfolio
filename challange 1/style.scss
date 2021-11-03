@@ -1,0 +1,229 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+}
+
+
+$myBlue: #00c2ff;
+
+li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+.header {
+    background-image: url("./images/car-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: calc(100vh - 102px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__topnav {
+        max-width: 1000px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+
+        &-logo {
+            display: flex;
+            gap: 10px;
+            
+            &-item {
+                cursor: pointer;
+                font-size: 2.5rem;
+            }
+
+            @media (max-width: 900px) {
+                &-item {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        &-menu {
+
+            &-list {
+                display: flex;
+                align-items: center;
+                gap: 32px;
+
+                li {
+                    cursor: pointer;
+                    font-size: 1.2rem;
+                    font-weight: 300;
+
+                    &:active {
+                        font-weight: 700;
+                    }
+
+                    &:first-child {
+                        font-weight: 700;
+                    }
+                }
+
+                @media (max-width: 900px) {
+                    li {
+                        font-size: 1rem;
+                    }
+                }
+
+                &-btn {
+                    padding: 15px;
+                    border: none;
+                    background-color: #00c2ff;font-size: 1.2rem;
+                    font-size: 1.05rem;
+                }
+            }
+
+            @media (max-width: 900px) {
+                &-list {
+                    gap: 20px;
+                }
+            }
+        }
+    }
+
+    &__content {
+        max-width: 1000px;
+        width: 100%;
+        display: flex;
+        height: inherit;
+        align-items: flex-end;
+        padding: 0 15px;
+
+
+        .container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 80px;
+        }
+
+        &-heading {
+            color: $myBlue;
+            font-size: 70px;
+            margin: 30px 0 0 0;
+        }
+
+        &-desc {
+            font-size: 32px;
+            margin: 22px 0;
+        }
+
+        &-btn {
+            width: fit-content;
+            padding: 16px;
+            font-size: 32px;
+            background-color: $myBlue;
+        }
+
+    }
+}
+
+.footer {
+    width: 100%;
+    background-color: #000;
+    min-height: 102px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+
+    &__container {
+        max-width: 1000px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        &-col {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+
+            span {
+                
+                &:first-child {
+                    color: $myBlue;
+                    font-weight: 700;
+                }
+            }
+
+            .item {
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                padding-left: 10px;
+            }
+
+            
+            &:last-child {
+                padding-left: 100px;
+            }
+
+            &:nth-child(2) {
+                max-width: 150px;
+                position: relative;
+                left: 40px;
+            }
+        }
+
+        @media (max-width: 720px) {
+            &-col {
+                font-size: .95rem;
+            }
+        }
+    }
+
+    @media (max-width: 720px) {
+        &__container {
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+
+            
+            &-col {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .item {
+                    padding-left: 0;
+                    align-items: center;
+                }
+
+                
+                &:last-child {
+                    padding-left: 0;
+                }
+
+                &:nth-child(2) {
+                    left: 0;
+                    align-self: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .footer {
+        padding: 30px 15px;
+    }
+}
