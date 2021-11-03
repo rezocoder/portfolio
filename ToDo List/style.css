@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://cutewallpaper.org/21/webpage-wallpapers/Best-46+-HD-Webpage-Backgrounds-on-HipWallpaper-HD-.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-y;
+    height: 100vh;
+}
+
+.main{
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.todo-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header h1{
+    color: #fff;
+    cursor: pointer;
+}
+
+.header h1::after {
+    position: absolute;
+    top: 70px;
+    left: calc(50% - 50px);
+    content: '';
+    width: 100px;
+    height: 4px;
+    background-color: #fff;
+    transition: 0.5s ease;
+}
+
+.header h1:hover:after{
+    width: 50px;
+    left: calc(50% - 25px);
+    background-color: rgb(110, 36, 36);
+}
+
+.input-section {
+    margin-top: 50px;
+}
+
+.input-section input, .item input {
+    width: 350px;
+    height: 35px;
+    border: none;
+    z-index: 1;
+}
+
+@media (max-width: 400px) {
+    .input-section input, .item input {
+        max-width: 250px;
+        height: 35px;
+    }
+}
+
+.input-section button, .item button {
+    width: 40px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    text-align: center;
+    padding: 0;
+    position: relative;
+    top: 6px;
+    left: -4px;
+}
+
+.list {
+    margin-top: 50px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+.item input {
+    width: 270px;
+}
+
+@media (max-width: 400px) {
+    .item input {
+        width: 175px;
+    }
+}
+
+.item button {
+    top: 0;
+    font-size: 24px;
+}
+
+#myItem {
+    pointer-events: none;
+}
+
+.item input{
+    pointer-events: none;
+}
