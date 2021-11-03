@@ -1,0 +1,203 @@
+body {
+    /*background-image: url("images/bg.webp");*/
+    background-color: aliceblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.html-css {
+    background-color: brown;
+}
+
+.JS {
+    background-color: rgb(26, 138, 26);
+}
+
+.APPS {
+    background-color: rgb(13, 29, 121);
+}
+
+section {
+    padding: 20px;
+    max-width: 1280px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section ul {
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section ul li {
+    list-style: none;
+    background: #eee;
+    padding: 8px 20px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+section ul li.active {
+    background: #03a9f4;
+    color: #fff;
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project .itembox {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 15px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 5px;
+}
+
+.project .itembox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    height: 101%;
+    width: 100.5%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.7s;
+    opacity: 0;
+    border-radius: 5px;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+
+.overlay-content {
+    position: relative;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .showProject{
+    background:#1AAB8A;
+    color:#fff;
+    border:none;
+    position:relative;
+    font-size:1.3em;
+    padding:10px 28px;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+    text-decoration: none;
+  }
+  .showProject:hover{
+    background:#fff;
+    color:#1AAB8A;
+  }
+  #bg_1, #bg_2, #bg_3, #bg_4, #bg_5, #bg_6, #bg_7, #bg_8, #bg_9,
+  #bg_10, #bg_11, #bg_12, #bg_13, #bg_14, #bg_15, #bg_16, #bg_17, #bg_18 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #bg_1 {
+    background-image: url("./images/1.png");
+  }
+
+  #bg_2 {
+    background-image: url("./images/2.png");
+  }
+
+  #bg_3 {
+    background-image: url("./images/3.png");
+  }
+
+  #bg_4 {
+    background-image: url("./images/4.png");
+  }
+
+  #bg_5 {
+    background-image: url("./images/5.jpg");
+  }
+
+  #bg_6 {
+    background-image: url("./images/6.png");
+  }
+
+  #bg_7 {
+    background-image: url("./images/7.png");
+  }
+
+  #bg_8 {
+    background-image: url("./images/8.png");
+  }
+
+  #bg_9 {
+    background-image: url("./images/9.png");
+  }
+
+  #bg_10 {
+    background-image: url("./images/10.png");
+  }
+
+  #bg_11 {
+    background-image: url("./images/11.png");
+  }
+
+  #bg_12 {
+    background-image: url("./images/12.png");
+  }
+
+  #bg_13 {
+    background-image: url("./images/13.png");
+  }
+
+  #bg_14 {
+    background-image: url("./images/14.png");
+  }
+
+  #bg_15 {
+    background-image: url("./images/15.png");
+  }
+
+  #bg_16 {
+    background-image: url("./images/16.png");
+  }
+
+  #bg_17 {
+    background-image: url("./images/17.png");
+  }
+
+  #bg_18 {
+    background-image: url("./images/18.jpg");
+  }
