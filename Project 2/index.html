@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML/CSS</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__content">
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                  <a href="#">About</a>
+                  <a href="#">Services</a>
+                  <a href="#">Clients</a>
+                  <a href="#">Contact</a>
+                </div>
+              </div>
+
+
+
+
+                <ul class="header__content-list">
+                    <li class="header__content-list-item">Для мужчин</li>
+                    <li class="header__content-list-item">Для женщин</li>
+                    <li class="header__content-list-item">Для детей</li>
+                </ul>
+
+                <div class="logo">
+                    <img src="./images/logo.svg" alt="logo">
+                </div>
+
+                <ul class="header__content-list">
+                    <li class="header__content-list-item">Оплата</li>
+                    <li class="header__content-list-item">Доставка</li>
+                </ul>
+
+                <ul class="header__content-list icons">
+                    <li class="header__content-list-item">
+                        <img src="./images/Group 6.svg" alt="group">
+                    </li>
+                    <li class="header__content-list-item">
+                        <img src="./images/basket.png" alt="basket">
+                    </li>
+                </ul>
+
+                <span class="open-menu" onclick="openNav()">&#9776;</span>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="main__sections">
+            <div class="main__sections-item left">
+                <p>Зимняя распродажа</p>
+                <h1>СКИДКИ ДО 90%</h1>
+                <button>СМОТРЕТЬ МОДЕЛИ</button>
+            </div>
+            <div class="main__sections-item right">
+                <img src="./images/first-screen__image.png" alt="shoes">
+            </div>
+        </div>
+    </div>
+
+    <div class="shipping">
+        <div class="container">
+            <h2 class="shipping__heading">БЕСПЛАТНАЯ ДОСТАВКА <span>ОТ 3000₽</span></h2>
+            <p class="shipping__desc">Сделайте заказ и получите подарок!</p>
+        </div>
+    </div>
+
+    <div class="collection">
+            <div class="collection__sections">
+                <div class="collection__sections-item">
+                    <div class="collection__sections-item-text">
+                        <h3>МУЖСКАЯ <span>КОЛЛЕКЦИЯ</span></h3>
+                        <p>Обувь, полуверы, костюмы</p>
+                        <button>----</button>
+                    </div>
+                    <div class="collection__sections-item-image">
+                        <img src="./images/collection/Rectangle 3.png" alt="">
+                    </div>
+                    
+                </div>
+                <div class="collection__sections-item">
+                    <div class="collection__sections-item-text">
+                        <h3>ЖЕНСКАЯ <span>КОЛЛЕКЦИЯ</span></h3>
+                        <p>Обувь, полуверы, костюмы</p>
+                        <button>----</button>
+                    </div>
+                    <div class="collection__sections-item-image">
+                        <img src="./images/collection/Rectangle 3.1.png" alt="">
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="models">
+        <h2 class="models__heading">Новые модели</h2>
+        <div class="models__gallery">
+            <div class="models__gallery-item">
+                <div class="models__gallery-item-image">
+                    <img src="./images/models/girl.png" alt="">
+                </div>
+                <div class="models__gallery-item-title">
+                    Коктейльное платье
+                </div>
+
+                <div class="models__gallery-item-price">
+                    ₽ 40 000
+                </div>
+            </div>
+            <div class="models__gallery-item">
+                <div class="models__gallery-item-image">
+                    <img src="./images/models/boy.png" alt="">
+                </div>
+                <div class="models__gallery-item-title">
+                    Коктейльное платье
+                </div>
+
+                <div class="models__gallery-item-price">
+                    ₽ 40 000
+                </div>
+            </div>
+            <div class="models__gallery-item">
+                <div class="models__gallery-item-image">
+                    <img src="./images/models/girl.png" alt="">
+                </div>
+                <div class="models__gallery-item-title">
+                    Коктейльное платье
+                </div>
+
+                <div class="models__gallery-item-price">
+                    ₽ 40 000
+                </div>
+            </div>
+            <div class="models__gallery-item">
+                <div class="models__gallery-item-image">
+                    <img src="./images/models/boy.png" alt="">
+                </div>
+                <div class="models__gallery-item-title">
+                    Коктейльное платье
+                </div>
+
+                <div class="models__gallery-item-price">
+                    ₽ 40 000
+                </div>
+            </div>
+        </div>
+
+        <button class="models__all">ВСЕ МОДЕЛИ</button>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__sections">
+                <div class="footer__sections-item logo">
+                    <img src="./images/logo light.svg" alt="">
+                </div>
+                <div class="footer__sections-item links">
+                    <div class="footer__sections-item-col">
+                        <ul class="footer__sections-item-col-list">
+                            <li>Основные ссылки</li>
+                            <li>О компании</li>
+                            <li>Каталог</li>
+                            <li>Доставка</li>
+                            <li>Оплата</li>
+                        </ul>
+                    </div>
+                    <div class="footer__sections-item-col">
+                        <ul class="footer__sections-item-col-list">
+                            <li>Категории</li>
+                            <li>Мужская одежда</li>
+                            <li>Женская одежда</li>
+                            <li>Детская одежда</li>
+                            <li>Для животных</li>
+                        </ul>
+                    </div>
+                    <div class="footer__sections-item-col">
+                        <ul class="footer__sections-item-col-list">
+                            <li>ПОЛЕЗНЫЕ ССЫЛКИ</li>
+                            <li>ПОЛЕЗНЫЕ ССЫЛКИ</li>
+                            <li>Блог о моде</li>
+                            <li>Наша миссия</li>
+                        </ul>
+                    </div>
+                    <div class="footer__sections-item-col">
+                        <ul class="footer__sections-item-col-list">
+                            <li>СОЦ СЕТИ</li>
+                            <li><img src="./images/social/VK.svg" alt="VK"> VK.com</li>
+                            <li><img src="./images/social/VK.svg" alt="VK"> VK.com</li>
+                            <li><img src="./images/social/VK.svg" alt="VK"> VK.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

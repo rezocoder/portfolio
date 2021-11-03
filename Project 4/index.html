@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The Cafe</title>
+</head>
+<body>
+    <div class="topnav">
+        <div class="topnav__menu">
+            <ul class="topnav__menu-list">
+                <li class="topnav__menu-list-item">
+                    <a href="#">home</a>
+                </li>
+                <li class="topnav__menu-list-item">
+                    <a href="#">about</a>
+                </li>
+                <li class="topnav__menu-list-item">
+                    <a href="#">menu</a>
+                </li>
+                <li class="topnav__menu-list-item">
+                    <a href="#">where</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <header class="header">
+        <div class="header__content">
+            <div class="header__content-heading">
+                <h1>the <br> Cafe</h1>
+            </div>
+            <div class="header__content-graffic">
+                <span class="header__content-graffic-open">Open from 6am to 5pm</span>
+                <span>15 Adr street, 5015</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <div class="about">
+            <div class="about__heading">
+                <h2><span>ABOUT THE CAFE</span></h2>
+            </div>
+
+            <div class="about__text">
+                <p>The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <br>
+                <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+            </div>
+            <div class="about__quoute">
+                <p>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</p>
+                <br>
+                <p>Chef, Coffeeist and Owner: Liam Brown</p>
+            </div>
+            <div class="about__image">
+                <img src="./images/coffeeshop.jpg" alt="coffeehouse">
+            </div>
+            <div class="about__graffics">
+                <p><span>Opening hours:</span> everyday from 6am to 5pm.</p>
+                <p><span>Address:</span> 15 Adr street, 5015, NY</p>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="menu__heading">
+                <h2><span>THE MENU</span></h2>
+            </div>
+
+            <div class="menu__header">
+                <div class="menu__header-topnav">
+                    <div class="menu__header-topnav-item" id="menu_eat" onclick="openEatMenu()">
+                        Eat
+                    </div>
+                    <div class="menu__header-topnav-item drink" id="menu_drink" onclick="openDrinkMenu()">
+                        Drink
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu__content">
+                <div class="menu__content-section" id="eat">
+                    <div class="menu__content-section-item">
+                        <p>Bread Basket</p>
+                        <span>Assortment of fresh baked fruit breads and muffins 5.50</span>
+                    </div>
+                    <div class="menu__content-section-item">
+                        <p>Honey Almond Granola with Fruits</p>
+                        <span>Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</span>
+                    </div>
+                    <div class="menu__content-section-item">
+                        <p>Belgian Waffle</p>
+                        <span>Vanilla flavored batter with malted flour 7.50</span>
+                    </div>
+                    <div class="menu__content-section-item">
+                        <p>Scrambled eggs</p>
+                        <span>Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</span>
+                    </div>
+                    <div class="menu__content-section-item">
+                        <p>Blueberry Pancakes</p>
+                        <span>With syrup, butter and lots of berries 8.50</span>
+                    </div>
+                </div>
+
+
+                <div class="menu__content-section" id="drink">
+                    <div class="menu__content-section-item">
+                        <p>Coffee</p>
+                        <span>Regular coffee 2.50</span>
+                    </div>
+                    <div class="menu__content-section-item">
+                        <p>Chocolato</p>
+                        <span>Chocolate espresso with milk 4.50</span>
+                    </div>
+                    <div class="menu__content-section-item">
+                        <p>Corretto</p>
+                        <span>Whiskey and coffee 5.00</span>
+                    </div>
+                    <div class="menu__content-section-item">
+                        <p>Iced tea</p>
+                        <span>Hot tea, except not hot 3.00</span>
+                    </div>
+                    <div class="menu__content-section-item">
+                        <p>Soda</p>
+                        <span>Coke, Sprite, Fanta, etc. 2.50</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
