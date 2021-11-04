@@ -859,8 +859,7 @@ p.desc:hover {
   margin-top: 40px;
   opacity: 0.8;
 }
-
-.showProject{
+.showProject, .showMore{
   background:#1AAB8A;
   color:#fff;
   border:none;
@@ -872,11 +871,11 @@ p.desc:hover {
   transition:800ms ease all;
   outline:none;
 }
-.showProject:hover{
+.showProject:hover, .showMore:hover{
   background:#fff;
   color:#1AAB8A;
 }
-.showProject:before,.showProject:after{
+.showProject:before,.showProject:after,  .showMore:before, .showMore:after{
   content:'';
   position:absolute;
   top:0;
@@ -886,13 +885,20 @@ p.desc:hover {
   background: #1AAB8A;
   transition:400ms ease all;
 }
-.showProject:after{
+.showProject:after, .showMore:after{
   right:inherit;
   top:inherit;
   left:0;
   bottom:0;
 }
-.showProject:hover:before,.showProject:hover:after{
+.showProject:hover:before,.showProject:hover:after, .showMore:hover:before, .showMore:hover:after{
   width:100%;
   transition:800ms ease all;
+}
+
+.moreProjects {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
 }
