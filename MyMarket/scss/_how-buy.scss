@@ -1,0 +1,67 @@
+.how-buy {
+    margin-top: 50px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__wrapper {
+        padding: 68px 0 84px 0;
+        width: 100%;
+        max-width: 1272px;
+        display: flex;
+        flex-direction: column;
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            h2 {
+                font-family: "Helvetica Neue LT GEO 75 Bold";
+                font-size: 19px;
+                color: #272a37;
+            }
+
+            @media(max-width: 768px) {
+                h2 {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .content {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+
+
+            @media(max-width: 768px) {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .step-box {
+                width: 192px;
+                height: 100px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                color: #272a37;
+                font-size: 14px;
+                font-family: "Helvetica Neue LT GEO 65 Medium";
+            }
+
+            .step-line {
+                position: relative;
+                top: 40px;
+                display: none;
+            }
+        }
+    }
+}

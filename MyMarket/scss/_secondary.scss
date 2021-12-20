@@ -1,0 +1,27 @@
+.secondary {
+    @include servicesSectionStyle;
+    
+    @media(max-width: 768px) {
+        margin-top: 40px;
+    }
+
+    &__item {
+        width: 50%;
+
+        @media(max-width: 768px) {
+            width: 100%;
+        }
+    }
+    .row {
+        @media(max-width: 768px) {
+            flex-direction: column-reverse;
+        }
+ 
+        .img {
+            width: 49%;
+        }
+    }
+
+ }
+
+

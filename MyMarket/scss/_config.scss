@@ -1,0 +1,333 @@
+$mainYellow: #fec900;
+$mainGray: #f1f3f6;
+$big_height: 38%; 		
+$big_nav_width: 12%;	
+$small_width: 100%; 
+$small_height: 55%; 	
+$small_nav_width: 15%;
+$box-shadow: 0 11px 22px rgba(0, 0, 0, 0.20), 0 7px 7px rgba(0, 0, 0, 0.24);
+$brown: #795548;
+$blue: #2196F3;
+$green: #4CAF50;
+$magenta: #F44336;
+$nav_color: rgba(255, 82, 82, .2);
+$nav_hover_color: rgba(255, 82, 82, .8);
+
+
+@mixin  btnStyle {
+    font-size: 14px;
+    font-weight: 700;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    padding: 0 16px 2px 12px;
+    max-width: 116px;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid $mainGray;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-sizing: border-box;
+    transition: .3s ease-in-out;
+}
+
+@mixin mainBtnStyle {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    padding: 14px 38px;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    background-image: linear-gradient(76deg,#fec900,#ffd026);
+    transition: .5s ease-in-out;
+    box-sizing: border-box;
+
+    &:hover {
+        background-image: linear-gradient(#fec900,#fec900);
+    }
+}
+
+@mixin defaultBackgroundStyle {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+@mixin iconStyle {
+    width: 16px;
+    height: 16px;
+    @include defaultBackgroundStyle;
+}
+
+@mixin divider {
+    width: 1px;
+    background-color: rgba(137,150,174,.2);
+    margin: 0 16px;
+}
+
+@mixin icon {
+    width: 16px;
+    height: 16px;
+    padding: 8px;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@mixin  defaultSectionStyle {
+    width: 100%;
+    max-width: 1272px;
+    margin-top: 56px;
+    min-height: 320px;
+    background-color: #fff;
+    border-radius: 14px;
+    max-width: 1272px;
+}
+
+@mixin advartisementStyle {
+    margin-top: 56px;
+    height: 128px;
+    @include defaultBackgroundStyle;
+    border-radius: 14px;
+    cursor: pointer;
+
+    @media(max-width: 992px) {
+        margin-top: 20px;
+    }
+}
+
+@mixin servicesSectionStyle {
+        @include defaultSectionStyle;
+        
+     
+        .row {
+            display: flex;
+     
+            .img {
+                flex-direction: row;
+                align-items: center;
+                padding: 0 10px;
+                width: 43%;
+            }
+        }
+
+        @media(max-width:768px) {
+            .row {
+                flex-direction: column;
+                align-items: center;
+                
+                .img {
+                    width: 80%;
+                }
+            }
+        }
+     
+        &__item {
+            width: 57%;
+            padding: 40px 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+     
+            img {
+                width: 100%;
+            }
+     
+            h2 {
+             font-size: 24px;
+             font-weight: bold;
+            }
+     
+            p {
+             color: #8996ae;
+            }
+     
+            button {
+                @include mainBtnStyle;
+                align-self: flex-start;
+            }
+        }
+
+        @media(max-width:768px) {
+            &__item {
+                width: 100%;
+                gap: 20px;
+                padding: 40px 15px;
+
+                button {
+                    align-self: stretch;
+                }
+
+                h2 {
+                    font-size: 20px;
+                   }
+            }
+        }
+
+        @media(max-width:768px) {
+            &__item {
+                padding: 40px 8px;
+                
+                h2 {
+                    font-size: 16px;
+                }
+            }
+        }
+}
+
+@mixin  sliderHeaderStyle {
+    margin-top: 50px;
+    flex-direction: column;
+
+    .row {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        h3 {
+            margin-right: 10px;
+            color: #272a37;
+        }
+
+        .btn {
+            @include btnStyle;
+            border-radius: 20px;
+            background-color: rgba(137,150,174,.1);
+            transition: .1s ease-in-out;
+            padding: 7px 28px;
+            color: #212529;
+
+            &:hover {
+                background-color: rgb(255, 255, 255);
+                opacity: .65;
+            }
+
+            &:active {
+                background-color: #fff;
+            }
+        }
+
+        .last {
+            background-color: #fff;
+            padding: 7px 18px;
+        }
+    }
+
+    .slick-next, .slick-prev {
+        background-color: red;
+        position: absolute;
+        opacity: 0;
+        cursor: default;
+    }
+
+    &__arrows {
+        display: flex;
+        gap: 5px;
+        position: relative;
+
+        .btn {
+            @include icon;
+            background-color: #fff;
+            border: none;
+            width: 28px;
+            height: 28px;
+            transition: .2s ease-in-out;
+
+            .slider-right {
+                @include iconStyle;
+                width: 7px;
+                height: 7px;
+                background-image: url("https://www.mymarket.ge/react/build/static/media/slider-right.f78d9890.svg");
+            }
+
+            .slider-left {
+                @include iconStyle;
+                width: 7px;
+                height: 7px;
+                opacity: 0.3;
+                background-image: url("https://www.mymarket.ge/react/build/static/media/slider-left.90b7afc8.svg");
+            }
+        }
+
+        .right:hover {
+            opacity: 0.65;
+        }
+    }
+}
+
+@mixin sliderStyle {
+    &__item {
+        width: calc(100/8%);
+        min-width: 130px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        cursor: pointer;
+
+        .img {
+            width: 100%;
+            height: 130px;
+            border-radius: 12px;
+            transition: .5s ease-in-out;
+
+            img {
+                width: 100%;
+                border-radius: 12px;
+            }
+        }
+        
+        a {
+            text-decoration: none;
+            color: #272a37;
+            font-weight: bold;
+        }
+
+        span {
+            color: #8996ae;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        &:hover {
+            a {
+                text-decoration: underline;
+                color: #325afa;
+            }
+
+            span {
+                color: #325afa;
+            }
+        }
+    }
+}
+
+@mixin slickStyle {
+    .slick-list {
+        width: 100%;
+    }
+
+    .slick-track {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .slick-slide {
+        display: flex;
+        justify-content: center;
+    }
+
+    .slick-track {
+        display: flex;
+        gap: 15px;
+    }
+}

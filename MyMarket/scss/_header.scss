@@ -1,0 +1,281 @@
+@import "./config";
+
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 0 20px;
+
+    &__container {
+        height: 100%;
+        align-items: center;
+    }
+
+    &__search-content {
+        width: 732px;
+        height: 64px;
+        background-color: $mainYellow;
+        border-radius: 32px;
+        padding: 4px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        margin: 0 13px 0 22px;
+        display: flex;
+        align-items: center;
+        width: 42px;
+        height: 100%;
+        cursor: pointer;
+
+        .logo {
+            width: 42px;
+            height: 20px;
+            background-image: url("https://www.mymarket.ge/react/build/static/media/logo.03303ab3.svg");
+            @include defaultBackgroundStyle;
+        }
+    }
+
+    &__form {
+        width: 100%;
+        background-color: #fff;
+        border-radius: 32px;
+        display: flex;
+        align-items: center;
+        padding: 0 15px 0 10px;
+
+        input {
+            height: 28px;
+            width: 100%;
+            border: none;
+            outline: none;
+
+            &::placeholder {
+                    color: rgba(34, 34, 34, 0.7);
+                    font-weight: 700;
+                    font-size: 12px;
+                    padding: 4px 0 0 5px;
+            }
+        }
+
+        .form-icons {
+            display: flex;
+            align-items: center;
+
+            .img-upload {
+                @include icon;
+                box-sizing: content-box;
+                &:hover {
+                    background: $mainGray;
+                }
+    
+                .upload {
+                    background-image: url("https://www.mymarket.ge/react/build/static/media/search-opload.1c862db6.svg");
+                    @include iconStyle;
+                    box-sizing: content-box;
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+
+            .form-divider {
+                @include divider;
+                height: 24px;
+                margin: 0 8px 0 8px;
+                background-color:rgba(137,150,174,.25);
+            }
+
+            .form-icon {
+                @include icon;
+
+                &:hover {
+                    background: $mainGray;
+                }
+
+                .search {
+                    @include iconStyle;
+                    width: 14px;
+                    height: 14px;
+                    background-image: url("https://www.mymarket.ge/react/build/static/media/search.1bf61568.svg");
+                }
+            }
+        }
+    }
+
+    &__navbar {
+        width: 506px;
+        height: 64px;
+        margin-left: 32px;
+
+        display: flex;
+        align-items: center;
+    }
+
+    &__btn {
+        @include btnStyle;
+        background: transparent;
+        color: #212529;
+
+        &:hover {
+            border: 2px solid $mainYellow;
+        }
+
+        .add {
+            @include iconStyle;
+            background-image: url("https://www.mymarket.ge/react/build/static/media/add-statement.af6a67fc.svg");
+            position: relative;
+            top: 2px;
+        }
+
+        .auth {
+            @include iconStyle;
+            background-image: url("https://www.mymarket.ge/react/build/static/media/auth.bcbe3035.svg");
+            position: relative;
+            top: 2px;
+        }
+    }
+
+    &__divider {
+        @include divider;
+        height: 12px;
+    }
+
+    &__icons {
+        display: flex;
+        gap: 8px;
+
+        .icon {
+            @include icon;
+
+            &:hover {
+                background: $mainGray;
+            }
+
+            .message {
+                @include iconStyle;
+                background-image: url("https://www.mymarket.ge/react/build/static/media/message.17bb7539.svg");
+            }
+
+            .favorite {
+                @include iconStyle;
+                background-image: url("https://www.mymarket.ge/react/build/static/media/favorites.d982e597.svg");
+            }
+
+            .cart {
+                @include iconStyle;
+                background-image: url("https://www.mymarket.ge/react/build/static/media/cart.2300ae5e.svg");
+            }
+        }
+    }
+
+    .menu-icon {
+        @include icon;
+        margin-left: 20px;
+        &:hover {
+            background: $mainGray;
+        }
+        
+        .menu {
+            width: 16px;
+            height: 12px;
+            background-image: url("https://www.mymarket.ge/react/build/static/media/menu.bcfa07ff.svg");
+            @include defaultBackgroundStyle;
+        }
+
+        .dropdown {
+            position: absolute;
+            top: 100px;
+            right: 4%;
+            z-index: 1000;
+            height: 200px;
+            min-width: 10rem;
+            padding: 0.5rem 0;
+            font-size: 1rem;
+            color: #212529;
+            text-align: left;
+            list-style: none;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgba(0,0,0,.15);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            display: none;
+
+            .dropdown-menu {
+                font-size: 15px;
+                color: #535353;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                font-weight: 600;
+
+                li {
+                    width: 100%;
+                    padding: 8px 24px;
+                    transition: .3s;
+                    line-height: 1.5;
+
+                    &:hover {
+                        background-color: $mainGray;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width: 1200px) {
+    .header {
+
+        &__search-content {
+            width: 450px;
+        }
+    }
+}
+
+@media(max-width: 992px) {
+    .add-btn {
+        display: none;
+    }
+
+    #message {
+        display: none;
+    }
+}
+
+@media(max-width: 768px) {
+    .auth-btn {
+        display: none;
+    }
+
+    .header__divider {
+        display: none;
+    }
+
+    .header__navbar{
+        justify-content: flex-end;
+    }
+
+    .header__search-content {
+        width: 550px;
+        height: 45px;
+    }
+
+    .form-divider {
+        display: none;
+    }
+    .header__logo {
+        margin: 0 3px 0 5px;
+
+        .logo {
+            width: 28px;
+            background-size: contain;
+        }
+    }
+    
+}

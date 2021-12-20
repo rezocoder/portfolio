@@ -1,0 +1,55 @@
+.shops{
+    @include sliderHeaderStyle;
+    margin-bottom: 50px;
+    
+  
+
+    .shop-list {
+        margin-top: 30px;
+
+       @include slickStyle;
+    }
+
+    @include sliderStyle;
+    &__item {
+        min-width: 120px;
+
+        &:hover {
+            .img {
+                transition: .5s ease-in-out;
+                border: 2px solid #8996ae;
+                transform: scale(0.9);
+
+                img {
+                    transition: .5s ease-in-out;
+                }
+            }
+        }
+
+        .img {
+            background-image: none;
+            background-color: #fff;
+            width: 120px;
+            border: 2px solid transparent;
+            border-radius: 50%;
+            cursor: pointer;
+            max-height: 118px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+
+            img {
+                width: 99%;
+                height: 99%;
+                border-radius: 50%;
+                object-fit: contain;
+                
+            }
+        }
+
+        span {
+            top: 18px;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+.advertisement {
+    @include advartisementStyle;
+    background-image: url("https://port80ge.adocean.pl/files/x/njg/mlxqott/phrnpolovp/bauma.png");
+}
+
+@media(max-width: 768px) {
+    .advertisement {
+        margin-top: 20px;
+    }
+}

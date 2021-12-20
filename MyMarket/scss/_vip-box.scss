@@ -1,0 +1,56 @@
+.vip-box {
+    @include defaultSectionStyle;
+    padding: 30px 15px 30px 30px;
+    width: 100%;
+    @media(max-width: 768px) {
+        margin-top: 30px;
+      }
+    
+    &__header {
+        margin-top: 5px;
+        display: flex;
+        gap: 10px;
+
+        button {
+            @include btnStyle;
+            border-radius: 20px;
+            background-color: $mainYellow;
+            transition: .1s ease-in-out;
+            padding: 2px 6px;
+            color: #ffffff;
+            border: none;
+            height: auto;
+            font-size: 12px;
+        }
+
+        h4 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #272a37;
+            text-transform: uppercase;
+        }
+
+        a {
+            font-size: 13px;
+            color: #3055e7;
+        }
+    }
+
+    &__row {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    @include sliderStyle;
+    &__item {
+        max-width: 160px;
+    }
+
+    @include slickStyle;
+
+    .slick-track {
+        display: flex;
+        gap: 10px;
+    }
+    
+}

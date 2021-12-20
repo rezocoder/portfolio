@@ -1,0 +1,159 @@
+.sales{
+    @include sliderHeaderStyle;
+    margin-top: 50px;
+
+    &__header {
+        margin: 0 0 30px 10px;
+        h3 {
+            display: block;
+        }
+    }
+    
+  
+
+    .sale-list {
+        margin-top: 30px;
+       @include slickStyle;
+    }
+
+    @include sliderStyle;
+    &__item {
+        min-width: 120px;
+        height: 390px;
+        max-width: 400px;
+
+        .slide-box {
+            width: 100%;
+            height: 315px;
+            padding: 15px 25px;
+            border-radius: 18px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: space-between;
+            background-color: #fff;
+        }
+
+        .desc-box {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 15px 5px;
+
+            .desc {
+                display: flex;
+                gap: 8px;
+
+                button {
+                    @include btnStyle;
+                    background-color: #0ec604;
+                    transition: .1s ease-in-out;
+                    color: #ffffff;
+                    border: none;
+                    height: auto;
+                    font-size: 12px;
+                    line-height: 14px;
+                    padding: 4px 7px;
+                    border-radius: 11px;
+                }
+    
+                span {
+                    color: #272a37;
+                    font-size: 16px;
+                }
+            }
+            a {
+                font-size: 14px;
+                color: #3055e7;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        &__item {
+            max-width: 650px;
+            height: auto;
+            .slide-box {
+                height: auto;
+            }
+        }
+    }
+
+    &__card {
+        width: 46%;
+        height: 46%;
+        border-radius: 10px;
+        border: 1px solid #f4f4f4;
+        position: relative;
+
+        &:hover {
+             .overlay {
+                height: 100%;
+
+                .text {
+                    opacity: 1;
+                }
+              }
+        }
+
+        @media (max-width: 768px) {
+            &:hover {
+                .overlay {
+                   height: 0;
+   
+                   .text {
+                       opacity: 0;
+                   }
+                 }
+           }
+        }
+
+        img {
+            width: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        .overlay {
+            border-radius: 10px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 0;
+            width: 100%;
+            opacity: 1;
+            transition: .3s;
+            background-color: rgba(39,42,55,.95);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .text {
+                opacity: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                text-align: center;
+
+                .price {
+                    color: rgb(42, 201, 42);
+                    font-size: 18px;
+                }
+
+                .old-price {
+                    color: #fff;
+                    text-decoration: line-through;
+                    font-size: 14px;
+                }
+            }
+          }
+    }
+
+    .slick-track {
+        display: flex;
+        gap: 15px;
+    }
+}

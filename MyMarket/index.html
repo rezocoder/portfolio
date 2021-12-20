@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="icon" href="https://www.mymarket.ge/react/build/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">  
+    <link rel="stylesheet" href="./scss/style.css">
+    <title>MyMarket.ge</title>
+</head>
+<body>
+    
+        <header class="header">
+            <div class="header__container container">
+                <div class="header__search-content">
+                    <div class="header__logo">
+                        <a href="google.com">
+                            <div class="logo"></div>
+                        </a>
+                    </div>
+
+                    <form class="header__form">
+                        <input type="text" placeholder="market">
+                        <div class="form-icons">
+                            <div class="img-upload">
+                                <i class="upload"></i>
+                            </div>
+                            <div class="form-divider"></div>
+                            <div class="form-icon">
+                                <i class="search"></i>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+    
+                <div class="header__navbar">
+                    <button class="header__btn btn add-btn"><div class="add"></div> დამატება</button>
+                    <div class="header__divider"></div>
+                    <ul class="header__icons">
+                        <li class="icon" id="message"><i class="message"></i></li>
+                        <li class="icon"><i class="favorite"></i></li>
+                        <li class="icon"><i class="cart"></i></li>
+                    </ul>
+                    <div class="header__divider"></div>
+                    <button class="header__btn btn auth-btn"><div class="auth"></div> ავტორიზაცია</button>
+                    <div class="menu-icon">
+                        <div class="menu"></div>
+                        <div class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li>გახსენი მაღაზია</li>
+                                <li>მაღაზიები</li>
+                                <li>დახმარება</li>
+                                <li>კონტაქტი</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <section class="header-bottom">
+            <div class="header-bottom__container container">
+                <div class="header-bottom__services">
+                    <a href="">
+                        ონლაინ ყიდვა
+                    </a>
+
+                    <a href="">
+                        Visa | - 30%
+                    </a>
+                </div>
+    
+                <button class="btn"><div class="sale"></div> <div>ფასდაკლება</div></button>
+            </div>
+        </section>
+        <div class="wrapper">
+
+        <section class="main container">
+            <aside class="main__filter-block">
+                <ul>
+                    <li><svg class="main__category" width="16" height="16" viewBox="0 0 326 373" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M326 280.114C326 281.328 325.879 282.543 325.637 283.757V284.121L325.273 284.485C325.031 285.7 324.667 287.035 324.183 288.492V288.856C323.698 289.828 323.093 290.921 322.366 292.135L322.002 292.863C321.275 293.592 320.548 294.442 319.822 295.413L318.731 296.506L317.278 297.963C316.308 298.449 315.46 298.934 314.734 299.42L314.552 299.602L314.37 299.784H314.007C311.342 301.241 308.555 302.213 305.648 302.698C303.952 302.941 302.983 303.062 302.74 303.062H209.701V349.688C209.701 356.001 207.399 361.465 202.796 366.079C198.192 370.693 192.741 373 186.441 373H139.559C133.259 373 127.808 370.693 123.204 366.079C118.601 361.465 116.299 356.001 116.299 349.688V303.062H23.2598C23.0175 303.062 22.0483 302.941 20.3523 302.698C17.4448 302.213 14.6585 301.241 11.9933 299.784H11.6299L11.4482 299.602L11.2664 299.42C10.5396 299.177 9.69156 298.691 8.72241 297.963C8.23783 297.234 7.75325 296.749 7.26867 296.506L6.17837 295.413C5.4515 294.442 4.72464 293.592 3.99777 292.863L3.81605 292.499L3.63434 292.135C2.90747 290.921 2.30175 289.828 1.81717 288.856V288.492C1.33259 287.035 0.969156 285.7 0.726867 284.485C0.484578 284.485 0.363434 284.364 0.363434 284.121V283.757C0.121145 282.543 0 281.328 0 280.114V278.657C0.242289 277.686 0.363434 276.836 0.363434 276.107C0.605723 275.136 0.848012 274.043 1.0903 272.829V272.465C2.05946 269.551 3.63434 266.88 5.81494 264.451L43.612 207.263C65.9026 229.118 96.9762 246.603 136.833 259.716C176.689 272.829 220.362 279.386 267.851 279.386C286.749 279.386 306.011 278.172 325.637 275.743V276.107C325.637 276.836 325.758 277.686 326 278.657V280.114ZM58.1494 256.073C54.9996 256.073 52.2739 257.227 49.9721 259.534C47.6704 261.841 46.5195 264.633 46.5195 267.912C46.5195 271.19 47.6704 273.922 49.9721 276.107C52.2739 278.293 54.9996 279.386 58.1494 279.386C61.2991 279.386 64.0249 278.293 66.3266 276.107C68.6284 273.922 69.7793 271.19 69.7793 267.912C69.7793 264.633 68.6284 261.841 66.3266 259.534C64.0249 257.227 61.2991 256.073 58.1494 256.073ZM104.851 256.073C101.58 256.073 98.7934 257.227 96.4916 259.534C94.1899 261.841 93.039 264.633 93.039 267.912C93.039 271.19 94.1899 273.922 96.4916 276.107C98.7934 278.293 101.58 279.386 104.851 279.386C108.122 279.386 110.847 278.293 113.028 276.107C115.208 273.922 116.299 271.19 116.299 267.912C116.299 264.633 115.208 261.841 113.028 259.534C110.847 257.227 108.122 256.073 104.851 256.073ZM57.786 186.136H43.612C40.7046 185.65 37.9182 184.679 35.2531 183.222C35.0108 183.222 34.8896 183.161 34.8896 183.04C34.8896 182.918 34.8291 182.857 34.7079 182.857H34.5262C33.7993 182.372 33.0725 181.765 32.3456 181.036C31.3764 180.55 30.7707 180.186 30.5284 179.943C30.2861 179.701 29.9227 179.215 29.4381 178.486C28.7113 177.758 28.1055 177.029 27.621 176.301L27.0758 175.754L26.8941 175.572C26.1672 174.358 25.5615 173.265 25.0769 172.294V171.565C24.5923 170.351 24.2289 169.137 23.9866 167.923L23.8049 167.559L23.6232 167.194C23.3809 165.98 23.2598 164.766 23.2598 163.552V161.73C23.502 160.759 23.6232 160.031 23.6232 159.545C23.8655 158.574 24.1078 157.481 24.3501 156.267V155.902C25.8038 151.288 28.469 147.524 32.3456 144.61L58.8763 112.556C74.625 139.268 102.912 161.488 143.738 179.215C184.564 196.942 231.144 206.898 283.478 209.084L314.007 254.98C301.892 255.709 290.383 256.073 279.48 256.073C232.961 256.073 190.076 249.759 150.825 237.132C111.574 224.504 80.5611 207.506 57.786 186.136ZM81.5909 162.823C78.32 162.823 75.5336 163.977 73.2319 166.284C70.9301 168.591 69.7793 171.323 69.7793 174.479C69.7793 177.636 70.9301 180.368 73.2319 182.675C75.5336 184.982 78.32 186.136 81.5909 186.136C84.8618 186.136 87.5875 184.982 89.7681 182.675C91.9487 180.368 93.039 177.636 93.039 174.479C93.039 171.323 91.9487 168.591 89.7681 166.284C87.5875 163.977 84.8618 162.823 81.5909 162.823ZM128.11 186.136C124.839 186.136 122.053 187.289 119.751 189.596C117.45 191.903 116.299 194.635 116.299 197.792C116.299 200.949 117.45 203.681 119.751 205.988C122.053 208.295 124.839 209.448 128.11 209.448C131.381 209.448 134.107 208.295 136.288 205.988C138.468 203.681 139.559 200.949 139.559 197.792C139.559 194.635 138.468 191.903 136.288 189.596C134.107 187.289 131.381 186.136 128.11 186.136ZM197.89 209.448C194.619 209.448 191.893 210.602 189.712 212.909C187.532 215.216 186.441 217.948 186.441 221.104C186.441 224.261 187.532 226.993 189.712 229.3C191.893 231.607 194.619 232.761 197.89 232.761C201.161 232.761 203.947 231.607 206.249 229.3C208.55 226.993 209.701 224.261 209.701 221.104C209.701 217.948 208.55 215.216 206.249 212.909C203.947 210.602 201.161 209.448 197.89 209.448ZM302.377 167.194L302.013 167.923C301.771 169.137 301.408 170.351 300.923 171.565V172.294C300.438 173.265 299.833 174.358 299.106 175.572L298.924 175.754L298.742 176.301L296.562 178.486C296.077 179.215 295.714 179.701 295.472 179.943C295.229 180.186 294.624 180.55 293.654 181.036C292.928 181.765 292.201 182.372 291.474 182.857H291.292L291.11 183.222H290.747C289.778 183.707 287.839 184.314 284.932 185.043C236.474 182.129 193.347 172.415 155.55 155.902C117.753 139.389 90.6161 118.869 74.1405 94.3428L115.208 44.4395C130.23 62.8952 151.673 78.9225 179.536 92.5215C207.399 106.12 239.139 115.834 274.756 121.662L293.654 144.61C297.531 147.524 300.196 151.288 301.65 155.902V156.267C301.892 157.481 302.135 158.574 302.377 159.545C302.377 160.031 302.498 160.759 302.74 161.73V163.552C302.74 164.766 302.619 165.98 302.377 167.194ZM151.37 92.8857C148.099 92.8857 145.313 93.9785 143.011 96.1641C140.709 98.3496 139.559 101.082 139.559 104.36C139.559 107.638 140.709 110.431 143.011 112.738C145.313 115.045 148.099 116.198 151.37 116.198C154.641 116.198 157.427 115.045 159.729 112.738C162.031 110.431 163.182 107.638 163.182 104.36C163.182 101.082 162.031 98.3496 159.729 96.1641C157.427 93.9785 154.641 92.8857 151.37 92.8857ZM197.89 116.198C194.619 116.198 191.893 117.352 189.712 119.659C187.532 121.966 186.441 124.698 186.441 127.854C186.441 131.011 187.532 133.743 189.712 136.05C191.893 138.357 194.619 139.511 197.89 139.511C201.161 139.511 203.947 138.357 206.249 136.05C208.55 133.743 209.701 131.011 209.701 127.854C209.701 124.698 208.55 121.966 206.249 119.659C203.947 117.352 201.161 116.198 197.89 116.198ZM244.591 139.511C241.441 139.511 238.715 140.664 236.414 142.971C234.112 145.278 232.961 148.01 232.961 151.167C232.961 154.324 234.112 157.056 236.414 159.363C238.715 161.67 241.441 162.823 244.591 162.823C247.741 162.823 250.466 161.67 252.768 159.363C255.07 157.056 256.221 154.324 256.221 151.167C256.221 148.01 255.07 145.278 252.768 142.971C250.466 140.664 247.741 139.511 244.591 139.511ZM142.829 11.292C142.829 11.0492 142.89 10.867 143.011 10.7456C143.132 10.6242 143.314 10.5635 143.556 10.5635C144.768 8.37793 146.464 6.43522 148.644 4.73535C148.887 4.49251 149.25 4.24967 149.735 4.00684C149.735 3.764 149.977 3.52116 150.462 3.27832C150.946 3.03548 151.31 2.79264 151.552 2.5498C151.794 2.5498 152.218 2.4891 152.824 2.36768C153.43 2.24626 153.854 2.06413 154.096 1.82129C155.792 1.09277 157.367 0.607096 158.821 0.364258C159.79 0.121419 161.183 0 163 0C164.817 0 166.331 0.121419 167.543 0.364258C168.754 0.607096 170.208 1.09277 171.904 1.82129C172.146 2.06413 172.57 2.24626 173.176 2.36768C173.782 2.4891 174.266 2.61051 174.63 2.73193C174.993 2.85335 175.417 3.1569 175.902 3.64258C176.144 3.64258 176.265 3.764 176.265 4.00684L177.356 4.73535C179.536 6.43522 181.353 8.37793 182.807 10.5635L182.989 10.7456L183.171 11.292L248.589 89.9717C196.012 75.887 156.761 54.3958 130.836 25.498L142.829 11.292Z" fill="#8996ae"></path></svg>საახალწლო პროდუქცია</li>
+                    
+                    <li><svg class="main__category" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g id="Group_12523" data-name="Group 12523" transform="translate(-84 -669)"><rect id="Rectangle_3857" data-name="Rectangle 3857" width="16" height="16" transform="translate(84 669)" fill="#e4e7ed" opacity="0"></rect><g id="shopping_basket-24px" transform="translate(84 669)"><path id="Path_33369" data-name="Path 33369" d="M0,0H16V16H0Z" fill="none"></path><path id="Path_33370" data-name="Path 33370" d="M15,6.662H11.807L8.88,2.282a.666.666,0,0,0-1.107,0L4.847,6.662H1.667A.669.669,0,0,0,1,7.329a.562.562,0,0,0,.027.18l1.693,6.18A1.326,1.326,0,0,0,4,14.663h8.667a1.34,1.34,0,0,0,1.287-.973l1.693-6.18.02-.18A.669.669,0,0,0,15,6.662ZM8.327,3.856,10.2,6.662H6.453ZM8.333,12a1.333,1.333,0,1,1,1.333-1.333A1.337,1.337,0,0,1,8.333,12Z" transform="translate(-0.333 -0.662)" fill="#8996ae"></path></g></g></svg> სუპერმარკეტები</li>
+                    <li><svg class="main__category" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g id="Group_12537" data-name="Group 12537" transform="translate(-84 -189)"><g id="Group_12536" data-name="Group 12536"><rect id="Rectangle_3857" data-name="Rectangle 3857" width="16" height="16" transform="translate(84 189)" fill="#e4e7ed" opacity="0"></rect><g id="emoji_people-24px" transform="translate(84 189)"><g id="Group_12533" data-name="Group 12533"><rect id="Rectangle_5886" data-name="Rectangle 5886" width="16" height="16" fill="none"></rect><rect id="Rectangle_5887" data-name="Rectangle 5887" width="16" height="16" fill="none"></rect></g><g id="Group_12535" data-name="Group 12535" transform="translate(2.719 1.333)"><g id="Group_12534" data-name="Group 12534"><circle id="Ellipse_802" data-name="Ellipse 802" cx="1.333" cy="1.333" r="1.333" transform="translate(3.947)" fill="#8996ae"></circle><path id="Path_33384" data-name="Path 33384" d="M11.953,6.073a2.068,2.068,0,0,0-1.573-.74H8.686a3.349,3.349,0,0,1-3.28-2.767A.665.665,0,0,0,4.753,2h0a.67.67,0,0,0-.667.76A4.691,4.691,0,0,0,7.36,6.473v8.193a.669.669,0,0,0,.667.667h0a.669.669,0,0,0,.667-.667V11.333h1.333v3.333a.669.669,0,0,0,.667.667h0a.669.669,0,0,0,.667-.667v-7.3l2.16,2.16a.664.664,0,0,0,.94,0h0a.664.664,0,0,0,0-.94Z" transform="translate(-4.079 -2)" fill="#8996ae"></path></g></g></g></g></g></svg>მომსახურება</li>
+                    <li><svg class="main__category" id="Group_12865" class="rent-svg" data-name="Group 12865" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect id="Rectangle_3857" data-name="Rectangle 3857" width="16" height="16" fill="#e4e7ed" opacity="0"></rect><path id="Path_33382" data-name="Path 33382" d="M9.86,3.24,7.38,7.293a.665.665,0,0,0,.567,1.013H12.9a.665.665,0,0,0,.567-1.013L10.993,3.24A.662.662,0,0,0,9.86,3.24Z" transform="translate(-2.427 -0.973)" fill="#8996ae"></path><circle id="Ellipse_801" data-name="Ellipse 801" cx="3" cy="3" r="3" transform="translate(8.667 8.667)" fill="#8996ae"></circle><path id="Path_33383" data-name="Path 33383" d="M3.667,18.833h4a.669.669,0,0,0,.667-.667v-4a.669.669,0,0,0-.667-.667h-4A.669.669,0,0,0,3,14.167v4A.669.669,0,0,0,3.667,18.833Z" transform="translate(-1 -4.5)" fill="#8996ae"></path></svg>გაქირავება</li>
+                    <li><svg class="main__category" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g id="Group_12524" data-name="Group 12524" transform="translate(-84 -253)"><rect id="Rectangle_3857" data-name="Rectangle 3857" width="16" height="16" transform="translate(84 253)" fill="#e4e7ed" opacity="0"></rect><g id="home-24px" transform="translate(84 253)"><path id="Path_33371" data-name="Path 33371" d="M0,0H16V16H0Z" fill="none"></path><path id="Path_33372" data-name="Path 33372" d="M7.6,13.782V10.448h2.667v3.333a.669.669,0,0,0,.667.667h2a.669.669,0,0,0,.667-.667V9.115h1.133a.331.331,0,0,0,.22-.58L9.381,3.515a.672.672,0,0,0-.893,0L2.914,8.535a.332.332,0,0,0,.22.58H4.267v4.667a.669.669,0,0,0,.667.667h2A.669.669,0,0,0,7.6,13.782Z" transform="translate(-0.934 -1.115)" fill="#8996ae"></path></g></g></svg>სახლი და ბაღი</li>
+                    <li><svg class="main__category" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g id="Group_12529" data-name="Group 12529" transform="translate(-84 -285)"><rect id="Rectangle_3857" data-name="Rectangle 3857" width="16" height="16" transform="translate(84 285)" fill="#e4e7ed" opacity="0"></rect><g id="local_laundry_service-24px" transform="translate(84 285)"><path id="Path_33376" data-name="Path 33376" d="M0,0H16V16H0Z" fill="none"></path><path id="Path_33377" data-name="Path 33377" d="M7.7,11.633a.329.329,0,0,0,.013.487,2.668,2.668,0,0,0,3.74-3.74.324.324,0,0,0-.487-.013L7.7,11.633Zm5.633-9.627L5.333,2A1.329,1.329,0,0,0,4,3.333V14a1.329,1.329,0,0,0,1.333,1.333h8A1.329,1.329,0,0,0,14.667,14V3.333A1.323,1.323,0,0,0,13.333,2.007ZM8,3.333A.667.667,0,1,1,7.333,4,.669.669,0,0,1,8,3.333Zm-2,0A.667.667,0,1,1,5.333,4,.669.669,0,0,1,6,3.333ZM9.333,14a4,4,0,1,1,4-4A4,4,0,0,1,9.333,14Z" transform="translate(-1.333 -0.667)" fill="#8996ae"></path></g></g></svg>საოჯახო ტექნიკა</li>
+                    <li><svg class="main__category" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g id="Group_12530" data-name="Group 12530" transform="translate(-84 -317)"><rect id="Rectangle_3857" data-name="Rectangle 3857" width="16" height="16" transform="translate(84 317)" fill="#e4e7ed" opacity="0"></rect><g id="power-24px" transform="translate(84 317)"><path id="Path_33378" data-name="Path 33378" d="M0,0H16V16H0Z" fill="none"></path><path id="Path_33379" data-name="Path 33379" d="M12.673,5.667l-.007-2a.667.667,0,1,0-1.333,0v2H8.667v-2a.667.667,0,1,0-1.333,0v2H7.327A1.334,1.334,0,0,0,6,6.993V10.1a1.332,1.332,0,0,0,.387.94L8.333,13v1.333A.669.669,0,0,0,9,15h2a.669.669,0,0,0,.667-.667V13l1.947-1.947A1.359,1.359,0,0,0,14,10.107V6.993A1.326,1.326,0,0,0,12.673,5.667Z" transform="translate(-2 -1)" fill="#8996ae"></path></g></g></svg>საახალწლო პროდუქცია</li>
+                    <li><svg class="main__category" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g id="Group_12525" data-name="Group 12525" transform="translate(-84 -349)"><rect id="Rectangle_3857" data-name="Rectangle 3857" width="16" height="16" transform="translate(84 349)" fill="#e4e7ed" opacity="0"></rect><g id="gps_fixed-24px" transform="translate(84 349)"><path id="Path_33373" data-name="Path 33373" d="M0,0H16V16H0Z" fill="none"></path><path id="Path_33374" data-name="Path 33374" d="M8,5.455A2.545,2.545,0,1,0,10.545,8,2.545,2.545,0,0,0,8,5.455Zm5.689,1.909A5.724,5.724,0,0,0,8.636,2.311V1.636a.636.636,0,1,0-1.273,0v.675A5.724,5.724,0,0,0,2.311,7.364H1.636a.636.636,0,1,0,0,1.273h.675a5.724,5.724,0,0,0,5.053,5.053v.675a.636.636,0,0,0,1.273,0v-.675a5.724,5.724,0,0,0,5.053-5.053h.675a.636.636,0,0,0,0-1.273h-.675ZM8,12.455A4.455,4.455,0,1,1,12.455,8,4.451,4.451,0,0,1,8,12.455Z" fill="#8996ae"></path></g></g></svg>სუპერმარკეტები</li>
+                    <li><svg class="main__category" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g id="Group_12502" data-name="Group 12502" transform="translate(-84 -381)"><rect id="Rectangle_3857" data-name="Rectangle 3857" width="16" height="16" transform="translate(84 381)" fill="#e4e7ed" opacity="0"></rect><g id="audiotrack-24px" transform="translate(84 381)"><path id="Path_33341" data-name="Path 33341" d="M0,0H16V16H0Z" fill="none"></path><path id="Path_33342" data-name="Path 33342" d="M10,4.333v5.7A2.624,2.624,0,0,0,7.78,9.82,2.667,2.667,0,0,0,9.1,14.967a2.736,2.736,0,0,0,2.233-2.733V5.667h1.333a1.333,1.333,0,0,0,0-2.667H11.334A1.337,1.337,0,0,0,10,4.333Z" transform="translate(-2 -1)" fill="#8996ae"></path></g></g></svg>მომსახურება</li>
+                    <li><svg class="main__category" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g id="Group_12503" data-name="Group 12503" transform="translate(-84 -413)"><rect id="Rectangle_3857" data-name="Rectangle 3857" width="16" height="16" transform="translate(84 413)" fill="#e4e7ed" opacity="0"></rect><g id="child_friendly-24px" transform="translate(84 413)"><path id="Path_33343" data-name="Path 33343" d="M0,0H16V16H0Z" fill="none"></path><path id="Path_33344" data-name="Path 33344" d="M9.333,2.743V7.356h5.333a5.333,5.333,0,0,0-4.573-5.28.67.67,0,0,0-.76.667Zm4.213,8.54a5.3,5.3,0,0,0,1.12-3.26H4.96L4.507,7.07a.662.662,0,0,0-.6-.38H2.667a.667.667,0,0,0,0,1.333H3.48s1.26,2.713,1.413,2.947A2.331,2.331,0,1,0,8.3,13.356H9.687a2.333,2.333,0,1,0,3.86-2.073ZM6,14.023a1,1,0,1,1,1-1A1,1,0,0,1,6,14.023Zm6,0a1,1,0,1,1,1-1A1,1,0,0,1,12,14.023Z" transform="translate(-0.667 -0.69)" fill="#8996ae"></path></g></g></svg>გაქირავება</li>
+                    <li><svg class="main__category" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g id="Group_12531" data-name="Group 12531" transform="translate(-84 -445)"><rect id="Rectangle_3857" data-name="Rectangle 3857" width="16" height="16" transform="translate(84 445)" fill="#e4e7ed" opacity="0"></rect><g id="checkroom-24px" transform="translate(84 445)"><rect id="Rectangle_5885" data-name="Rectangle 5885" width="16" height="16" fill="none"></rect><path id="Path_33380" data-name="Path 33380" d="M13.761,11.1,8.6,7.874V7.419a1.752,1.752,0,0,0,1.458-2.025,1.94,1.94,0,0,0-1.566-1.35,2.242,2.242,0,0,0-2.412.99c-.18.335.108.715.546.715h0a.6.6,0,0,0,.54-.285A.916.916,0,0,1,8,5a.834.834,0,0,1,.9.75.838.838,0,0,1-.918.75.541.541,0,0,0-.582.5v.88L2.239,11.1c-.462.29-.216.9.36.9H13.4C13.977,12,14.223,11.39,13.761,11.1ZM4.4,11,8,8.749,11.6,11Z" fill="#8996ae"></path></g></g></svg>სახლი და ბაღი</li>
+                    <li><svg class="main__category" xmlns="http://www.w3.org/2000/svg" class="construction" width="16" height="16" viewBox="0 0 16 16"><g id="Group_12520" data-name="Group 12520" transform="translate(-84 -477)"><rect id="Rectangle_3857" data-name="Rectangle 3857" width="16" height="16" transform="translate(84 477)" fill="#e4e7ed" opacity="0"></rect><g id="construction-24px" transform="translate(84 477)"><g id="Group_12517" data-name="Group 12517"><rect id="Rectangle_5881" data-name="Rectangle 5881" width="16" height="16" fill="none"></rect><rect id="Rectangle_5882" data-name="Rectangle 5882" width="16" height="16" fill="none"></rect></g><g id="Group_12519" data-name="Group 12519" transform="translate(1.693 1.742)"><g id="Group_12518" data-name="Group 12518"><path id="Path_33363" data-name="Path 33363" d="M18.637,16.343,15.343,13.05,13.93,14.463l3.293,3.293a.994.994,0,0,0,1.413,0A1.006,1.006,0,0,0,18.637,16.343Z" transform="translate(-6.337 -6.092)" fill="#8996ae"></path><path id="Path_33364" data-name="Path 33364" d="M12.613,7.538A2.336,2.336,0,0,0,14.947,5.2a2.3,2.3,0,0,0-.273-1.067l-1.8,1.8-.993-.993,1.8-1.8a2.3,2.3,0,0,0-1.067-.273A2.336,2.336,0,0,0,10.28,5.2a2.273,2.273,0,0,0,.14.773L9.187,7.211,8,6.024H8a.664.664,0,0,0,0-.94l-.473-.473L8.94,3.2a2,2,0,0,0-2.827,0L4.233,5.084a.664.664,0,0,0,0,.94l.473.473H3.013a.448.448,0,0,0-.333.14.467.467,0,0,0,0,.667L4.373,9A.467.467,0,0,0,5.04,9a.475.475,0,0,0,.14-.333V6.971l.467.467a.664.664,0,0,0,.94,0L7.773,8.624,3.54,12.858a.994.994,0,0,0,0,1.413h0a.994.994,0,0,0,1.413,0L11.833,7.4A2.342,2.342,0,0,0,12.613,7.538Z" transform="translate(-2.54 -2.613)" fill="#8996ae"></path></g></g></g></g></svg>საოჯახო ტექნიკა</li>
+                    <li><svg class="main__category" xmlns="http://www.w3.org/2000/svg" class="agriculture" width="16" height="16" viewBox="0 0 16 16"><g id="Group_12516" data-name="Group 12516" transform="translate(-84 -509)"><rect id="Rectangle_3857" data-name="Rectangle 3857" width="16" height="16" transform="translate(84 509)" fill="#e4e7ed" opacity="0"></rect><g id="agriculture-24px" transform="translate(84 509)"><g id="Group_12513" data-name="Group 12513"><rect id="Rectangle_5879" data-name="Rectangle 5879" width="16" height="16" fill="none"></rect><rect id="Rectangle_5880" data-name="Rectangle 5880" width="16" height="16" fill="none"></rect></g><g id="Group_12515" data-name="Group 12515" transform="translate(0.667 1.993)"><g id="Group_12514" data-name="Group 12514"><path id="Path_33359" data-name="Path 33359" d="M16.34,8.977a2.98,2.98,0,0,1,1.667.507V6.31a1.337,1.337,0,0,0-1.333-1.333H12.48l-.707-.707.707-.707a.335.335,0,0,0-.473-.473L10.12,4.977a.33.33,0,0,0,0,.473h0a.33.33,0,0,0,.473,0l.707-.707.707.707V6.977A1.337,1.337,0,0,1,10.673,8.31h-.36a3.986,3.986,0,0,1,1.027,2.667,4.425,4.425,0,0,1-.06.667h2.093A3,3,0,0,1,16.34,8.977Z" transform="translate(-4.007 -2.99)" fill="#8996ae"></path><path id="Path_33360" data-name="Path 33360" d="M18.333,12.97A2.333,2.333,0,1,0,20.667,15.3,2.336,2.336,0,0,0,18.333,12.97Zm0,3.333a1,1,0,1,1,1-1A1,1,0,0,1,18.333,16.3Z" transform="translate(-6 -6.317)" fill="#8996ae"></path><path id="Path_33361" data-name="Path 33361" d="M3.667,8.3H7A1.337,1.337,0,0,0,5.667,6.97h-2a.667.667,0,0,0,0,1.333Z" transform="translate(-1.667 -4.317)" fill="#8996ae"></path><path id="Path_33362" data-name="Path 33362" d="M6.887,12.517l-.12-.313.62-.233a3.28,3.28,0,0,0-1.54-1.62l-.267.593-.307-.14.267-.6A3.409,3.409,0,0,0,4.333,9.97a3.4,3.4,0,0,0-1.013.173l.227.607-.313.12L3,10.257A3.28,3.28,0,0,0,1.38,11.8l.593.267-.14.307-.6-.267A3.233,3.233,0,0,0,1,13.3a3.4,3.4,0,0,0,.173,1.013l.607-.227.12.313-.62.233a3.28,3.28,0,0,0,1.54,1.62l.267-.593.307.14-.267.6a3.358,3.358,0,0,0,1.213.233,3.4,3.4,0,0,0,1.013-.173l-.233-.607.313-.12.233.62a3.28,3.28,0,0,0,1.62-1.54l-.593-.267.14-.307.6.267A3.358,3.358,0,0,0,7.667,13.3a3.4,3.4,0,0,0-.173-1.013ZM5.1,15.157a2,2,0,1,1,1.08-2.613A2,2,0,0,1,5.1,15.157Z" transform="translate(-1 -5.317)" fill="#8996ae"></path></g></g></g></g></svg>საახალწლო პროდუქცია</li>
+                    <li><svg class="main__category" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g id="Group_12512" data-name="Group 12512" transform="translate(-84 -541)"><rect id="Rectangle_3857" data-name="Rectangle 3857" width="16" height="16" transform="translate(84 541)" fill="#e4e7ed" opacity="0"></rect><g id="pets-24px" transform="translate(84 541)"><path id="Path_33357" data-name="Path 33357" d="M0,0H16V16H0Z" fill="none"></path><circle id="Ellipse_797" data-name="Ellipse 797" cx="1.667" cy="1.667" r="1.667" transform="translate(1.333 4.667)" fill="#8996ae"></circle><circle id="Ellipse_798" data-name="Ellipse 798" cx="1.667" cy="1.667" r="1.667" transform="translate(4.333 2)" fill="#8996ae"></circle><circle id="Ellipse_799" data-name="Ellipse 799" cx="1.667" cy="1.667" r="1.667" transform="translate(8.333 2)" fill="#8996ae"></circle><circle id="Ellipse_800" data-name="Ellipse 800" cx="1.667" cy="1.667" r="1.667" transform="translate(11.333 4.667)" fill="#8996ae"></circle><path id="Path_33358" data-name="Path 33358" d="M12.891,13.407c-.58-.68-1.067-1.26-1.653-1.94a2.828,2.828,0,0,0-1.167-.88,1.35,1.35,0,0,0-.22-.06,3.355,3.355,0,0,0-.52-.027,2.8,2.8,0,0,0-.527.033,1.35,1.35,0,0,0-.22.06,2.872,2.872,0,0,0-1.167.88c-.58.68-1.067,1.26-1.653,1.94-.873.873-1.947,1.84-1.747,3.193a2.093,2.093,0,0,0,1.553,1.547c.487.1,2.04-.293,3.693-.293h.12c1.653,0,3.207.387,3.693.293a2.1,2.1,0,0,0,1.553-1.547c.207-1.36-.867-2.327-1.74-3.2Z" transform="translate(-1.331 -3.5)" fill="#8996ae"></path></g></g></svg>სუპერმარკეტები</li>
+                    <li><svg class="main__category" xmlns="http://www.w3.org/2000/svg" class="sport" width="16" height="16" viewBox="0 0 16 16"><g id="Group_12511" data-name="Group 12511" transform="translate(-84 -573)"><rect id="Rectangle_3857" data-name="Rectangle 3857" width="16" height="16" transform="translate(84 573)" fill="#e4e7ed" opacity="0"></rect><g id="sports_volleyball-24px" transform="translate(84 573)"><g id="Group_12508" data-name="Group 12508"><rect id="Rectangle_5877" data-name="Rectangle 5877" width="16" height="16" fill="none"></rect><rect id="Rectangle_5878" data-name="Rectangle 5878" width="16" height="16" fill="none"></rect></g><g id="Group_12510" data-name="Group 12510" transform="translate(1.333 1.367)"><g id="Group_12509" data-name="Group 12509"><path id="Path_33351" data-name="Path 33351" d="M4.667,4.01a6.644,6.644,0,0,0-2.073,8.067l2.073-1.2Z" transform="translate(-2 -2.703)" fill="#8996ae"></path><path id="Path_33352" data-name="Path 33352" d="M10,8.3V2.05a6.656,6.656,0,0,0-2,.527v6.88Z" transform="translate(-4 -2.05)" fill="#8996ae"></path><path id="Path_33353" data-name="Path 33353" d="M9.3,13.15,3.89,16.27a6.594,6.594,0,0,0,1.453,1.467L11.3,14.31Z" transform="translate(-2.63 -5.75)" fill="#8996ae"></path><path id="Path_33354" data-name="Path 33354" d="M13,7.96v2.307l5.407,3.12a6.651,6.651,0,0,0,.547-1.987Z" transform="translate(-5.667 -4.02)" fill="#8996ae"></path><path id="Path_33355" data-name="Path 33355" d="M8.07,19.48A6.67,6.67,0,0,0,16.1,17.24l-2.073-1.2Z" transform="translate(-4.023 -6.713)" fill="#8996ae"></path><path id="Path_33356" data-name="Path 33356" d="M18.947,7.89A6.664,6.664,0,0,0,13,2.05v2.4Z" transform="translate(-5.667 -2.05)" fill="#8996ae"></path></g></g></g></g></svg>მომსახურება</li>
+                    <li><svg class="main__category" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class="svg-1069"><g id="Group_14558" data-name="Group 14558" transform="translate(-19197 -3364)"><g id="Group_14557" data-name="Group 14557" transform="translate(19194 3360)"><path id="Combined_Shape" data-name="Combined Shape" d="M4.667,14a.934.934,0,0,1-.933-.933.934.934,0,0,1-.933-.933V1.867H.933A.933.933,0,0,1,.933,0h2.8a.933.933,0,0,1,.933.933v11.2h8.4a.933.933,0,1,1,0,1.867Z" transform="translate(4 4)" fill="#8996ae" opacity="0.44"></path><rect id="Rectangle_63_Copy" data-name="Rectangle 63 Copy" width="8" height="8" rx="1.5" transform="translate(10 6.667)" fill="#8996ae"></rect><circle id="Oval" cx="3" cy="3" r="3" transform="translate(5 14)" fill="#8996ae"></circle></g><rect id="Rectangle_6012" data-name="Rectangle 6012" width="16" height="16" transform="translate(19197 3364)" fill="none"></rect></g></svg>გაქირავება</li>
+                    <li id="test"><svg class="main__category" xmlns="http://www.w3.org/2000/svg" class="book" width="16" height="16" viewBox="0 0 16 16"><g id="Group_12507" data-name="Group 12507" transform="translate(-84 -605)"><rect id="Rectangle_3857" data-name="Rectangle 3857" width="16" height="16" transform="translate(84 605)" fill="#e4e7ed" opacity="0"></rect><g id="menu_book-24px" transform="translate(84 605)"><g id="Group_12505" data-name="Group 12505"><rect id="Rectangle_5875" data-name="Rectangle 5875" width="16" height="16" fill="none"></rect><rect id="Rectangle_5876" data-name="Rectangle 5876" width="16" height="16" fill="none"></rect></g><g id="Group_12506" data-name="Group 12506" transform="translate(0.667 3)"><path id="Path_33347" data-name="Path 33347" d="M12,4.5a6.2,6.2,0,0,0-3.667,1,6.2,6.2,0,0,0-3.667-1,7.213,7.213,0,0,0-2.853.527A1.358,1.358,0,0,0,1,6.26v7.52a1.33,1.33,0,0,0,1.653,1.293,8.234,8.234,0,0,1,2.013-.24,7.05,7.05,0,0,1,3.04.613,1.37,1.37,0,0,0,1.247,0,6.953,6.953,0,0,1,3.04-.613,8.234,8.234,0,0,1,2.013.24A1.324,1.324,0,0,0,15.66,13.78V6.26a1.358,1.358,0,0,0-.813-1.233A7.159,7.159,0,0,0,12,4.5Zm2.333,8.487a.673.673,0,0,1-.8.653A8.406,8.406,0,0,0,12,13.507a8.03,8.03,0,0,0-3.667,1V6.833a8.03,8.03,0,0,1,3.667-1,8.458,8.458,0,0,1,1.8.187.676.676,0,0,1,.533.653Z" transform="translate(-1 -4.5)" fill="#8996ae"></path><path id="Path_33348" data-name="Path 33348" d="M13.731,10.343a.5.5,0,0,1-.153-.973,8.869,8.869,0,0,1,3.573-.3.5.5,0,1,1-.113.993,7.88,7.88,0,0,0-3.153.26A1.386,1.386,0,0,1,13.731,10.343Z" transform="translate(-5.078 -6.003)" fill="#8996ae"></path><path id="Path_33349" data-name="Path 33349" d="M13.731,13a.5.5,0,0,1-.153-.973,8.858,8.858,0,0,1,3.573-.3.5.5,0,0,1-.113.993,7.88,7.88,0,0,0-3.153.26A.646.646,0,0,1,13.731,13Z" transform="translate(-5.078 -6.89)" fill="#8996ae"></path><path id="Path_33350" data-name="Path 33350" d="M13.731,15.663a.5.5,0,0,1-.153-.973,8.858,8.858,0,0,1,3.573-.3.5.5,0,1,1-.113.993,7.88,7.88,0,0,0-3.153.26A.646.646,0,0,1,13.731,15.663Z" transform="translate(-5.078 -7.777)" fill="#8996ae"></path></g></g></g></svg>სახლი და ბაღი</li>
+                    <li><svg class="main__category" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g id="Group_12504" data-name="Group 12504" transform="translate(-84 -637)"><rect id="Rectangle_3857" data-name="Rectangle 3857" width="16" height="16" transform="translate(84 637)" fill="#e4e7ed" opacity="0"></rect><g id="color_lens-24px" transform="translate(84 637)"><path id="Path_33345" data-name="Path 33345" d="M0,0H16V16H0Z" fill="none"></path><path id="Path_33346" data-name="Path 33346" d="M9,3A6,6,0,0,0,9,15a1,1,0,0,0,.74-1.673,1,1,0,0,1,.747-1.66h1.18A3.335,3.335,0,0,0,15,8.333C15,5.387,12.313,3,9,3ZM5.333,9a1,1,0,1,1,1-1A1,1,0,0,1,5.333,9Zm2-2.667a1,1,0,1,1,1-1A1,1,0,0,1,7.333,6.333Zm3.333,0a1,1,0,1,1,1-1A1,1,0,0,1,10.667,6.333Zm2,2.667a1,1,0,1,1,1-1A1,1,0,0,1,12.667,9Z" transform="translate(-1 -1)" fill="#8996ae"></path></g></g></svg>საოჯახო ტექნიკა</li>
+                </ul>
+            </aside>
+
+            <div class="main__slider-block">
+                    <div class="container">
+	
+
+                        <input type="radio" id="i1" name="images" checked/>
+                        <input type="radio" id="i2" name="images" />
+                        <input type="radio" id="i3" name="images" />
+                        <input type="radio" id="i4" name="images"  />
+                        
+                        <div class="slide_img" id="one">			
+                                
+                                <img src="https://static.my.ge/mymarket/banners/61a7615ac65be.png">
+                                
+                                    <label class="prev" for="i4"><span></span></label>
+                                    <label class="next" for="i2"><span></span></label>	
+                            
+                        </div>
+                        
+                        <div class="slide_img" id="two">
+                            
+                                <img src="https://static.my.ge/mymarket/banners/618507b22fe86.png" >
+                                
+                                    <label class="prev" for="i1"><span></span></label>
+                                    <label class="next" for="i3"><span></span></label>
+                            
+                        </div>
+                                
+                        <div class="slide_img" id="three">
+                                <img src="https://static.my.ge/mymarket/banners/61bb0f62a3120.png">	
+                                
+                                    <label class="prev" for="i2"><span></span></label>
+                                    <label class="next" for="i4"><span></span></label>
+                        </div>
+                    
+                    
+                        <div class="slide_img" id="four">
+                                <img src="https://static.my.ge/mymarket/banners/61a78663d0a99.png">	
+                                
+                                    <label class="prev" for="i3"><span></span></label>
+                                    <label class="next" for="i1"><span></span></label>
+                    
+                        </div>
+                </div>
+                <div class="main__services">
+                    <div class="item-section">
+                        <div class="item"  id="appear">
+                            <div class="main-icon sign"></div>
+                            <div class="desc">რეგისტრაცია</div>
+                        </div>
+                        <div class="item"  id="sale">
+                            <div class="main-icon sale"></div>
+                            <div class="desc">ფასდაკლებები</div>
+                        </div>
+                        <div class="item" id="hand">
+                            <div class="main-icon hand"></div>
+                            <div class="desc">ონლაინ მაღაზიები</div>
+                        </div>
+                        <div class="item">
+                            <div class="main-icon hand"></div>
+                            <div class="desc">საახალწლო</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="services container">
+            <div class="slider">
+                <div class="container">
+                    <div class="row">
+                        <div class="services__header">
+                            <h3>გააგრძელე ძიება</h3>
+                            <button class="btn last" >ბოლო</button>
+                            <button class="btn filter">შენახული</button>
+                        </div>
+                    </div>
+
+                    <div class="services__arrows">
+                        <button class="btn left slider__control slider__control_left"><i class="slider-left"></i></button>
+                        <button class="btn right slider__control slider__control_right slider__control_show"><i class="slider-right"></i></button>
+                    </div>
+                </div>
+               
+             
+  
+    
+    <div class="slider__wrapper">
+        
+      <div class="slider__item">
+        <div class="slide-box">
+            <div class="slider__desc">საახალწლო პროდუქცია</div>
+            <div class="slider__icon"><i class="heart"></i></div>
+        </div>
+      </div>
+      <div class="slider__item">
+        <div class="slide-box">
+            <div class="slider__desc">სპეცტექნიკის გაქირავება</div>
+            <div class="slider__icon"><i class="heart"></i></div>
+        </div>
+      </div>
+      <div class="slider__item">
+        <div class="slide-box">
+            <div class="slider__desc">კომპიტერული ტექნიკის გაქირავება</div>
+            <div class="slider__icon"><i class="heart"></i></div>
+        </div>
+      </div>
+      <div class="slider__item">
+        <div class="slide-box">
+            <div class="slider__desc">ავტომობილების გაქირავება</div>
+            <div class="slider__icon"><i class="heart"></i></div>
+        </div>
+      </div>
+      <div class="slider__item">
+        <div class="slide-box">
+            <div class="slider__desc">ავეჯი, ინტერიერი, ჭურჭლის გაქირავება</div>
+            <div class="slider__icon"><i class="heart"></i></div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  </section>
+
+  <section class="advertisement container"></section>
+
+  <section class="trade-in container">
+    <div class="row">
+        <div class="trade-in__item img">
+            <img src="https://www.mymarket.ge/react/build/static/media/tradeinhome.c0f43843.gif" alt="">
+        </div>
+        <div class="trade-in__item">
+            <h2>Trade in - შეცვალე ძველი ტექნიკა ახლით</h2>
+            <p>ატვირთე შენი ძველი ტექნიკის მონაცემები, ჩააბარე და დაიბრუნე მისი ღირებულება საბანკო ანგარიშზე</p>
+            <button class="btn">დაწყება</button>
+        </div>
+    </div>
+  </section>
+
+
+<section class="vip-box">
+    <div class="vip-box__header">
+        <button class="btn">s-vip</button>
+        <h4>Super vip</h4>
+        <a href="">170 განცხადება</a>
+    </div>
+
+    <div class="vip-box__row container">
+        <div class="vip-box__item vip-box__first">
+            <div class="img">
+                <img src="https://static.my.ge/mymarket/photos/thumbs/1005/22624279_1.jpg?v=15" alt="">
+            </div>
+            <a href="">გამათბობლის</a>
+            <span>20.00ლ</span>
+        </div>
+        <div class="vip-box__item">
+            <div class="img">
+                <img src="https://static.my.ge/mymarket/photos/thumbs/1216/23455299_1.jpg?v=1" alt="">
+            </div>
+            <a href="">გამათბობლის</a>
+            <span>20.00ლ</span>
+        </div>
+        <div class="vip-box__item">
+            <div class="img">
+                <img src="https://static.my.ge/mymarket/photos/thumbs/1204/23316223_1.jpg?v=1" alt="">
+            </div>
+            <a href="">გამათბობლის</a>
+            <span>20.00ლ</span>
+        </div>
+        <div class="vip-box__item">
+            <div class="img">
+                <img src="https://static.my.ge/mymarket/photos/thumbs/1106/18205514_1.jpg?v=43" alt="">
+            </div>
+            <a href="">გამათბობლის</a>
+            <span>20.00ლ</span>
+        </div>
+        <div class="vip-box__item">
+            <div class="img">
+                <img src="https://static.my.ge/mymarket/photos/thumbs/1206/23330235_1.jpg?v=7" alt="">
+            </div>
+            <a href="">გამათბობლის</a>
+            <span>20.00ლ</span>
+        </div>
+        <div class="vip-box__item">
+            <div class="img">
+                <img src="https://static.my.ge/mymarket/photos/thumbs/1120/23141811_1.jpg?v=26" alt="">
+            </div>
+            <a href="">გამათბობლის</a>
+            <span>20.00ლ</span>
+        </div>
+        <div class="vip-box__item">
+            <div class="img">
+                <img src="https://static.my.ge/mymarket/photos/thumbs/0524/10750657_1.jpg?v=35" alt="">
+            </div>
+            <a href="">გამათბობლის</a>
+            <span>20.00ლ</span>
+        </div>
+        <div class="vip-box__item">
+            <div class="img">
+                <img src="https://static.my.ge/mymarket/photos/thumbs/1216/23455299_1.jpg?v=1" alt="">
+            </div>
+            <a href="">გამათბობლის</a>
+            <span>20.00ლ</span>
+        </div>
+    </div>
+</section>
+
+
+<section class="second-advertisement container"></section>
+
+<section class="secondary container">
+    <div class="row">
+        <div class="secondary__item">
+            <h2>იყიდე მეორადი ნივთები სახლიდან</h2>
+            <p>უკვე შეგიძლია, მეორადი პროდუქცია იყიდო სახლიდან გაუსვლელად, ონლაინ გადახდითა და ადგილზე მიტანით.</p>
+            <button class="btn">იყიდე ახლა</button>
+        </div>
+
+        <div class="secondary__item img">
+            <img src="https://www.mymarket.ge/react/build/static/media/Gif3.4ab095ef.gif" alt="">
+        </div>
+    </div>
+  </section>
+
+
+
+  <div class="category">
+      
+    <div class="slide">
+        <div class="item">
+            <img src="https://static.my.ge/mymarket/images/cats/1064.png" alt="">
+        </div>
+
+        <span>ტექნიკა</span>
+        
+    </div>
+    
+    <div class="slide">
+        <div class="item">
+            <img src="https://static.my.ge/mymarket/images/cats/2.png" alt="">
+        </div>
+        <span>საოჯახო ტექნიკა</span>
+        
+    </div>
+    <div class="slide">
+        <div class="item">
+            <img src="https://static.my.ge/mymarket/images/cats/1066.png" alt="">
+        </div>
+        <span>ტექნიკა</span>
+        
+    </div>
+    <div class="slide">
+        <div class="item">
+            <img src="https://static.my.ge/mymarket/images/cats/250.png" alt="">
+        </div>
+        <span>ტექნიკა</span>
+        
+    </div>
+    <div class="slide">
+        <div class="item">
+            <img src="https://static.my.ge/mymarket/images/cats/1067.png" alt="">
+        </div>
+        <span>ტექნიკა</span>
+        
+    </div>
+    <div class="slide">
+        <div class="item">
+            <img src="https://static.my.ge/mymarket/images/cats/12.png" alt="">
+        </div>
+        <span>ტექნიკა</span>
+    </div>
+  </div>
+
+
+  <section class="product container">
+    <div class="slider">
+        <div class="container">
+            <div class="row">
+                <div class="services__header">
+                    <h3>შენთვის საიტერესო</h3>
+                    <button class="btn last" >სავაჭრო ინვენტარი</button>
+                </div>
+            </div>
+
+            <div class="services__arrows">
+                <button id="left" class="btn left slider__control slider__control_left"><i class="slider-left"></i></button>
+                <button id="right" class="btn right slider__control slider__control_right slider__control_show"><i class="slider-right"></i></button>
+            </div>
+        </div>
+
+<div class="product-list">
+    <div class="product-list__item">
+        <div class="img">
+            <img src="https://static.my.ge/mymarket/photos/thumbs/1216/23455299_1.jpg?v=1" alt="">
+        </div>
+        <a href="">გამათბობლის</a> <br>
+        <span>20.00ლ</span>
+    </div>
+    <div class="product-list__item">
+        <div class="img">
+            <img src="https://static.my.ge/mymarket/photos/thumbs/0524/10750657_1.jpg?v=35" alt="">
+        </div>
+        <a href="">გამათბობლის</a> <br>
+        <span>20.00ლ</span>
+    </div>
+    <div class="product-list__item">
+        <div class="img">
+            <img src="https://static.my.ge/mymarket/photos/thumbs/1120/23141811_1.jpg?v=26" alt="">
+        </div>
+        <a href="">გამათბობლის</a> <br>
+        <span>20.00ლ</span>
+    </div>
+    <div class="product-list__item">
+        <div class="img">
+            <img src="https://static.my.ge/mymarket/photos/thumbs/1206/23330235_1.jpg?v=7" alt="">
+        </div>
+        <a href="">გამათბობლის</a> <br>
+        <span>20.00ლ</span>
+    </div>
+    <div class="product-list__item">
+        <div class="img">
+            <img src="https://static.my.ge/mymarket/photos/thumbs/1106/18205514_1.jpg?v=43" alt="">
+        </div>
+        <a href="">გამათბობლის</a> <br>
+        <span>20.00ლ</span>
+    </div>
+    <div class="product-list__item">
+        <div class="img">
+            <img src="https://static.my.ge/mymarket/photos/thumbs/1216/23455299_1.jpg?v=1" alt="">
+        </div>
+        <a href="">გამათბობლის</a> <br>
+        <span>20.00ლ</span>
+    </div>
+    <div class="product-list__item">
+        <div class="img">
+            <img src="https://static.my.ge/mymarket/photos/thumbs/1005/22624279_1.jpg?v=15" alt="">
+        </div>
+        <a href="">გამათბობლის</a> <br>
+        <span>20.00ლ</span>
+    </div>
+    <div class="product-list__item">
+        <div class="img">
+            <img src="https://static.my.ge/mymarket/photos/thumbs/1206/23330235_1.jpg?v=7" alt="">
+        </div>
+        <a href="">გამათბობლის</a> <br>
+        <span>20.00ლ</span>
+    </div>
+  </div>
+        </div>
+    </section>
+
+
+    
+<section class="secondary container">
+    <div class="row">
+        <div class="secondary__item">
+            <h2>ონლაინ მაღაზიები</h2>
+            <p>შეიძინე ონლაინ საშენო პროდუქცია, 300-ზე მეტი მაღაზიისგან და მიიღე სასურველ მისამართზე მთელს საქართველოში</p>
+            <button class="btn">დაიწყე შოპინგი</button>
+        </div>
+
+        <div class="secondary__item img">
+            <img src="https://www.mymarket.ge/react/build/static/media/shopBlock.c6f9e56f.gif" alt="">
+        </div>
+    </div>
+  </section>
+
+
+  <section class="shop">
+    <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="services__header">
+                    <h3>საშენო პროდუქტები</h3>
+                    <button class="btn last" >ელექტრო გამათბობელი</button>
+                    <button class="btn">წიგნები</button>
+                    <button class="btn" >თავის მოვლის საშუალებები</button>
+                    <button class="btn">ბაღის ინსტრუმენტები</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="shop__content">
+        <div class="item left">
+           <h1>ელექტრო გამათბობლები</h1>
+        </div>
+        <div class="item right">
+            <div class="product-item" id="first">
+                <img src="https://static.my.ge/mymarket/photos/thumbs/1217/23464479_1.jpg?v=0" alt="">
+                <div class="desc">
+                    <p>ელექტრო გამათბობელი</p>
+                    <span>65ლ</span>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="https://static.my.ge/mymarket/photos/thumbs/1216/23459759_1.jpg?v=0" alt="">
+                <div class="desc">
+                    <p>ელექტრო გამათბობელი</p>
+                    <span>65ლ</span>
+                </div>
+            </div>
+            <div class="product-item" id="third">
+                <img src="https://static.my.ge/mymarket/photos/thumbs/1112/23054755_1.jpg?v=0" alt="">
+                <div class="desc">
+                    <p>ინფრაწითელი გამათბობელი</p>
+                    <span>65ლ</span>
+                </div>
+            </div>
+            <div class="product-item" id="four">
+                <div class="desc show-all">
+                    <h3>მაჩვენე ყველა</h3>
+                    <span>42 განცხადება</span>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="shops container">
+    <div class="slider">
+        <div class="container">
+            <div class="row">
+                <div class="services__header">
+                    <h3>მაღაზიები</h3>
+                    <a href="">615 მაღაზია</a>
+                </div>
+            </div>
+
+            <div class="services__arrows">
+                <button id="left" class="btn left slider__control slider__control_left"><i class="slider-left"></i></button>
+                <button id="right" class="btn right slider__control slider__control_right slider__control_show"><i class="slider-right"></i></button>
+            </div>
+        </div>
+
+<div class="shop-list">
+    <div class="shops__item">
+        <div class="img">
+            <img src="https://static.my.ge/mymarket/shops/12115.jpg?v=0" alt="">
+        </div>
+        <a href="">გამათბობლის</a> <br>
+    </div>
+    <div class="shops__item">
+        <div class="img">
+            <img src="https://static.my.ge/mymarket/shops/12107.jpg?v=3" alt="">
+        </div>
+        <a href="">გამათბობლის</a> <br>
+    </div>
+    <div class="shops__item">
+        <div class="img">
+            <img src="https://static.my.ge/mymarket/shops/12099.jpg?v=1" alt="">
+        </div>
+        <a href="">გამათბობლის</a> <br>
+    </div>
+    <div class="shops__item">
+        <div class="img">
+            <img src="https://static.my.ge/mymarket/shops/12091.jpg?v=2" alt="">
+        </div>
+        <a href="">გამათბობლის</a> <br>
+    </div>
+    <div class="shops__item">
+        <div class="img">
+            <img src="https://static.my.ge/mymarket/shops/12079.jpg?v=0" alt="">
+        </div>
+        <a href="">გამათბობლის</a> <br>
+    </div>
+    <div class="shops__item">
+        <div class="img">
+            <img src="https://static.my.ge/mymarket/shops/12075.jpg?v=5" alt="">
+        </div>
+        <a href="">გამათბობლის</a> <br>
+    </div>
+    <div class="shops__item">
+        <div class="img">
+            <img src="https://static.my.ge/mymarket/shops/12087.jpg?v=1" alt="">
+        </div>
+        <a href="">გამათბობლის</a> <br>
+    </div>
+    <div class="shops__item">
+        <div class="img">
+            <img src="https://static.my.ge/mymarket/shops/12059.jpg?v=3" alt="">
+        </div>
+        <a href="">გამათბობლის</a> <br>
+    </div>
+
+
+
+    <div class="shops__item">
+        <div class="img">
+            <img src="https://static.my.ge/mymarket/shops/12115.jpg?v=0" alt="">
+        </div>
+        <a href="">გამათბობლის</a> <br>
+    </div>
+    <div class="shops__item">
+        <div class="img">
+            <img src="https://static.my.ge/mymarket/shops/12107.jpg?v=3" alt="">
+        </div>
+        <a href="">გამათბობლის</a> <br>
+    </div>
+    <div class="shops__item">
+        <div class="img">
+            <img src="https://static.my.ge/mymarket/shops/12099.jpg?v=1" alt="">
+        </div>
+        <a href="">გამათბობლის</a> <br>
+    </div>
+    <div class="shops__item">
+        <div class="img">
+            <img src="https://static.my.ge/mymarket/shops/12091.jpg?v=2" alt="">
+        </div>
+        <a href="">გამათბობლის</a> <br>
+    </div>
+    <div class="shops__item">
+        <div class="img">
+            <img src="https://static.my.ge/mymarket/shops/12079.jpg?v=0" alt="">
+        </div>
+        <a href="">გამათბობლის</a> <br>
+    </div>
+    <div class="shops__item">
+        <div class="img">
+            <img src="https://static.my.ge/mymarket/shops/12075.jpg?v=5" alt="">
+        </div>
+        <a href="">გამათბობლის</a> <br>
+    </div>
+    <div class="shops__item">
+        <div class="img">
+            <img src="https://static.my.ge/mymarket/shops/12087.jpg?v=1" alt="">
+        </div>
+        <a href="">გამათბობლის</a> <br>
+    </div>
+    <div class="shops__item">
+        <div class="img">
+            <img src="https://static.my.ge/mymarket/shops/12059.jpg?v=3" alt="">
+        </div>
+        <a href="">გამათბობლის</a> <br>
+    </div>
+  </div>
+        </div>
+    </section>
+
+
+
+
+
+    
+  <section class="sales container">
+    <div class="slider">
+            <div class="row">
+                <div class="sales__header">
+                    <h3>ფასდაკლებები</h3>
+                </div>
+            </div>
+
+<div class="sales-list">
+    <div class="sales__item">
+        <div class="slide-box">
+            <div class="sales__card">
+                <img src="https://static.my.ge/mymarket/photos/thumbs/1108/23005032_1.jpg?v=1" alt="">
+                <div class="overlay">
+                    <div class="text">
+                        <span class="price">229.00 ლ</span>
+                        <span class="old-price">299.00 ლ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sales__card">     
+                <img src="https://static.my.ge/mymarket/photos/thumbs/1108/23005672_1.jpg?v=1" alt="">
+                <div class="overlay">
+                    <div class="text">
+                        <span class="price">229.00 ლ</span>
+                        <span class="old-price">299.00 ლ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sales__card"> 
+                <img src="https://static.my.ge/mymarket/photos/thumbs/1108/23004904_1.jpg?v=1" alt="">
+                <div class="overlay">
+                    <div class="text">
+                        <span class="price">229.00 ლ</span>
+                        <span class="old-price">299.00 ლ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sales__card"> 
+                <img src="https://static.my.ge/mymarket/photos/thumbs/1108/23005288_1.jpg?v=2" alt="">
+                <div class="overlay">
+                    <div class="text">
+                        <span class="price">229.00 ლ</span>
+                        <span class="old-price">299.00 ლ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="desc-box">
+            <div class="desc">
+                <button>-23%</button>
+                <span>ნაძვის ხეზე</span>
+            </div>
+            <a href="">57 განცხადება</a>
+        </div>
+    </div>
+    <div class="sales__item">
+        <div class="slide-box">
+            <div class="sales__card"> 
+                <img src="https://static.my.ge/mymarket/photos/thumbs/0227/18801664_1.jpg?v=4" alt="">
+                <div class="overlay">
+                    <div class="text">
+                        <span class="price">229.00 ლ</span>
+                        <span class="old-price">299.00 ლ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sales__card"> 
+                <img src="https://static.my.ge/mymarket/photos/thumbs/1213/19073732_1.jpg?v=3" alt="">
+                <div class="overlay">
+                    <div class="text">
+                        <span class="price">229.00 ლ</span>
+                        <span class="old-price">299.00 ლ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sales__card"> 
+                <img src="https://static.my.ge/mymarket/photos/thumbs/1210/19073748_1.jpg?v=3" alt="">
+                <div class="overlay">
+                    <div class="text">
+                        <span class="price">229.00 ლ</span>
+                        <span class="old-price">299.00 ლ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sales__card"> 
+                <img src="https://static.my.ge/mymarket/photos/thumbs/1213/19074036_1.jpg?v=3" alt="">
+                <div class="overlay">
+                    <div class="text">
+                        <span class="price">229.00 ლ</span>
+                        <span class="old-price">299.00 ლ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="desc-box">
+            <div class="desc">
+                <button>-15%</button>
+                <span>ნაძვის ხის აქსესუარებზე</span>
+            </div>
+            <a href="">10 განცხადება</a>
+        </div>
+    </div>
+    <div class="sales__item">
+        <div class="slide-box">
+            <div class="sales__card"> 
+                <img src="https://static.my.ge/mymarket/photos/thumbs/0330/20456013_1.jpg?v=1" alt="">
+                <div class="overlay">
+                    <div class="text">
+                        <span class="price">229.00 ლ</span>
+                        <span class="old-price">299.00 ლ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sales__card"> 
+                <img src="https://static.my.ge/mymarket/photos/thumbs/0330/20459317_1.jpg?v=1" alt="">
+                <div class="overlay">
+                    <div class="text">
+                        <span class="price">229.00 ლ</span>
+                        <span class="old-price">299.00 ლ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sales__card"> 
+                <img src="https://static.my.ge/mymarket/photos/thumbs/0330/20459769_1.jpg?v=2" alt="">
+                <div class="overlay">
+                    <div class="text">
+                        <span class="price">229.00 ლ</span>
+                        <span class="old-price">299.00 ლ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sales__card"> 
+                <img src="https://static.my.ge/mymarket/photos/thumbs/0330/20459861_1.jpg?v=1" alt="">
+                <div class="overlay">
+                    <div class="text">
+                        <span class="price">229.00 ლ</span>
+                        <span class="old-price">299.00 ლ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="desc-box">
+            <div class="desc">
+                <button>-20%</button>
+                <span>სათამაშოებზე</span>
+            </div>
+            <a href="">132 განცხადება</a>
+        </div>
+    </div>
+
+
+
+  </div>
+        </div>
+    </section>
+        
+
+
+<section class="service container">
+    <div class="slider">
+        <div class="row">
+            <div class="service__header">
+                <h3>მომსახურება</h3>
+            </div>
+
+            <div class="services__arrows">
+                <button id="left" class="btn left slider__control slider__control_left"><i class="slider-left"></i></button>
+                <button id="right" class="btn right slider__control slider__control_right slider__control_show"><i class="slider-right"></i></button>
+            </div>
+        </div>
+
+        <div class="service-list">
+            <div class="service__item">
+                <div class="item-content">
+                    <div class="slide-box">
+                        <img src="https://static.my.ge/mymarket/photos/thumbs/1213/23422395_1.jpg?v=3" alt="">
+                        <div class="desc">
+                            <span class="service-category">მშენებლობა</span>
+                            <span class="escription">სამშენებლო ნარჩენების გადატანა</span>
+                            <span class="price">7.00 ლარი</span>
+                        </div>
+                    </div>
+                    <div class="slide-box">
+                        <img src="https://static.my.ge/mymarket/photos/thumbs/0625/11906443_1.jpg?v=6" alt="">
+                        <div class="desc">
+                            <span class="service-category">მშენებლობა</span>
+                            <span class="escription">სამშენებლო ნარჩენების გადატანა</span>
+                            <span class="price">7.00 ლარი</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="service__item">
+                <div class="item-content">
+                    <div class="slide-box">
+                        <img src="https://static.my.ge/mymarket/photos/thumbs/0711/13132324_1.jpg?v=61" alt="">
+                        <div class="desc">
+                            <span class="service-category">მშენებლობა</span>
+                            <span class="escription">სამშენებლო ნარჩენების გადატანა</span>
+                            <span class="price">7.00 ლარი</span>
+                        </div>
+                    </div>
+                    <div class="slide-box">
+                        <img src="https://static.my.ge/mymarket/photos/thumbs/0905/13691132_1.jpg?v=45" alt="">
+                        <div class="desc">
+                            <span class="service-category">მშენებლობა</span>
+                            <span class="escription">სამშენებლო ნარჩენების გადატანა</span>
+                            <span class="price">7.00 ლარი</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service__item">
+                <div class="item-content">
+                    <div class="slide-box">
+                        <img src="https://static.my.ge/mymarket/photos/thumbs/0813/22033748_1.jpg?v=1" alt="">
+                        <div class="desc">
+                            <span class="service-category">მშენებლობა</span>
+                            <span class="escription">სამშენებლო ნარჩენების გადატანა</span>
+                            <span class="price">7.00 ლარი</span>
+                        </div>
+                    </div>
+                    <div class="slide-box">
+                        <img src="https://static.my.ge/mymarket/photos/thumbs/0426/15993743_1.jpg?v=11" alt="">
+                        <div class="desc">
+                            <span class="service-category">მშენებლობა</span>
+                            <span class="escription">სამშენებლო ნარჩენების გადატანა</span>
+                            <span class="price">7.00 ლარი</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="service__item">
+                <div class="item-content">
+                    <div class="slide-box">
+                        <img src="https://static.my.ge/mymarket/photos/thumbs/0219/12599041_1.jpg?v=58" alt="">
+                        <div class="desc">
+                            <span class="service-category">საბურღი სამუშაოები</span>
+                            <span class="escription">სამშენებლო ნარჩენების გადატანა</span>
+                            <span class="price">ფასი შეთანხმებით</span>
+                        </div>
+                    </div>
+                    <div class="slide-box">
+                        <img src="https://static.my.ge/mymarket/photos/thumbs/0204/15390999_1.jpg?v=16" alt="">
+                        <div class="desc">
+                            <span class="service-category">სრული სარემონტო მომსახურება</span>
+                            <span class="escription">დანგრევა დემონტაჟი</span>
+                            <span class="price">5.00 ლარი</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="service__item">
+                <div class="item-content">
+                    <div class="slide-box">
+                        <img src="https://static.my.ge/mymarket/photos/thumbs/0907/22297943_1.jpg?v=9" alt="">
+                        <div class="desc">
+                            <span class="service-category">მშენებლობა</span>
+                            <span class="escription">სამშენებლო ნარჩენების გადატანა</span>
+                            <span class="price">7.00 ლარი</span>
+                        </div>
+                    </div>
+                    <div class="slide-box">
+                        <img src="https://static.my.ge/mymarket/photos/thumbs/0620/21443689_1.jpg?v=28" alt="">
+                        <div class="desc">
+                            <span class="service-category">მშენებლობა</span>
+                            <span class="escription">სამშენებლო ნარჩენების გადატანა</span>
+                            <span class="price">7.00 ლარი</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="service__item">
+                <div class="item-content">
+                    <div class="slide-box">
+                        <img src="https://static.my.ge/mymarket/photos/thumbs/1216/23455299_1.jpg?v=1" alt="">
+                        <div class="desc">
+                            <span class="service-category">მშენებლობა</span>
+                            <span class="escription">სამშენებლო ნარჩენების გადატანა</span>
+                            <span class="price">7.00 ლარი</span>
+                        </div>
+                    </div>
+                    <div class="slide-box">
+                        <img src="https://static.my.ge/mymarket/photos/thumbs/1122/23171175_1.jpg?v=4" alt="">
+                        <div class="desc">
+                            <span class="service-category">მშენებლობა</span>
+                            <span class="escription">სამშენებლო ნარჩენების გადატანა</span>
+                            <span class="price">7.00 ლარი</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="service__item">
+                <div class="item-content">
+                    <div class="slide-box">
+                        <img src="https://static.my.ge/mymarket/photos/thumbs/0905/13691132_1.jpg?v=45" alt="">
+                        <div class="desc">
+                            <span class="service-category">მშენებლობა</span>
+                            <span class="escription">სამშენებლო ნარჩენების გადატანა</span>
+                            <span class="price">7.00 ლარი</span>
+                        </div>
+                    </div>
+                    <div class="slide-box">
+                        <img src="https://static.my.ge/mymarket/photos/thumbs/1005/22624279_1.jpg?v=15" alt="">
+                        <div class="desc">
+                            <span class="service-category">მშენებლობა</span>
+                            <span class="escription">სამშენებლო ნარჩენების გადატანა</span>
+                            <span class="price">7.00 ლარი</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="service__item">
+                <div class="item-content">
+                    <div class="slide-box">
+                        <img src="https://static.my.ge/mymarket/photos/thumbs/0813/22033748_1.jpg?v=1" alt="">
+                        <div class="desc">
+                            <span class="service-category">მშენებლობა</span>
+                            <span class="escription">სამშენებლო ნარჩენების გადატანა</span>
+                            <span class="price">7.00 ლარი</span>
+                        </div>
+                    </div>
+                    <div class="slide-box">
+                        <img src="https://static.my.ge/mymarket/photos/thumbs/0426/15993743_1.jpg?v=11" alt="">
+                        <div class="desc">
+                            <span class="service-category">მშენებლობა</span>
+                            <span class="escription">სამშენებლო ნარჩენების გადატანა</span>
+                            <span class="price">7.00 ლარი</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div class="service__item">
+                <div class="item-content">
+                    <div class="slide-box">
+                        <img src="https://static.my.ge/mymarket/photos/thumbs/0813/22033748_1.jpg?v=1" alt="">
+                        <div class="desc">
+                            <span class="service-category">მშენებლობა</span>
+                            <span class="escription">სამშენებლო ნარჩენების გადატანა</span>
+                            <span class="price">7.00 ლარი</span>
+                        </div>
+                    </div>
+                    <div class="slide-box">
+                        <img src="https://static.my.ge/mymarket/photos/thumbs/0426/15993743_1.jpg?v=11" alt="">
+                        <div class="desc">
+                            <span class="service-category">მშენებლობა</span>
+                            <span class="escription">სამშენებლო ნარჩენების გადატანა</span>
+                            <span class="price">7.00 ლარი</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="how-buy">
+    <div class="how-buy__wrapper">
+        <div class="header">
+            <div class="icon">
+                <img src="https://www.mymarket.ge/react/build/static/media/how-buy.67fc6a72.svg" alt="">
+            </div>
+            <div class="heading">
+                <h2>როგორ ვიყიდო ონლაინ?</h2>
+            </div>
+        </div>
+    
+        <div class="content">
+            <div class="step-box">
+                <div class="icon">
+                    <img src="https://www.mymarket.ge/react/build/static/media/market.2503904b.svg" alt="">
+                </div>
+                <div class="desc">
+                    დააკლიკე ღილაკს „ონლაინ ყიდვა“
+                </div>
+            </div>
+            <div class="step-line">
+                <img src="https://www.mymarket.ge/react/build/static/media/step-line.5f9a3076.svg" alt="">
+            </div>
+            <div class="step-box">
+                <div class="icon">
+                    <img src="https://www.mymarket.ge/react/build/static/media/cart-svg.c1ca5d6f.svg" alt="">
+                </div>
+                <div class="desc">
+                    ნახე სასურველ კატეგორიაში საშენო პროდუქტი
+                </div>
+            </div>
+            <div class="step-line">
+                <img src="https://www.mymarket.ge/react/build/static/media/step-line.5f9a3076.svg" alt="">
+            </div>
+            <div class="step-box">
+                <div class="icon">
+                    <img src="https://www.mymarket.ge/react/build/static/media/box.1e4c3749.svg" alt="">
+                </div>
+                <div class="desc">
+                    დააჭირე ღილაკს „შეძენა“ და მიყევი ინსტრუქციას
+                </div>
+            </div>
+            <div class="step-line">
+                <img src="https://www.mymarket.ge/react/build/static/media/step-line.5f9a3076.svg" alt="">
+            </div>
+            <div class="step-box">
+                <div class="icon">
+                    <img src="https://www.mymarket.ge/react/build/static/media/house.363d2ee4.svg" alt="">
+                </div>
+                <div class="desc">
+                    ნივთს ჩვენ მოგიტანთ სასურველ მისამართზე
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="scroll-up">
+    <img src="https://www.mymarket.ge/react/build/static/media/scr-top.aebcbc7b.svg" alt="">
+</div>
+
+
+<footer class="footer">
+    <div class="row">
+        <div class="column top-cat">
+            <h6>ტოპ კატეგორიები</h6>
+            <div class="top-categories">
+                <div class="item">
+                    <ul>
+                        <li><a href="">საახალწლო პროდუქცია</a></li>
+                        <li><a href="">სუპერმარკეტები</a></li>
+                        <li><a href="">მომსახურება</a></li>
+                        <li><a href="">გაქირავება</a></li>
+                        <li><a href="">სახლი და ბაღი</a></li>
+                        <li><a href="">საოჯახო ტექნიკა</a></li>
+                    </ul>
+                </div>
+                <div class="item technics">
+                    <ul>
+                        <li><a href="">ტექნიკა</a></li>
+                        <li><a href="">ნადირობა და თევზაობა</a></li>
+                        <li><a href="">მუსიკა</a></li>
+                        <li><a href="">საბავშვო</a></li>
+                        <li><a href="">სილამაზე და მოდა</a></li>
+                        <li><a href="">მშენებლობა და რემონტი</a></li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <ul>
+                        <li><a href="">სოფლის მეურნეობა</a></li>
+                        <li><a href="">ცხოველები</a></li>
+                        <li><a href="">სპორტი და დასვენება</a></li>
+                        <li><a href="">ბიზნესი და დანადგარები</a></li>
+                        <li><a href="">წიგნები და კანცელარია</a></li>
+                        <li><a href="">ხელოვნება და საკოლექციო</a></li>
+                    </ul>
+                </div>
+            </div>
+           
+        </div>
+        <div class="column">
+            <h6>მენიუ</h6>
+            <div class="item">
+                <ul>
+                    <li><a href="">მთავარი</a></li>
+                    <li><a href="">მაღაზიები</a></li>
+                    <li><a href="">იყიდე ონლაინ</a></li>
+                    <li><a href="">დახმარება</a></li>
+                    <li><a href="">კონტაქტი</a></li>
+                    <li><a href="">საიტის წესები</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="column">
+            <h6>ჩემი გვერდი</h6>
+            <div class="item">
+                <ul>
+                    <li><a href="">იყიდე ონლაინ</a></li>
+                    <li><a href="">ჩემი განცხადებები</a></li>
+                    <li><a href="">განცხადების დამატება</a></li>
+                    <li><a href="">შეტყობინებები</a></li>
+                    <li><a href="">ბალანსის შევსება</a></li>
+                    <li><a href="">ანგარიშის რედაქტირება</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="column">
+            <div class="item">
+                <ul class="icons social-item">
+                    <li>
+                        <h6>სოც. ქსელები</h6>
+                        <div class="social-icons">
+                            <a href="" class="fb">
+                                <img src="https://www.mymarket.ge/react/build/static/media/fb.01e7902d.svg" class="fb" alt="">
+                            </a>
+
+                            <a href="" class="insta">
+                                <img src="https://www.mymarket.ge/react/build/static/media/insta.e1714d21.svg" class="fb" alt="">
+                            </a>
+
+                            <a href="" class="linkedin">
+                                <img src="https://www.mymarket.ge/react/build/static/media/linkedin.29fe6cca.svg" class="fb" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <h6>ენები</h6>
+                        <div class="language-icons">
+                            <a href="" class="geo">
+                                <img src="https://www.mymarket.ge/react/build/static/media/ge-flag.54aae310.svg" class="fb" alt="">
+                            </a>
+
+                            <a href="" class="eng">
+                                <img src="https://www.mymarket.ge/react/build/static/media/en-flag.3500654f.svg" class="fb" alt="">
+                            </a>
+
+                            <a href="" class="rus">
+                                <img src="https://www.mymarket.ge/react/build/static/media/ru-flag.1314b6f4.svg" class="fb" alt="">
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <h6>გადმოწერე აპლიკაცია</h6>
+                        <div class="download-icons">
+                            <a href="" >
+                                <img src="https://www.mymarket.ge/react/build/static/media/app-store.d707c340.svg" class="fb" alt="">
+                            </a>
+
+                            <a href="" >
+                                <img src="https://www.mymarket.ge/react/build/static/media/google-play.e14d85ae.svg" class="fb" alt="">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <div class="footer-bottom">
+        <div class="row">
+            <div>
+                
+            </div>
+            <div class="my-webs">
+                <a href="" class="market">
+                    <img src="https://www.mymarket.ge/react/build/static/media/logo.03303ab3.svg" alt="">
+                    <span class="font-size-12 font-weight-bold">market</span>
+                </a>
+            </div>
+
+            <div class="my-webs">
+                <a href="" class="auto">
+                    <img src="https://www.mymarket.ge/react/build/static/media/logo.03303ab3.svg" alt="">
+                    <span class="font-size-12 font-weight-bold">auto</span>
+                </a>
+            </div>
+
+
+            <div class="my-webs">
+                <a href="" class="parts">
+                    <img src="https://www.mymarket.ge/react/build/static/media/logo.03303ab3.svg" alt="">
+                    <span class="font-size-12 font-weight-bold">parts</span>
+                </a>
+            </div>
+
+
+            <div class="my-webs">
+                <a href="" class="home">
+                    <img src="https://www.mymarket.ge/react/build/static/media/logo.03303ab3.svg" alt="">
+                    <span class="font-size-12 font-weight-bold">home</span>
+                </a>
+            </div>
+
+
+            <div class="my-webs">
+                <a href="">
+                    <img src="https://www.mymarket.ge/react/build/static/media/logo.03303ab3.svg" alt="">
+                    <span class="font-size-12 font-weight-bold">jobs</span>
+                </a>
+            </div>
+
+            <div class="my-webs">
+                <a href="">
+                    <img src="https://www.mymarket.ge/react/build/static/media/logo.03303ab3.svg" alt="">
+                    <span class="font-size-12 font-weight-bold">ads</span>
+                </a>
+            </div>
+
+            <div class="my-top">
+                <a href="https://www.top.ge/index.php?h=11654#11654">
+                    <img src="./images/count.png" alt="">
+                </a>     
+            </div>
+        </div>
+    </div>
+  </footer>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
